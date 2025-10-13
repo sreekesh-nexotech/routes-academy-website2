@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-onest: 'Onest', sans-serif;
+}
+
+body {
+  font-family: var(--font-poppins);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-onest);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-poppins);
+}
+
+h4, h5, h6 {
+  font-family: var(--font-onest);
+}

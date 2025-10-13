@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
+import { Poppins, Onest } from "next/font/google";
 
 import "./globals.css";
+
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], 
+  variable: "--font-poppins",
+});
+
+const onest = Onest({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-onest",
+});
 
 export const metadata: Metadata = {
   title: "Routes Academy",
@@ -13,10 +27,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-      >
-        {children}
+    <html lang="en" className={`${poppins.variable} ${onest.variable}`}>
+      <body className="bg-[#F2FBFA] flex flex-col min-h-screen">
+        {/* <Header/> */}
+        <div className="flex-grow "> 
+          <div> 
+            {children}
+          </div>
+        </div>
+        {/* <Footer/> */}
       </body>
     </html>
   );
