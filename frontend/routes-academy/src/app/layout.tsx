@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Onest } from "next/font/google";
 
 import "./globals.css";
+import Header from "@/components/ui/Header";
 
 
 const poppins = Poppins({
@@ -28,8 +29,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${onest.variable}`}>
-      <body className="bg-[#F2FBFA] flex flex-col min-h-screen">
-        {/* <Header/> */}
+      <body className="bg-white flex flex-col min-h-screen">
+         <Header />
         <div className="flex-grow "> 
           <div> 
             {children}
