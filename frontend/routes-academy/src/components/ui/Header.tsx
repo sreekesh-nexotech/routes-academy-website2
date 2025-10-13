@@ -2,8 +2,10 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
-import { Lilita_One } from 'next/font/google';
 import ButtonLink from '../elements/ButtonLink';
+import Image from 'next/image';
+
+import logo from '../../../public/images/logo.svg'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,13 +28,9 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link 
               href="#" 
-              className="font-bold text-blue-600" 
-              style={{
-                fontFamily: "'Comic Sans MS', cursive, sans-serif",
-                fontSize: 'clamp(1.5rem, 4vw, 2rem)'
-              }}
+              
             >
-              route
+              <Image src={logo} alt='Routes Accademy Logo' width={80} height={20}/>
             </Link>
           </div>
 
