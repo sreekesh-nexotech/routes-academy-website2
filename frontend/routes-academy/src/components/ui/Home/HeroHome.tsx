@@ -28,7 +28,7 @@ const HeroHome = () => {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row   justify-center gap-4">
           <ButtonLink href="#" label="See Courses" variant="primary" />
-          <ButtonLink href="#" label="Contact us" variant="secondary" />
+          <ButtonLink href="#" label="Contact us" variant="secondary"  className='bg-white'/>
         </div>
       </div>
     </div>
