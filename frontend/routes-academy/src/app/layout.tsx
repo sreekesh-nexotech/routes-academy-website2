@@ -3,11 +3,11 @@ import { Poppins, Onest } from "next/font/google";
 
 import "./globals.css";
 import Header from "@/components/ui/Header";
-
+import Footer from "@/components/ui/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], 
+  weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
 });
 
@@ -30,13 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${onest.variable}`}>
       <body className="bg-white flex flex-col min-h-screen">
-         <Header />
-        <div className="flex-grow "> 
-          <div> 
-            {children}
-          </div>
+        <Header />
+        <div className="flex-grow ">
+          <div>{children}</div>
         </div>
-        {/* <Footer/> */}
+        <Footer />
       </body>
     </html>
   );
