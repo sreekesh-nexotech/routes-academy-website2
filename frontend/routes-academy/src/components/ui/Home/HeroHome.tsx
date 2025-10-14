@@ -9,7 +9,7 @@ const HeroHome = () => {
       <PageIllustration/>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto text-center px-4 sm:px-6">
+      <div className="relative z-10 max-w-5xl mx-auto text-center px-4 sm:px-6">
         {/* Top Text */}
         <p className="text-blue-600 font-medium mb-4 tex-xl md:text-2xl">
           Learn. <span className="text-gray-900">Build.</span> Expand
