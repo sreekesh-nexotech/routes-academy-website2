@@ -23,9 +23,9 @@ const TestimonialVideo: React.FC = () => {
       const scrollProgress = Math.max(0, Math.min(1, (windowHeight - sectionTop) / sectionHeight));
       const scrollPercentage = scrollProgress * 100;
       
-      // Start zooming when 60% is scrolled, scale to 80% screen width
-      if (scrollPercentage >= 60) {
-        const zoomProgress = Math.min(1, (scrollPercentage - 60) / 20); // 20% range (60% to 80%)
+      // Start zooming when 40% of component is visible, complete at 100%
+      if (scrollPercentage >= 40) {
+        const zoomProgress = Math.min(1, (scrollPercentage - 40) / 60); // 60% range (40% to 100%)
         // Calculate scale factor to reach 80vw from current width
         const currentWidthVw = window.innerWidth <= 640 ? 90 : 
                              window.innerWidth <= 768 ? 84 : 
