@@ -31,8 +31,8 @@ const Footer = () => {
     { href: "#", label: "Report a bug" },
   ];
   return (
-    <footer>
-      <div className="grid sm:grid-cols-2  lg:grid-cols-4 p-[1rem] sm:p-[5rem]">
+    <footer className="container mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 p-[1rem] sm:p-[5rem]">
         <div>
           <div className="flex-shrink-0 mb-[2.75rem]">
             <Image
@@ -42,10 +42,10 @@ const Footer = () => {
               height={26}
             />
           </div>
-          <p className="font-normal text-neutral-700 text-[1.125rem] leading-[1.75rem] mb-[2.75rem]">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
-            mauris sed ma
-          </p>
+          <h4 className="font-normal text-neutral-700 text-[1rem] sm:text-[1.125rem] leading-[1.75rem] mb-[2.75rem]">
+            Lorem ipsum dolor sit amet consectetur <br /> adipiscing elit
+            aliquam mauris sed ma
+          </h4>
           <div className="flex gap-[1rem] mb-[6rem]">
             <Link href="#">
               <Image
@@ -79,14 +79,14 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="mb-[3.875rem] sm:mb-0">
-          <h5 className="text-[1.3125rem] leading-[3rem] text-blue-900 font-semibold">
+        <div className="mb-[3.875rem] sm:mb-0 md:ml-[2rem]">
+          <h5 className="text-[1.125rem] sm:text-[1.3125rem] leading-[3rem] text-blue-900 font-semibold">
             Courses
           </h5>
           {courseLinks.map((link) => (
             <div key={link.label}>
               <Link
-                className="font-normal text-neutral-600 text-[1rem] leading-[2.2rem]"
+                className="font-(family-name:--font-onest) font-normal text-neutral-600 text-[0.875rem] sm:text-[1rem] leading-[2.2rem]"
                 href={link.href}
               >
                 {link.label}
@@ -95,14 +95,14 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="hidden sm:block ">
-          <h5 className="text-[1.3125rem] leading-[3rem] text-blue-900 font-semibold">
+        <div className="hidden sm:block md:ml-[2rem]">
+          <h5 className="text-[1.125rem] sm:text-[1.3125rem] leading-[3rem] text-blue-900 font-semibold">
             Support
           </h5>
           {supportLinks.map((link) => (
             <div key={link.label}>
               <Link
-                className="font-normal text-neutral-600 text-[1rem] leading-[2.2rem]"
+                className="font-(family-name:--font-onest) font-normal text-neutral-600 text-[0.875rem] sm:text-[1rem] leading-[2.2rem]"
                 href={link.href}
               >
                 {link.label}
@@ -111,15 +111,15 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-2 sm:block">
+        <div className="grid grid-cols-2 sm:block md:ml-[2rem]">
           <div>
-            <h5 className="text-[1.3125rem] leading-[3rem] text-blue-900 font-semibold">
+            <h5 className="text-[1.125rem] sm:text-[1.3125rem] leading-[3rem] text-blue-900 font-semibold">
               Company
             </h5>
             {companyLinks.map((link) => (
               <div key={link.label}>
                 <Link
-                  className="font-normal text-neutral-600 text-[1rem] leading-[2.5rem]"
+                  className="font-(family-name:--font-onest) font-normal text-neutral-600 text-[0.875rem] sm:text-[1rem] leading-[2.5rem]"
                   href={link.href}
                 >
                   {link.label}
@@ -129,13 +129,13 @@ const Footer = () => {
             ))}
           </div>
           <div className="sm:hidden">
-            <h5 className="text-[1.3125rem] leading-[3rem] text-blue-900 font-semibold">
+            <h5 className="text-[1.125rem] sm:text-[1.3125rem] leading-[3rem] text-blue-900 font-semibold">
               Support
             </h5>
             {supportLinks.map((link) => (
               <div key={link.label}>
                 <Link
-                  className="font-normal text-neutral-600 text-[1rem] leading-[2.2rem]"
+                  className="font-normal text-neutral-600 text-[0.875rem] sm:text-[1rem] leading-[2.2rem]"
                   href={link.href}
                 >
                   {link.label}
@@ -147,9 +147,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center items-center pt-[2rem] pb-[1rem] mt-[2rem]">
-        <p className="text-neutral-700 font-normal text-[1rem] leading-[1.5rem]">
+        <h5 className="text-neutral-700 font-normal text-[1rem] leading-[1.5rem]">
           © {new Date().getFullYear()} ROUTE | Terms | Privacy
-        </p>
+        </h5>
       </div>
     </footer>
   );
