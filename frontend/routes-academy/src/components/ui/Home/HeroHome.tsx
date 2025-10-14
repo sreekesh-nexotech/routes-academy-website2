@@ -16,7 +16,7 @@ const HeroHome = () => {
         </p>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-7xl font-semibold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 leading-tight">
           Industry Built Programs That Turn Learning Into Hiring
         </h1>
 
