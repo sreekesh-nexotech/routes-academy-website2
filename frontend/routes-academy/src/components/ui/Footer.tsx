@@ -26,8 +26,8 @@ const Footer = () => {
   ];
 
   const companyLinks = [
-    { href: "#", label: "About" },
-    { href: "#", label: "Contact us" },
+    { href: "#", label: "Resume Builder" },
+    { href: "/#contact", label: "Contact us" },
     { href: "#", label: "Report a bug" },
   ];
   return (
