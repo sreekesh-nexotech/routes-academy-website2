@@ -59,7 +59,7 @@ const FaqItem: React.FC = () => {
             </h2>
             <p className="font-onest font-normal mt-[2.5vh] text-[1.5rem] md:text-[1.3rem] leading-[1.75rem] text-[#404040] text-center">
               These are the common doubts that people usually have. If it
-              doesn't help you, don't worry connect with us! We always love to
+              doesn&apos;t help you, don&apos;t worry connect with us! We always love to
               help and clear your doubts.
             </p>
           </div>
