@@ -9,14 +9,14 @@ const HeroHome = () => {
       <PageIllustration/>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto text-center px-4 sm:px-6">
+      <div className="relative z-10 max-w-5xl mx-auto text-center px-4 sm:px-6">
         {/* Top Text */}
         <p className="text-blue-600 font-medium mb-4 tex-xl md:text-2xl">
           Learn. <span className="text-gray-900">Build.</span> Expand
         </p>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-7xl font-semibold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 leading-tight">
           Industry Built Programs That Turn Learning Into Hiring
         </h1>
 
@@ -28,7 +28,7 @@ const HeroHome = () => {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row   justify-center gap-4">
           <ButtonLink href="#" label="See Courses" variant="primary" />
-          <ButtonLink href="#" label="Contact us" variant="secondary" />
+          <ButtonLink href="#" label="Contact us" variant="secondary"  className='bg-white'/>
         </div>
       </div>
     </div>

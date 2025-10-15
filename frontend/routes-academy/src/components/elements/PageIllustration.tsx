@@ -59,7 +59,7 @@ export default function PageIllustration() {
             key={`v-${i}`}
             className="absolute top-0 w-[1px] h-48 bg-gradient-to-b from-blue-500/0 via-blue-500/50 to-blue-500/0 animate-line-y "
             style={{
-              left: `${i * 80}px`,
+              left: `${i * 240}px`,
               animationDelay: `${i * -0.7}s`,
             }}
           />
