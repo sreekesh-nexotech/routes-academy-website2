@@ -2,7 +2,6 @@
 
 html, body {
   overflow-x: hidden;
-  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
@@ -25,4 +24,17 @@ h1, h2, h3 {
 
 h4, h5, h6 {
   font-family: var(--font-onest);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 300s linear infinite;
 }

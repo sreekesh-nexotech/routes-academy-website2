@@ -1,3 +1,4 @@
+import { ExternalLink } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -18,8 +19,9 @@ const ButtonLink = ({ href, label, variant = 'secondary', className = '' }: Butt
   const variantClasses = variant === 'primary' ? primaryClasses : secondaryClasses;
 
   return (
-    <Link href={href} className={`${baseClasses} ${variantClasses} ${className}`}>
+    <Link href={href} className={`${baseClasses} ${variantClasses} ${className} flex items-center justify-center gap-2`}>
       {label}
+      {variant === 'primary' && (<ExternalLink size={20}/>)}
     </Link>
   );
 };

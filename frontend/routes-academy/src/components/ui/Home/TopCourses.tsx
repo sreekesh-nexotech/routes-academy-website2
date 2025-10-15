@@ -1,4 +1,5 @@
 /* frontend/routes-academy/src/components/ui/Home/TopCourses.tsx */
+import ButtonLink from "@/components/elements/ButtonLink";
 import CourseCard from "../../../components/elements/CourseBox";
 import { ChevronDown } from "lucide-react";
 import React from "react";
@@ -102,12 +103,11 @@ const TopCourses: React.FC = () => {
       {/* Adjusted the layout to use flex-1 for dividers, ensuring they scale properly */}
       <div className="flex justify-center items-center gap-8 px-4 sm:px-6 py-8 w-full">
         <div className="border-t border-[#104EFF] flex-1 max-w-xs"></div>
-        <button className="bg-[#104EFF] rounded-lg flex justify-center items-center gap-2 px-5 py-3 hover:bg-[#0D2DE1] transition-colors group whitespace-nowrap shadow-lg">
-          <span className="font-onest font-semibold text-lg text-white">
-            See All Courses
-          </span>
-          <ChevronDown className="w-6 h-6 text-white group-hover:translate-y-1 transition-transform" />
-        </button>
+        <ButtonLink
+          href="/courses" 
+          label="See All Courses"
+          variant="primary"
+        />
         <div className="border-t border-[#104EFF] flex-1 max-w-xs"></div>
       </div>
     </section>

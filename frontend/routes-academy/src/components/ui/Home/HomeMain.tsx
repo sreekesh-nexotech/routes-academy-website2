@@ -5,18 +5,24 @@ import FaqItem from '@/components/elements/FaqItem'
 import Testimonial from './Testimonial'
 import TopCourses from './TopCourses'
 import Contact from './Contact'
+import Alumni from './Alumini'
+import Statistics from './Metrics'
+import Companies from './Companies'
 
 const HomeMain = () => {
   return (
-    <div>
+    <div className='w-full'>
         <HeroHome/>
         <TestimonialVideo />
-        <TopCourses />
+        <Alumni/>
+        <Statistics/>
+        <Companies/>
         <Testimonial/>
+        <TopCourses />
         <FaqItem />
         <Contact/>
     </div>
-  )
-}
+  );
+};
 
-export default HomeMain
+export default HomeMain;
