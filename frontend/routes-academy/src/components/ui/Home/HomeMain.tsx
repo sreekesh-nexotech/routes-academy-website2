@@ -4,6 +4,7 @@ import TestimonialVideo from './TestimonialVideo'
 import FaqItem from '@/components/elements/FaqItem'
 import Testimonial from './Testimonial'
 import TopCourses from './TopCourses'
+import Contact from './Contact'
 
 const HomeMain = () => {
   return (
@@ -11,8 +12,9 @@ const HomeMain = () => {
         <HeroHome/>
         <TestimonialVideo />
         <TopCourses />
-        <FaqItem />
         <Testimonial/>
+        <FaqItem />
+        <Contact/>
     </div>
   )
 }

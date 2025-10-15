@@ -48,7 +48,7 @@ const TestimonialVideo: React.FC = () => {
   return (
     <section 
       ref={sectionRef}
-      className="w-screen min-h-[60vh] sm:h-[70vh] md:h-[75vh] lg:h-[80vh] bg-white flex flex-col items-center justify-start gap-4 sm:gap-6 md:gap-8 py-8 sm:py-10 md:py-12"
+      className="w-screen min-h-[60vh] bg-white flex flex-col items-center justify-start gap-4 sm:gap-6 md:gap-8 py-12 sm:py-16 md:py-20 lg:py-24"
     >
       {/* Heading */}
       <h2 className="w-[90vw] sm:w-[85vw] md:w-[80vw] lg:w-[70vw] px-4 sm:px-6 md:px-8 text-center font-semibold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-tight text-blue-950">

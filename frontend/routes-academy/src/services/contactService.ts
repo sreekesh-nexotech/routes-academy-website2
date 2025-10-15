@@ -12,7 +12,7 @@ export interface ContactResponse {  // Adjust fields based on actual API respons
 
 export async function submitContactForm(data: ContactFormData): Promise<ContactResponse> {
   try {
-    const response = await apiCall<ContactResponse>('api-endpoint', 'POST', data);  // Replace 'api-endpoint' with the actual endpoint
+    const response = await apiCall<ContactResponse>('create_lead_api', 'POST', data);  // Replace 'api-endpoint' with the actual endpoint
     return response;
   } catch (error) {
     console.error('Error submitting contact form:', error);
