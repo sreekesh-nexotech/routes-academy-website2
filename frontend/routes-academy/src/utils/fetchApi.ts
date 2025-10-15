@@ -3,7 +3,7 @@ export async function fetchApi<T>(
   method: string = 'GET',
   body?: object | null
 ): Promise<T> {
-  const url = `/api/${endpoint}`;  // Assuming a base path of /api for all requests
+  const url = `/api/${endpoint}`;  
 
   const options: RequestInit = {  
     method,
