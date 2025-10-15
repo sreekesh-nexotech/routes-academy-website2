@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 // Reusable ButtonLink component
@@ -17,9 +18,9 @@ const ButtonLink = ({ href, label, variant = 'secondary', className = '' }: Butt
   const variantClasses = variant === 'primary' ? primaryClasses : secondaryClasses;
 
   return (
-    <a href={href} className={`${baseClasses} ${variantClasses} ${className}`}>
+    <Link href={href} className={`${baseClasses} ${variantClasses} ${className}`}>
       {label}
-    </a>
+    </Link>
   );
 };
 

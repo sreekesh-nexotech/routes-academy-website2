@@ -105,7 +105,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-[#F1F5F9] font-sans">
+    <section id="contact" className="scroll-mt-30 py-16 sm:py-24 bg-[#F1F5F9] font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 lg:gap-20 items-start justify-center">
         {/* Left Section */}
         <div className="space-y-3">

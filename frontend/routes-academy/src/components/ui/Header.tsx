@@ -15,9 +15,9 @@ const Header = () => {
   };
 
   const navLinks = [
-    { href: '#', label: 'Home' },
+    { href: '/', label: 'Home' },
     { href: '#', label: 'Resume Builder' },
-    { href: '#', label: 'Contact' },
+    { href: '/#contact', label: 'Contact' },
   ];
 
   return (
@@ -44,7 +44,7 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <ButtonLink href='#' label='Login' variant='secondary' />
+            <ButtonLink href='#contact' label='Login' variant='secondary' />
             <ButtonLink href='courses' label='See Courses' variant='primary' />
           </nav>
 
@@ -76,7 +76,7 @@ const Header = () => {
              <div className="pt-4 pb-3 border-t border-gray-200">
                 <div className="flex flex-col items-start px-2 space-y-2">
                     <ButtonLink href="#" label="Login" variant="secondary" className="w-full"/>
-                    <ButtonLink href="courses" label="See Courses" variant="primary" className="w-full"/>
+                    <ButtonLink href="/courses" label="See Courses" variant="primary" className="w-full"/>
                 </div>
             </div>
           </div>
