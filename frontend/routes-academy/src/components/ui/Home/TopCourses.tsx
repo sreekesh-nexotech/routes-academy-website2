@@ -1,6 +1,6 @@
 /* frontend/routes-academy/src/components/ui/Home/TopCourses.tsx */
 import ButtonLink from "@/components/elements/ButtonLink";
-import CourseCard from "../../../components/elements/CourseBox";
+import CourseCard from "@/components/elements/HomeCourseBox";
 import { ChevronDown } from "lucide-react";
 import React from "react";
 
@@ -80,7 +80,8 @@ const TopCourses: React.FC = () => {
   return (
     <section className="flex flex-col w-full">
       {/* Section Container */}
-      <div className="bg-[#F1F5F9] py-16 sm:py-20 px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-16 w-full">
+      <div className="bg-[#F1F5F9] py-16 sm:py-20 w-full">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-20 flex flex-col items-center gap-16 w-full">
         {/* Section Heading */}
         <div className="flex flex-col justify-center items-center gap-4 max-w-4xl text-center">
           <h2 className="font-poppins font-medium text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-[#172554]">
@@ -90,6 +91,7 @@ const TopCourses: React.FC = () => {
             Discover Industry-Validated Courses with Guaranteed Career Pathways
           </p>
         </div>
+      </div>
 
         {/* Course Cards */}
         <div className="flex justify-center flex-wrap gap-6 sm:gap-12 w-full">

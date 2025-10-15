@@ -76,33 +76,46 @@ const testimonials = [
 
 const Testimonial = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const cardCount = testimonials.length;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+      setActiveIndex((prevIndex) => (prevIndex + 1) % cardCount);
     }, 5000); 
 
     return () => clearInterval(interval); 
-  }, []);
+  }, [cardCount]);
 
   return (
-    <section className="relative bg-gradient-to-t to-[#EFF6FF] from-[#93C5FD] py-16 md:py-24 overflow-hidden">
-      {/* Abstract background shapes */}
-      <div className="absolute top-0 left-0 -translate-x-1/3 -translate-y-1/3 w-96 h-96 bg-blue-200/50 rounded-full blur-3xl" aria-hidden="true"></div>
-      <div className="absolute bottom-0 right-0 translate-x-1/3 translate-y-1/3 w-96 h-96 bg-blue-200/50 rounded-full blur-3xl" aria-hidden="true"></div>
-
+    <section 
+      className="relative py-16 md:py-24 overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: `url('/images/testimonialbg.png')` }}
+  >
+      
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="w-full max-w-7xl mx-auto">
-          {/* Carousel Wrapper */}
-          <div className="relative h-[520px] md:h-[480px] ">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className={`transition-all duration-1000 ease-in-out absolute inset-0 ${index === activeIndex ? 'opacity-100' : 'opacity-0'}`}
-              >
-                {index === activeIndex && <TestimonialCard {...testimonial} />}
-              </div>
-            ))}
+          
+          {/* Carousel Wrapper  */}
+          <div className="relative overflow-hidden min-h-0">
+            
+            {/* Inner Slider Container */}
+            <div
+              className="flex transition-transform duration-700 ease-in-out min-h-0"
+              style={{ 
+                width: `${cardCount * 100}%`,
+                transform: `translateX(-${(activeIndex / cardCount) * 100}%)`,
+              }}
+            >
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="w-full h-full flex-shrink-0 min-h-0" 
+                  style={{ width: `${100 / cardCount}%` }}
+                >
+                  <TestimonialCard {...testimonial} />
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Pagination Dots */}
@@ -112,7 +125,7 @@ const Testimonial = () => {
                 key={index}
                 onClick={() => setActiveIndex(index)}
                 className={`cursor-pointer w-2.5 h-1.5 rounded-full transition-all duration-300 ${
-                  activeIndex === index ? 'bg-blue-600 w-8' : 'bg-white hover:bg-blue-300'
+                  activeIndex === index ? 'bg-[#104EFF] w-8' : 'bg-white hover:bg-[#104EFF]'
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
@@ -125,4 +138,3 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
-
