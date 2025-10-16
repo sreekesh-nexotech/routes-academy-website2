@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Course, courses } from "./CourseData";
+import { useState } from "react";
 
 const Courses = () => {
   return (
@@ -21,6 +23,9 @@ const Courses = () => {
         <div className="grid lg:grid-cols-4 lg:gap-[2.3125rem] justify-center">
           <div className="lg:col-span-1 mb-[1rem]">
             <CoursesNav />
+            <div className="hidden lg:block">
+              <GuideMe />
+            </div>
           </div>
           <div className="lg:col-span-3">
             <CourseList />
@@ -34,14 +39,15 @@ const Courses = () => {
 export default Courses;
 
 function CoursesNav() {
+  const [activeCategoryId, setActiveCategoryId] = useState(1);
   const courseCategories = [
-    { title: "All Courses", active: true },
-    { title: "Data and Analytics", active: false },
-    { title: "Finance, Accounting & ERP", active: false },
-    { title: "AI, ML& Cloud", active: false },
-    { title: "Digital Marketing & Growth", active: false },
-    { title: "HR & People Analytics", active: false },
-    { title: "Communication", active: false },
+    { id: 1, title: "All Courses" },
+    { id: 2, title: "Data and Analytics" },
+    { id: 3, title: "Finance, Accounting & ERP" },
+    { id: 4, title: "AI, ML& Cloud" },
+    { id: 5, title: "Digital Marketing & Growth" },
+    { id: 6, title: "HR & People Analytics" },
+    { id: 7, title: "Communication" },
   ];
   return (
     <div>
@@ -51,10 +57,11 @@ function CoursesNav() {
             <button
               className={`font-(family-name:--font-onest) text-left font-normal text-[.875rem] md:text-[1rem] leading-[1.3125rem] md:leading-[1.5rem] cursor-pointer w-full py-[.5rem] px-[1rem] 
                 ${
-                  category.active
+                  category.id === activeCategoryId
                     ? "bg-[#104EFF] text-[#FFFFFF] rounded-[0.25rem]"
                     : "text-[#172554]"
                 }`}
+              onClick={() => setActiveCategoryId(category.id)}
             >
               {category.title}
             </button>
@@ -65,9 +72,7 @@ function CoursesNav() {
   );
 }
 
-
 function CourseList() {
-
   return (
     <div className="grid md:grid-cols-2 gap-[2rem]">
       {courses.map((course) => (
@@ -113,5 +118,25 @@ function CourseCard({ course }: { course: Course }) {
         </div>
       </div>
     </Link>
+  );
+}
+
+function GuideMe() {
+  return (
+    <div className="bg-[#EFF6FF] font-(family-name:--font-onest) p-[1rem] text-center rounded-[1.25rem] mt-[5.625rem]">
+      <p className="font-normal text-[#172554] text-[.75rem] xl:text-[.875rem] mb-[.5rem]">
+        NEED ANY HELP ?
+      </p>
+      <h5 className="font-semibold text-[#172554] text-[1rem] xl:text-[1.2rem] 2xl:text-[1.3125rem] mb-[.5rem]">
+        Had some Confusion ?
+      </h5>
+      <p className="font-normal text-[#404040] text-[.75rem] xl:text-[1rem] mb-[1rem] xl:mb-[1.5rem]">
+        We can help you select the best and suitable Course for your career and
+        skill
+      </p>
+      <button className="cursor-pointer font-bold bg-[#172554] text-[#FFFFFF] text-[1rem] py-[1rem] px-[1rem] xl:py-[1rem] xl:px-[1.8125rem] rounded-[2rem] xl:rounded-[2.295rem] mx-auto">
+        Yes Guide Me
+      </button>
+    </div>
   );
 }
