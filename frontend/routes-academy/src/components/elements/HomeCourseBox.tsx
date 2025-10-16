@@ -1,6 +1,7 @@
 /* frontend/routes-academy/src/components/elements/CourseBox.tsx */
 import { Star, Book, User, Clock, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface CourseCardProps {
@@ -15,6 +16,7 @@ interface CourseCardProps {
   badgeText: string;
   bgColor: string;
   icon?: React.ReactNode;
+  href: string;
 }
 
 const CourseCard: React.FC<CourseCardProps> = ({
@@ -26,6 +28,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
   skills,
   price,
   image,
+  href,
   // badgeText, // Not used in the return block, keeping it in props for completeness
   // bgColor, // Not used in the return block, keeping it in props for completeness
   // icon, // Not used in the return block, keeping it in props for completeness
@@ -92,7 +95,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
               {price}
             </span>
           </div>
-          <button className="border border-[#A3A3A3] rounded-full flex justify-center items-center gap-1 px-4 py-2 sm:py-3 hover:border-[#104EFF] hover:bg-[#EFF6FF] transition-colors group">
+          <Link href={href} className="border border-[#A3A3A3] rounded-full flex justify-center items-center gap-1 px-4 py-2 sm:py-3 hover:border-[#104EFF] hover:bg-[#EFF6FF] transition-colors group">
             <span className="font-poppins font-medium text-sm sm:text-base leading-5 tracking-tight text-[#404040] group-hover:text-[#104EFF] transition-colors whitespace-nowrap">
               See course Details
             </span>
@@ -100,7 +103,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
               className="w-5 h-5 text-[#525252] group-hover:text-[#104EFF] transition-colors"
               strokeWidth={2}
             />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

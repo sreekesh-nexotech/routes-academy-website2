@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Course, courses } from "./CourseData";
 
 const Courses = () => {
   return (
@@ -64,85 +65,9 @@ function CoursesNav() {
   );
 }
 
-interface course {
-  id: number;
-  title: string;
-  description: string;
-  average_salary: string;
-  mode_of_conduct: string;
-  placed_students: number;
-  emi: boolean;
-  image_url: string;
-}
+
 function CourseList() {
-  const courses: course[] = [
-    {
-      id: 1,
-      title: "Data Engineer",
-      description:
-        "Ideal for beginners who want to learn data visualization and database management. Build practical skills to turn raw data into meaningful insights.",
-      average_salary: "7-15 LPA",
-      mode_of_conduct: "Offline",
-      placed_students: 120,
-      emi: true,
-      image_url: "/coursecard-1.svg",
-    },
-    {
-      id: 2,
-      title: "Data Engineer",
-      description:
-        "Ideal for beginners who want to learn data visualization and database management. Build practical skills to turn raw data into meaningful insights.",
-      average_salary: "7-15 LPA",
-      mode_of_conduct: "Offline",
-      placed_students: 120,
-      emi: true,
-      image_url: "/coursecard-2.svg",
-    },
-    {
-      id: 3,
-      title: "Data Engineer",
-      description:
-        "Ideal for beginners who want to learn data visualization and database management. Build practical skills to turn raw data into meaningful insights.",
-      average_salary: "7-15 LPA",
-      mode_of_conduct: "Offline",
-      placed_students: 120,
-      emi: true,
-      image_url: "/coursecard-3.svg",
-    },
-    {
-      id: 4,
-      title: "Data Engineer",
-      description:
-        "Ideal for beginners who want to learn data visualization and database management. Build practical skills to turn raw data into meaningful insights.",
-      average_salary: "7-15 LPA",
-      mode_of_conduct: "Offline",
-      placed_students: 120,
-      emi: true,
-      image_url: "/coursecard-4.svg",
-    },
-    {
-      id: 5,
-      title: "Data Engineer",
-      description:
-        "Ideal for beginners who want to learn data visualization and database management. Build practical skills to turn raw data into meaningful insights.",
-      average_salary: "7-15 LPA",
-      mode_of_conduct: "Offline",
-      placed_students: 120,
-      emi: true,
-      image_url: "/coursecard-5.svg",
-    },
-    {
-      id: 6,
-      title: "Data Engineer",
-      description:
-        "Ideal for beginners who want to learn data visualization and database management. Build practical skills to turn raw data into meaningful insights.",
-      average_salary: "7-15 LPA",
-      mode_of_conduct: "Offline",
-      placed_students: 120,
-      emi: true,
-      image_url: "/coursecard-6.svg",
-    },
-  ];
+
   return (
     <div className="grid md:grid-cols-2 gap-[2rem]">
       {courses.map((course) => (
@@ -151,13 +76,13 @@ function CourseList() {
     </div>
   );
 }
-function CourseCard({ course }: { course: course }) {
+function CourseCard({ course }: { course: Course }) {
   return (
-    <Link href="#">
+    <Link href={`/courses/${course.id}`}>
       <div className="max-w-[26.65625rem] rounded-[1rem] bg-[#FFFFFF] shadow-md">
         <Image
           src={course.image_url}
-          alt="coursecard-1"
+          alt={`coursecard-${course.id} image`}
           width={426.5}
           height={168}
           className="rounded-t-[1rem]"
