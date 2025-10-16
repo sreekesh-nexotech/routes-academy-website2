@@ -1,6 +1,7 @@
 import React from "react";
 import CourseHero from "@/components/ui/Courses/CourseHero";
 import CourseContact from "@/components/ui/Courses/CourseContact";
+import Courses from "@/components/ui/Courses/Courses";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
           A 90%+ placement rate within six months
         </h2>
       </div>
+      <Courses />
       <CourseContact />
     </div>
   );
