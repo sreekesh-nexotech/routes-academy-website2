@@ -17,7 +17,7 @@ const FaqItem: React.FC = () => {
     {
       question: "Did these courses have mentorship support?",
       answer:
-        "Our expert mentors aren't just instructors—they're industry veterans who provide personalized career guidance, transforming your learning into tangible professional success.",
+        "Our expert mentors arent just instructors—they are industry veterans who provide personalized career guidance, transforming your learning into tangible professional success.",
     },
     {
       question: "What are the placement supports provided?",
@@ -60,7 +60,7 @@ const FaqItem: React.FC = () => {
             </h2>
             <p className="font-onest font-normal mt-[2.5vh] text-[1.5rem] md:text-[1.3rem] leading-[1.75rem] text-[#404040] text-center">
               These are the common doubts that people usually have. If it
-              doesn't help you, don't worry connect with us! We always love to
+              doesnt help you, dont worry connect with us! We always love to
               help and clear your doubts.
             </p>
           </div>
