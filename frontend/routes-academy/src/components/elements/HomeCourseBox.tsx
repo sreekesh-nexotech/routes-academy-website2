@@ -29,9 +29,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
   price,
   image,
   href,
-  // badgeText, // Not used in the return block, keeping it in props for completeness
-  // bgColor, // Not used in the return block, keeping it in props for completeness
-  // icon, // Not used in the return block, keeping it in props for completeness
+
 }) => {
   return (
     <div className="bg-white rounded-3xl shadow-xl p-4 flex flex-col justify-between gap-4 flex-1 min-w-[18rem] max-w-sm sm:max-w-md lg:min-w-[20rem] xl:max-w-md">

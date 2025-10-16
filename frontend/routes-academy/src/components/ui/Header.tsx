@@ -45,7 +45,7 @@ const Header = () => {
               </Link>
             ))}
             <ButtonLink href='#contact' label='Login' variant='secondary' />
-            <ButtonLink href='courses' label='See Courses' variant='primary' />
+            <ButtonLink href='/courses' label='See Courses' variant='primary' />
           </nav>
 
           {/* Mobile Menu Button */}

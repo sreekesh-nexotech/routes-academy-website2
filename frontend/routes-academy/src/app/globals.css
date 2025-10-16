@@ -26,6 +26,12 @@ h4, h5, h6 {
   font-family: var(--font-onest);
 }
 
+button, a {
+  font-family: var(--font-onest);
+}
+
+
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
