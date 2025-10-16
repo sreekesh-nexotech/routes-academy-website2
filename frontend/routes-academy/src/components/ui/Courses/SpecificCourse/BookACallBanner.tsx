@@ -108,7 +108,7 @@ const BookACallBanner = () => {
   };
 
   return (
-    <div className="bg-[#104EFF] rounded-lg mt-10">
+    <div className="bg-[#104EFF] rounded-lg mt-10 scroll-mt-30" id="course-contact">
       <div className="container mx-auto">
         <div className="grid gap-[2.5rem] lg:gap-[2.5rem] p-[1rem] md:p-[2rem] lg:p-[5rem]">
           {/* Left Text Section */}

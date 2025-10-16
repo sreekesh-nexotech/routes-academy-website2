@@ -13,7 +13,7 @@ const CourseDetailsCard: React.FC<{ course: Course }> = ({ course }) => {
     <div className="bg-[#F2F5FF] rounded-2xl  p-6 ">
         <div className="text-center mt-3 space-y-3">
           <ButtonLink
-            href='#Coursecontact'
+            href='#course-contact'
             label={`Enroll Now${course.emi ? '. EMI Available' : ''}`}
             variant='primary'
             className="rounded-b-3xl rounded-t-3xl py-3"

@@ -11,7 +11,7 @@ const CourseContentSection: React.FC<{ curriculum: Course["curriculum_detailed"]
     };
 
     return (
-        <div className="bg-[#F8FAFF] rounded-2xl p-3 py-5  md:p-8 " id="modules">
+        <div className="bg-[#F8FAFF] rounded-2xl p-3 py-5  md:p-8 scroll-mt-30 " id="modules">
             <h2 className="text-3xl font-poppins font-semibold text-[#172554] mb-6">Course Content</h2>
             <div className="space-y-4">
                 {curriculum.map((item, i) => (

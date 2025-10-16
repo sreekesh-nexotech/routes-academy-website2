@@ -4,7 +4,7 @@ import { Course } from "../CourseData";
 const WhatYouWillLearnSection: React.FC<{ course: Course }> = ({ course }) => {
   
   return (
-    <div className="bg-[#F8FAFF] rounded-2xl shadow-lg p-8 " id="features">
+    <div className="bg-[#F8FAFF] rounded-2xl shadow-lg p-8 scroll-mt-30 " id="features">
       <h2 className="text-3xl font-poppins font-semibold text-[#172554] mb-6">What you will learn</h2>
       <div className="mb-6">
         <p className="text-gray-600 leading-relaxed">

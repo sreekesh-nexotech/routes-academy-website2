@@ -8,7 +8,7 @@ const DoubtsCard: React.FC = () => (
       We have a dedicated team ready for clearing your course related confusions
     </p>
     <Link
-      href="#courseContact"
+      href="#course-contact"
       className="cursor-pointer px-10 w-full py-3 rounded-full font-medium text-[1rem] text-[#FFFFFF] bg-[#172554] hover:bg-[#22387e] transition-all duration-300 "
     >
       Start a 5 Min Call
