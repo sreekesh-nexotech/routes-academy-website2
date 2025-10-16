@@ -2,6 +2,7 @@ import React from "react";
 import CourseHero from "@/components/ui/Courses/CourseHero";
 import CourseContact from "@/components/ui/Courses/CourseContact";
 import Courses from "@/components/ui/Courses/Courses";
+import CourseHelps from "@/components/ui/Courses/CourseHelps";
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
         </h2>
       </div>
       <Courses />
+      <CourseHelps />
       <CourseContact />
     </div>
   );
