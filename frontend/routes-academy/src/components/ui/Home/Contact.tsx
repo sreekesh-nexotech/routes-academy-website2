@@ -208,7 +208,7 @@ const Contact: React.FC = () => {
   );
 };
 
-// ✅ Reusable Components
+
 const FormInput: React.FC<{
   name: string;
   label: string;
