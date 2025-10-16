@@ -25,7 +25,7 @@ const CourseHero = () => {
     },
   ];
   return (
-    <div className="grid md:grid-cols-2 xl:grid-cols-3 xl:relative">
+    <div className="grid md:grid-cols-2 xl:grid-cols-3 xl:relative mt-[5rem]">
       {/* Hero content section */}
       <div className="md:col-span-1 md:ml-[3rem] flex md:items-end md:justify-items-end order-2 md:order-none px-[5rem] md:px-0 mt-[2rem] lg:mt-0">
         <div className="xl:absolute xl:top-[33%] xl:left-[10%] 2xl:left-[15%]">
