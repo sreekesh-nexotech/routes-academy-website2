@@ -9,7 +9,7 @@ export async function fetchApi<T>(
     method,
     headers: {  // Add necessary headers here
       'Content-Type': 'application/json',
-      'Authorization': `token ${process.env.CRM_API_KEY}:${process.env.CRM_API_SECRET}`,
+      // 'Authorization': `token ${process.env.CRM_API_KEY}:${process.env.CRM_API_SECRET}`,
     },
     body: body ? JSON.stringify(body) : undefined,
   };
