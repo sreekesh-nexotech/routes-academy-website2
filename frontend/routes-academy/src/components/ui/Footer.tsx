@@ -32,7 +32,7 @@ const Footer = () => {
   ];
   return (
     <footer className="container mx-auto">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 p-[1rem] sm:p-[5rem]">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 p-[1rem] sm:p-[5rem]  mt-[3.125rem] sm:m-0">
         <div>
           <div className="flex-shrink-0 mb-[2.75rem]">
             <Image
