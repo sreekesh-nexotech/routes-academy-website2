@@ -4,6 +4,7 @@ import { Poppins, Onest } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/Header";
 import Footer from "@/components/ui/Footer";
+import defaultSEO from "@/utils/seo";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,9 +18,13 @@ const onest = Onest({
   variable: "--font-onest",
 });
 
+
 export const metadata: Metadata = {
-  title: "Routes Academy",
-  description: "Industry Built Program That Turn Learning Into Hiring.",
+  ...defaultSEO,
+  title: {
+    default: "Routes Academy | Learn from the Best",
+    template: "%s | Routes Academy",
+  },
 };
 
 export default function RootLayout({

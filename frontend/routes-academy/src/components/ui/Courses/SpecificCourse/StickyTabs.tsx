@@ -1,4 +1,5 @@
 /* frontend/routes-academy/src/components/ui/Courses/SpecificCourse/StickyTabs.tsx */
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 

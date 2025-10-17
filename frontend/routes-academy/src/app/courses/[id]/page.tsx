@@ -1,6 +1,5 @@
-"use client";
 
-import { use, useEffect, useRef, useState } from "react";
+import { use } from "react";
 import { courses } from "../../../components/ui/Courses/CourseData";
 import CourseHeroSection from "@/components/ui/Courses/SpecificCourse/CourseHero";
 import StickyTabs from "@/components/ui/Courses/SpecificCourse/StickyTabs";
@@ -11,6 +10,7 @@ import CertificationSection from "@/components/ui/Courses/SpecificCourse/Certifi
 import CourseSidebar from "@/components/ui/Courses/SpecificCourse/CourseSidebar";
 import BookACallBanner from "@/components/ui/Courses/SpecificCourse/BookACallBanner";
 import SuccessStories from "@/components/ui/Courses/SpecificCourse/Testimonial";
+import { getCourseSEO } from "@/utils/seo";
 
 interface UnwrappedParams {
   id: string;
@@ -19,6 +19,12 @@ interface UnwrappedParams {
 interface CoursePageProps {
   params: Promise<UnwrappedParams>;
 }
+
+
+export async function generateMetadata({ params }: { params: { id: string } }) {
+  return getCourseSEO(params.id);
+}
+
 
 export default function CoursePage(props: CoursePageProps) {
   const { id } = use(props.params);
