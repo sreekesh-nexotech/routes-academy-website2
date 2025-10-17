@@ -29,6 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${onest.variable}`}>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Routes Academy" />
+      </head>
       <body className="bg-white flex flex-col min-h-screen">
         <Header />
         <div className="flex-grow ">

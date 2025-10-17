@@ -20,7 +20,7 @@ const testimonials = [
     ],
     stats: [
       { value: '80%', label: 'Salary growth' },
-      { value: '12+', label: 'Offers from other companies' },
+      { value: '12+', label: 'Job Offers' },
       { value: '5/5', label: 'Course satisfaction' },
     ],
   },
@@ -54,7 +54,7 @@ const testimonials = [
     ],
     stats: [
       { value: '80%', label: 'Salary growth' },
-      { value: '12+', label: 'Offers from other companies' },
+      { value: '12+', label: 'Job Offers' },
       { value: '5/5', label: 'Course satisfaction' },
     ],
   },

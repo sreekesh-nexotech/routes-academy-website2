@@ -26,7 +26,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link 
-              href="#" 
+              href="/" 
               
             >
               <Image src="https://routesacademy.b-cdn.net/images/logo.svg" alt='Routes Accademy Logo' width={80} height={20}/>
