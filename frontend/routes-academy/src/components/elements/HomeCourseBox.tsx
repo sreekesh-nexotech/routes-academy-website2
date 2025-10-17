@@ -29,14 +29,18 @@ const CourseCard: React.FC<CourseCardProps> = ({
   price,
   image,
   href,
-
 }) => {
   return (
     <div className="bg-white rounded-3xl shadow-xl p-4 flex flex-col justify-between gap-4 flex-1 min-w-[18rem] max-w-sm sm:max-w-md lg:min-w-[20rem] xl:max-w-md">
       {/* Course Image */}
       <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden">
-        {/* Changed object-contain to object-cover for better visual filling, adjust if object-contain is required */}
-        <Image src={image} alt={title} fill className="object-cover" />
+        {/* Use object-center for better vertical alignment and aspect ratio control */}
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover object-center"
+        />
       </div>
 
       {/* Course Details */}
@@ -89,11 +93,14 @@ const CourseCard: React.FC<CourseCardProps> = ({
         {/* Price and CTA */}
         <div className="flex justify-between items-center gap-4">
           <div className="bg-[#F1F5F9] rounded-lg flex justify-center items-center px-3 py-2">
-            <span className="font-onest font-semibold text-xl sm:text-2xl leading-6 text-[#27272A]">
+            <span className="font-onest font-semibold text-sm sm:text-base leading-5 text-[#27272A]">
               {price}
             </span>
           </div>
-          <Link href={href} className="border border-[#A3A3A3] rounded-full flex justify-center items-center gap-1 px-4 py-2 sm:py-3 hover:border-[#104EFF] hover:bg-[#EFF6FF] transition-colors group">
+          <Link
+            href={href}
+            className="border border-[#A3A3A3] rounded-full flex justify-center items-center gap-1 px-4 py-2 sm:py-3 hover:border-[#104EFF] hover:bg-[#EFF6FF] transition-colors group"
+          >
             <span className="font-poppins font-medium text-sm sm:text-base leading-5 tracking-tight text-[#404040] group-hover:text-[#104EFF] transition-colors whitespace-nowrap">
               See course Details
             </span>
