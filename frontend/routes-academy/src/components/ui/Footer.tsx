@@ -3,12 +3,6 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
-import logo from "../../../public/images/logo.svg";
-import Facebook from "../../../public/images/Facebook.svg";
-import Instagram from "../../../public/images/Instagram.svg";
-import Twitter from "../../../public/images/Twitter.svg";
-import YouTube from "../../../public/images/YouTube.svg";
-import LinkedIn from "../../../public/images/LinkedIn.svg";
 
 const Footer = () => {
   const courseLinks = [
@@ -36,7 +30,7 @@ const Footer = () => {
         <div>
           <div className="flex-shrink-0 mb-[2.75rem]">
             <Image
-              src={logo}
+              src="https://routesacademy.b-cdn.net/images/logo.svg"
               alt="Routes Accademy Logo"
               width={89}
               height={26}
@@ -49,18 +43,18 @@ const Footer = () => {
           <div className="flex gap-[1rem] mb-[6rem]">
             <Link href="#">
               <Image
-                src={Facebook}
+                src="https://routesacademy.b-cdn.net/icons/Facebook.svg"
                 alt="Facebook Logo"
                 width={36}
                 height={36}
               />
             </Link>
             <Link href="#">
-              <Image src={Twitter} alt="Twitter Logo" width={36} height={36} />
+              <Image src="https://routesacademy.b-cdn.net/icons/Twitter.svg" alt="Twitter Logo" width={36} height={36} />
             </Link>
             <Link href="#">
               <Image
-                src={Instagram}
+                src="https://routesacademy.b-cdn.net/icons/Instagram.svg"
                 alt="Instagram Logo"
                 width={36}
                 height={36}
@@ -68,14 +62,14 @@ const Footer = () => {
             </Link>
             <Link href="#">
               <Image
-                src={LinkedIn}
+                src="https://routesacademy.b-cdn.net/icons/LinkedIn.svg"
                 alt="LinkedIn Logo"
                 width={36}
                 height={36}
               />
             </Link>
             <Link href="#">
-              <Image src={YouTube} alt="YouTube Logo" width={36} height={36} />
+              <Image src="https://routesacademy.b-cdn.net/icons/YouTube.svg" alt="YouTube Logo" width={36} height={36} />
             </Link>
           </div>
         </div>

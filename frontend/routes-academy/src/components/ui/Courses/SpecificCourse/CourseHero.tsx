@@ -3,8 +3,7 @@ import React from "react";
 
 const CourseHeroSection: React.FC<{ course: Course }> = ({ course }) => (
   <div className="mb-12 relative">
-    {/* Use grid for the main layout, 1 column by default, 2 columns on small screens and up */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+    <div className="z-10 grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
       
       <div className="order-2 sm:order-1 sm:max-w-full">
         <h1 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-poppins font-extrabold text-[#172554] mb-4">{course.title}</h1>
@@ -20,7 +19,7 @@ const CourseHeroSection: React.FC<{ course: Course }> = ({ course }) => (
       </div>
       
 
-      <div className="order-1 sm:order-2 justify-self-center">
+      <div className="z-10 order-1 sm:order-2 justify-self-center">
         <img
           src={course.specific_course_img}
           alt="Student Graphic"

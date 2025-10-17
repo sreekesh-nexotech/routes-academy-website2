@@ -19,7 +19,7 @@ const Alumni: React.FC = () => {
               className="h-[12vh] w-[600vw] md:h-[18vh] md:w-[400vw] lg:h-[25vh] lg:w-[350vw] min-w-[200px] md:min-w-[300px] lg:min-w-[400px] flex items-center justify-center shrink-0"
             >
               <Image
-                src="/companyLogo.png"
+                src="https://routesacademy.b-cdn.net/icons/companyLogo.png"
                 alt="Company Logo"
                 width={600}
                 height={240}
@@ -39,7 +39,7 @@ const Alumni: React.FC = () => {
               className="h-[12vh] w-[60vw] md:h-[18vh] md:w-[45vw] lg:h-[25vh] lg:w-[35vw] min-w-[200px] md:min-w-[300px] lg:min-w-[400px] flex items-center justify-center shrink-0"
             >
               <Image
-                src="/companyLogo.png"
+                src="https://routesacademy.b-cdn.net/icons/companyLogo.png"
                 alt="Company Logo"
                 width={600}
                 height={240}

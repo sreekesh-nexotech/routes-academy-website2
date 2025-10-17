@@ -16,21 +16,21 @@ const testimonialsData: Testimonial[] = [
     quote: "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
     name: "Arjun Menon",
     title: "Business Intelligence Analyst",
-    avatarSrc: "/images/succes.png", 
+    avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png", 
   },
   {
     id: 2,
     quote: "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach - they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
     name: "Priya Sharma",
     title: "Digital Marketing Executive",
-    avatarSrc: "/images/succes2.png",
+    avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
   },
   {
     id: 3,
     quote: "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands-on training made me feel ready for anything. Best decision I ever made...",
     name: "Rohit Kumar",
     title: "HR Business Assistant",
-    avatarSrc: "/images/succes3.png",
+    avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
   },
 ];
 

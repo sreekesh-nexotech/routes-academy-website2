@@ -27,37 +27,37 @@ function Helps() {
       title: "Industry-recognized certifications",
       description:
         "These certifications serve as proof of expertise that employers trust, giving students a competitive edge in the job market",
-      logo: "/help-1.svg",
+      logo: "https://routesacademy.b-cdn.net/icons/help-1.svg",
     },
     {
       title: "Placement support",
       description:
         "This eliminates the stress and uncertainty of job hunting by providing dedicated support throughout the entire placement process.",
-      logo: "/help-2.svg",
+      logo: "https://routesacademy.b-cdn.net/icons/help-2.svg",
     },
     {
       title: "interview coaching",
       description:
         "Comprehensive training that includes mock interviews and expert guidance to help students master interview techniques,",
-      logo: "/help-3.svg",
+      logo: "https://routesacademy.b-cdn.net/icons/help-3.svg",
     },
     {
       title: "Resume polishing",
       description:
         "This ensures students present themselves effectively to employers by crafting resumes that stand out from the competition.",
-      logo: "/help-4.svg",
+      logo: "https://routesacademy.b-cdn.net/icons/help-4.svg",
     },
     {
       title: "Direct access to recruiters",
       description:
         "This eliminates the traditional job hunting struggle by connecting students directly with decision-makers who are actively looking to hire",
-      logo: "/help-5.svg",
+      logo: "https://routesacademy.b-cdn.net/icons/help-5.svg",
     },
     {
       title: "Industry-recognized certifications",
       description:
         "These certifications serve as proof of expertise that employers trust, giving students a competitive edge in the job market",
-      logo: "/help-1.svg",
+      logo: "https://routesacademy.b-cdn.net/icons/help-1.svg",
     },
   ];
   return (

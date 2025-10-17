@@ -57,7 +57,7 @@ export default function PageIllustration() {
         {Array.from({ length: 20 }).map((_, i) => (
           <div
             key={`v-${i}`}
-            className="absolute top-0 w-[1px] h-48 bg-gradient-to-b from-blue-500/0 via-blue-500/50 to-blue-500/0 animate-line-y "
+            className="absolute top-0 w-[1px] h-48 bg-gradient-to-b from-blue-500/0 via-blue-500/50 to-blue-500/0 animate-line-y z-1 "
             style={{
               left: `${i * 240}px`,
               animationDelay: `${i * -0.7}s`,
@@ -69,7 +69,7 @@ export default function PageIllustration() {
         {Array.from({ length: 12 }).map((_, i) => (
           <div
             key={`h-${i}`}
-            className="absolute left-0 h-[1px] w-48 bg-gradient-to-r from-blue-500/0 via-blue-500/50 to-blue-500/0 animate-line-x"
+            className="absolute left-0 h-[1px] w-48 bg-gradient-to-r from-blue-500/0 via-blue-500/50 to-blue-500/0 animate-line-x z-1"
             style={{
               top: `${i * 80}px`,
               animationDelay: `${i * -1}s`,

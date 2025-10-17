@@ -63,7 +63,7 @@ const TestimonialVideo: React.FC = () => {
           style={{ transform: `scaleX(${zoomScale})` }}
         >
           <Image
-            src="/videoSmall.png"
+            src="https://routesacademy.b-cdn.net/images/videoSmall.png"
             alt="Video thumbnail"
             fill
             className="rounded-lg sm:rounded-xl md:rounded-2xl object-cover"

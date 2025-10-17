@@ -5,7 +5,7 @@ import TestimonialCard from '../../elements/TestimonialCard';
 // Sample data for the testimonials
 const testimonials = [
   {
-    image: '/images/pics.png',
+    image: 'https://routesacademy.b-cdn.net/images/pics.png',
     name: 'Anathu Krishna',
     role: 'Jr. Data Scientist @ Nexotech',
     courses: [
@@ -25,7 +25,7 @@ const testimonials = [
     ],
   },
   {
-    image: '/images/pics.png',
+    image: 'https://routesacademy.b-cdn.net/images/pics.png',
     name: 'Priya Sharma',
     role: 'Frontend Developer @ Innovate Inc.',
     courses: [
@@ -39,7 +39,7 @@ const testimonials = [
     ],
   },
   {
-    image: '/images/pics.png',
+    image: 'https://routesacademy.b-cdn.net/images/pics.png',
     name: 'Anathu Krishna',
     role: 'Jr. Data Scientist @ Nexotech',
     courses: [
@@ -59,7 +59,7 @@ const testimonials = [
     ],
   },
   {
-    image: '/images/pics.png',
+    image: 'https://routesacademy.b-cdn.net/images/pics.png',
     name: 'Priya Sharma',
     role: 'Frontend Developer @ Innovate Inc.',
     courses: [
@@ -89,7 +89,7 @@ const Testimonial = () => {
   return (
     <section 
       className="relative py-16 md:py-24 overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: `url('/images/testimonialbg.png')` }}
+      style={{ backgroundImage: `url('https://routesacademy.b-cdn.net/images/testimonialbg.png')` }}
   >
       
       <div className="container mx-auto px-4 sm:px-6 relative z-10">

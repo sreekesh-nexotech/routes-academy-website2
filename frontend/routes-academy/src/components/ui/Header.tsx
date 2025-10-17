@@ -5,7 +5,6 @@ import Link from 'next/link';
 import ButtonLink from '../elements/ButtonLink';
 import Image from 'next/image';
 
-import logo from '../../../public/images/logo.svg'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +29,7 @@ const Header = () => {
               href="#" 
               
             >
-              <Image src={logo} alt='Routes Accademy Logo' width={80} height={20}/>
+              <Image src="https://routesacademy.b-cdn.net/images/logo.svg" alt='Routes Accademy Logo' width={80} height={20}/>
             </Link>
           </div>
 

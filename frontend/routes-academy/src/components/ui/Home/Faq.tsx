@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import faqIcon from "../../../../public/faq-icon.svg";
 
 
 interface Faq {
@@ -17,7 +16,7 @@ const FaqItem: React.FC = () => {
     {
       question: "Did these courses have mentorship support?",
       answer:
-        "Our expert mentors arent just instructors—they are industry veterans who provide personalized career guidance, transforming your learning into tangible professional success.",
+        "Our expert mentors aren't just instructors—they're industry veterans who provide personalized career guidance, transforming your learning into tangible professional success.",
     },
     {
       question: "What are the placement supports provided?",
@@ -45,8 +44,10 @@ const FaqItem: React.FC = () => {
         {/* Icon */}
         <div className="w-[10vh] h-[10vh]  my-[4vh] min-w-[120px] min-h-[120px] md:w-[13vh] md:h-[13vh] md:min-w-[180px] md:min-h-[180px]">
           <Image
-            src={faqIcon}
+            src="https://routesacademy.b-cdn.net/icons/faq-icon.svg"
             alt="FAQ"
+            width={10}
+            height={10}
             className="w-full h-full object-contain"
             priority
           />
@@ -55,12 +56,12 @@ const FaqItem: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-[2vw] md:gap-[8vw] w-full">
           {/* Heading Text */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left max-w-5xl flex-wrap">
-            <h2 className="font-poppins font-semibold text-[2.8rem] md:text-[3.2rem] leading-[3.5rem] tracking-[-0.0075em] text-[#172554] text-center ">
+            <h2 className="font-poppins font-semibold text-[2.8rem] md:text-[3.2rem] leading-[3.5rem] tracking-[-0.0075em] text-[#172554]">
               Frequently Asked Questions
             </h2>
             <p className="font-onest font-normal mt-[2.5vh] text-[1.5rem] md:text-[1.3rem] leading-[1.75rem] text-[#404040] text-center">
               These are the common doubts that people usually have. If it
-              doesnt help you, dont worry connect with us! We always love to
+              doesn&apos;t help you, don&apos;t worry connect with us! We always love to
               help and clear your doubts.
             </p>
           </div>

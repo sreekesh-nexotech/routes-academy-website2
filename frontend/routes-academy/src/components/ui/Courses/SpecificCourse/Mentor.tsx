@@ -3,10 +3,10 @@ import { Course } from "../CourseData";
 import RatingBar from "./RatingBar";
 
 const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => (
-  <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200 space-y-10 scroll-mt-30" id="faculty">
+  <div className="bg-[#F8FAFF] rounded-2xl  p-8 space-y-10 scroll-mt-30" id="faculty">
     <div>
       <h2 className="text-3xl font-poppins font-semibold text-[#172554] mb-6">Meet Your Faculty</h2>
-      <div className="flex flex-col sm:flex-row items-center gap-6 bg-gray-50 p-6 rounded-xl border border-gray-100">
+      <div className="flex flex-col sm:flex-row items-center gap-6  p-6 ">
         <img
           src={course.mentor.image}
           alt={course.mentor.name}

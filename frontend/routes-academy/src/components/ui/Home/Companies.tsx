@@ -4,11 +4,11 @@ import React from "react";
 import Image from "next/image";
 
 const companiesData = [
-  { src: "/ibm.png", alt: "IBM" },
-  { src: "/Microsoft_logo_(2012).png", alt: "Microsoft" },
-  { src: "/idnIFWhoAM_logos.png", alt: "BFSI" },
-  { src: "/STED.a89f7934.png", alt: "STED" },
-  { src: "/SAP_2011_logo.png", alt: "SAP" },
+  { src: "https://routesacademy.b-cdn.net/icons/ibm.png", alt: "IBM" },
+  { src: "https://routesacademy.b-cdn.net/icons/Microsoft_logo_(2012).png", alt: "Microsoft" },
+  { src: "https://routesacademy.b-cdn.net/icons/idnIFWhoAM_logos.png", alt: "BFSI" },
+  { src: "https://routesacademy.b-cdn.net/icons/STED.a89f7934.png", alt: "STED" },
+  { src: "https://routesacademy.b-cdn.net/icons/SAP_2011_logo.png", alt: "SAP" },
 ];
 
 const Companies: React.FC = () => {

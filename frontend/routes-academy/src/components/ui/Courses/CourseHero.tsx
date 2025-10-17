@@ -1,9 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import PageIllustration from "@/components/elements/PageIllustration";
 
-import courseHero from "../../../../public/images/courses-hero.svg";
-import courseHeroMobile from "../../../../public/images/courses-hero-mobile.svg";
-// import PageIllustration from "../../elements/PageIllustration";
 
 const CourseHero = () => {
   const careerObjecives = [
@@ -26,8 +24,9 @@ const CourseHero = () => {
   ];
   return (
     <div className="grid md:grid-cols-2 xl:grid-cols-3 xl:relative mt-[5rem]">
+      <PageIllustration/>
       {/* Hero content section */}
-      <div className="md:col-span-1 md:ml-[3rem] flex md:items-end md:justify-items-end order-2 md:order-none px-[5rem] md:px-0 mt-[2rem] lg:mt-0">
+      <div className="z-10 md:col-span-1 md:ml-[3rem] flex md:items-end md:justify-items-end order-2 md:order-none px-[5rem] md:px-0 mt-[2rem] lg:mt-0">
         <div className="xl:absolute xl:top-[33%] xl:left-[10%] 2xl:left-[15%]">
           <h1 className="text-center md:text-start font-semibold text-[2rem] lg:text-[3rem] xl:text-[3.5rem] leading-[2.5rem] lg:leading-[4.25rem] mb-[1.21875rem]">
             Build <span className="text-blue-600">Job‑Ready</span>
@@ -77,12 +76,12 @@ const CourseHero = () => {
       {/* <PageIllustration /> */}
 
       {/* Hero Image section */}
-      <div className="flex justify-center md:justify-end md:items-end md:col-span-1 xl:col-span-2">
+      <div className="z-10 flex justify-center md:justify-end md:items-end md:col-span-1 xl:col-span-2">
         <div className="lg:max-w-[600px] xl:max-w-[780px] 2xl:max-w-auto px-[5rem] md:px-0">
           {/* Image for bigger screen*/}
           <Image
             className="mt-[2.75rem] hidden sm:block"
-            src={courseHero}
+            src="https://routesacademy.b-cdn.net/images/courses-hero.svg"
             alt="course-hero"
             width={876}
             height={927}
@@ -90,7 +89,7 @@ const CourseHero = () => {
           {/* Image for Smaller screen*/}
           <Image
             className="mt-[2.75rem] sm:hidden"
-            src={courseHeroMobile}
+            src="https://routesacademy.b-cdn.net/images/courses-hero-mobile.svg"
             alt="course-hero-mobile"
             width={230.0006561279297}
             height={219.07366943359375}
