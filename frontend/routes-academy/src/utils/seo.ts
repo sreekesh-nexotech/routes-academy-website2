@@ -57,7 +57,7 @@ export function getCourseSEO(courseId: string): Metadata {
       url: `https://routesacademy.in/courses/${course.id}`,
       images: [
         {
-          url: course.image_url,
+          url: course.home_img_url,
           width: 1200,
           height: 630,
           alt: `${course.title} | Routes Academy`,
@@ -68,7 +68,7 @@ export function getCourseSEO(courseId: string): Metadata {
       card: "summary_large_image",
       title: `${course.title} | Routes Academy`,
       description: course.description,
-      images: [course.image_url],
+      images: [course.home_img_url],
     },
     alternates: {
       canonical: `https://routesacademy.in/courses/${course.id}`,
