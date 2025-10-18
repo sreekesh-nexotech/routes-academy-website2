@@ -3,7 +3,7 @@ import path from 'path';
 import { MetadataRoute } from 'next';
 import { courses } from '@/components/ui/Courses/CourseData';
 
-const baseUrl = 'https://yourdomain.com'; // update this
+const baseUrl = 'https://routesacademy.website'; 
 
 function getAllAppRoutes(dirPath: string, parentRoute = ''): string[] {
   const entries = fs.readdirSync(dirPath, { withFileTypes: true });
@@ -35,14 +35,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = getAllAppRoutes(appDir).map((route) => ({
     url: `${baseUrl}${route === '/page.tsx' ? '' : route}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly' as const, // 👈 Use a literal type
+    changeFrequency: 'weekly' as const, 
     priority: 0.8,
   }));
 
   const courseRoutes: MetadataRoute.Sitemap = courses.map((course) => ({
     url: `${baseUrl}/courses/${course.id}`,
     lastModified: new Date(),
-    changeFrequency: 'monthly' as const, // 👈 Use literal type
+    changeFrequency: 'monthly' as const, 
     priority: 0.9,
   }));
 
