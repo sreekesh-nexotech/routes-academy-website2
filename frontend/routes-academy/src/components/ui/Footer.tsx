@@ -141,8 +141,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center items-center pt-[2rem] pb-[1rem] mt-[2rem]">
-        <h5 className="text-neutral-700 font-normal text-[1rem] leading-[1.5rem]">
-          © {new Date().getFullYear()} ROUTE | Terms | Privacy
+        <h5 className="text-center text-neutral-700 font-normal text-[1rem] leading-[1.5rem]">
+          © {new Date().getFullYear()} ROUTE | Terms | Privacy<br />
+          <p className="opacity-70">Made by <Link href="https://nexotech.cc/" target="new" className="underline hover:text-blue-500">Nexotech</Link></p>
         </h5>
       </div>
     </footer>
