@@ -44,3 +44,23 @@ button, a {
 .animate-scroll {
   animation: scroll 300s linear infinite;
 }
+
+
+.scrollbar-1::-webkit-scrollbar {
+  width: 4px;
+}
+.scrollbar-1::-webkit-scrollbar-track {
+  background-color: #eff6ff;
+  border-radius: 100px;
+}
+.scrollbar-1::-webkit-scrollbar-thumb {
+  /* width: 13px; */
+  background: #e4e7ee;
+  border-radius: 100px;
+  box-shadow: 0px 0px 2px 1px #00000040 inset;
+  filter: drop-shadow(0px 1px 1.4px 0px #332983a6);
+}
+.scrollbar-1::-webkit-scrollbar-thumb:hover {
+  background: #e5e7eb;
+  border-radius: 10px;
+}

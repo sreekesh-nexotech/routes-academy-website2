@@ -108,7 +108,7 @@ const CourseContact = () => {
   };
 
   return (
-    <div className="bg-[#104EFF]">
+    <div className="bg-[#104EFF]"  id="contact">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-[2.5rem] lg:gap-[2.5rem] p-[1rem] md:p-[2rem] lg:p-[5rem]">
           {/* Left Text Section */}
