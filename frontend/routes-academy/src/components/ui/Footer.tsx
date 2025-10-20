@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="flex-shrink-0 mb-[2.75rem]">
             <Image
               src="https://routesacademy.b-cdn.net/images/logo.svg"
-              alt="Routes Accademy Logo"
+              alt="Routes academy Logo"
               width={89}
               height={26}
             />

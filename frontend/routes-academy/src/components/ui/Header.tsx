@@ -29,7 +29,7 @@ const Header = () => {
               href="/" 
               
             >
-              <Image src="https://routesacademy.b-cdn.net/images/logo.svg" alt='Routes Accademy Logo' width={80} height={20}/>
+              <Image src="https://routesacademy.b-cdn.net/images/logo.svg" alt='Routes academy Logo' width={80} height={20}/>
             </Link>
           </div>
 
