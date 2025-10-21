@@ -66,9 +66,9 @@ function CoursesNav() {
   ];
   return (
     <div>
-      <ul>
+      <ul className="bg-[#FAFAFA] p-[1rem] rounded-[.5rem] lg:bg-[#FFFFFF] lg:p-0 lg:rounded-none">
         {courseCategories.map((category, index) => (
-          <li key={index}>
+          <li key={index} className="mb-[.5rem] last:mb-0 bg-[#FFFFFF]">
             <button
               className={`font-(family-name:--font-onest) text-left font-normal text-[.875rem] md:text-[1rem] leading-[1.3125rem] md:leading-[1.5rem] cursor-pointer w-full py-[.5rem] px-[1rem] 
                 ${
@@ -89,7 +89,7 @@ function CoursesNav() {
 
 function CourseList() {
   return (
-    <div className="grid md:grid-cols-2 gap-[2rem]">
+    <div className="grid md:grid-cols-2 gap-[2rem] lg:pl-[1rem]">
       {courses.map((course) => (
         <CourseCard key={course.id} course={course} />
       ))}
@@ -98,8 +98,8 @@ function CourseList() {
 }
 function CourseCard({ course }: { course: Course }) {
   return (
-    <Link href={`/courses/${course.id}`}>
-      <div className="max-w-[26.65625rem] rounded-[1rem] bg-[#FFFFFF] shadow-md">
+    <Link href={`/courses/${course.id}`} className="max-w-[26.65625rem]">
+      <div className="rounded-[1rem] bg-[#FFFFFF] shadow-md">
         <Image
           src={course.image_url}
           alt={`coursecard-${course.id} image`}
