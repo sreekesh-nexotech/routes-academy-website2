@@ -94,31 +94,34 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
           Meet Your Faculty
         </h2>
         <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
-            {/* Mentor Image */}
-            <img
-              src={course.mentor.image}
-              alt={course.mentor.name}
-              width={140}
-              height={140}
-              className="rounded-full object-cover border-4 border-gray-100 shadow-md w-32 h-32 sm:w-36 sm:h-36"
-            />
+          <div className="flex flex-col xl:flex-row items-start xl:items-center gap-6">
+            {/* Mentor Image and Info Section */}
+            <div className="flex items-start gap-4 sm:gap-6 flex-1 min-w-0">
+              {/* Mentor Image */}
+              <img
+                src={course.mentor.image}
+                alt={course.mentor.name}
+                width={140}
+                height={140}
+                className="rounded-full object-cover border-4 border-gray-100 shadow-md w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 flex-shrink-0"
+              />
 
-            {/* Mentor Info */}
-            <div className="flex-1">
-              <h3 className="text-xl sm:text-2xl font-poppins font-bold text-[#172554]">
-                {course.mentor.name}
-              </h3>
-              <p className="text-base sm:text-lg text-[#104EFF] font-medium mb-1">
-                {course.mentor.role}
-              </p>
-              <p className="text-sm sm:text-base text-gray-600 mt-2">
-                {course.mentor.bio}
-              </p>
+              {/* Mentor Info */}
+              <div className="flex-1 min-w-0">
+                <h3 className="text-xl sm:text-2xl font-poppins font-bold text-[#172554]">
+                  {course.mentor.name}
+                </h3>
+                <p className="text-base sm:text-lg text-[#104EFF] font-medium mb-1">
+                  {course.mentor.role}
+                </p>
+                <p className="text-sm sm:text-base text-gray-600 mt-2">
+                  {course.mentor.bio}
+                </p>
+              </div>
             </div>
 
             {/* Circular Progress Indicators */}
-            <div className="flex gap-6 sm:gap-8 flex-wrap lg:flex-nowrap justify-center lg:justify-end w-full lg:w-auto">
+            <div className="flex gap-4 sm:gap-6 lg:gap-8 flex-shrink-0 w-full xl:w-auto justify-center xl:justify-end">
               <CircularProgress
                 percentage={engagingPercentage}
                 label="Engaging"
