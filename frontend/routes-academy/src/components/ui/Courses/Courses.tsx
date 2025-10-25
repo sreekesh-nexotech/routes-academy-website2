@@ -99,37 +99,41 @@ function CourseList() {
 function CourseCard({ course }: { course: Course }) {
   return (
     <Link href={`/courses/${course.id}`}>
-      <div className="max-w-[26.65625rem] rounded-[1rem] bg-[#FFFFFF] shadow-md">
+      <div className="max-w-[26.65625rem] h-full rounded-[1rem] bg-[#FFFFFF] shadow-md flex flex-col">
         <Image
           src={course.image_url}
           alt={`coursecard-${course.id} image`}
           width={426.5}
-          height={168}
-          className="rounded-t-[1rem]"
+          height={158}
+          className={`rounded-t-[1rem] w-full object-cover h-[18vh] ${
+            course.id === 2 ? "object-[center_62%]" : ""
+          }`}
         />
-        <div className="p-[1rem]">
-          <h5 className="font-bold text-[#172554] text-[1.125rem] md:text-[1.3125rem] leading-[1.5rem] md:leading-[1.875rem] mb-[1rem]">
+        <div className="p-[1rem] flex flex-col flex-grow">
+          <h5 className="font-bold text-[#172554] text-[1.125rem] md:text-[1.3125rem] leading-[1.5rem] md:leading-[1.875rem] mb-[1rem] min-h-[3rem]">
             {course.title}
           </h5>
-          <p className="font-(family-name:--font-onest) font-normal text-[#404040] text-[.75rem] md:text-[.875rem] leading-[1.125rem] mb-[1rem]">
+          <p className="font-(family-name:--font-onest) font-normal text-[#404040] text-[.75rem] md:text-[.875rem] leading-[1.125rem] mb-[1rem] flex-grow">
             {course.description}
           </p>
-          <div className="grid grid-cols-3 gap-[1.5] font-medium text-[#172554] text-[.875rem] md:text-[1rem] leading-[1.3125rem] md:leading-[1.5rem] mb-[.25rem]">
-            <h6>Average Salary</h6>
-            <h6>Mode of Conduct</h6>
-            <h6>We Placed</h6>
+          <div className="mt-auto">
+            <div className="grid grid-cols-3 gap-[1.5] font-medium text-[#172554] text-[.875rem] md:text-[1rem] leading-[1.3125rem] md:leading-[1.5rem] mb-[.25rem]">
+              <h6>Average Salary</h6>
+              <h6>Mode of Conduct</h6>
+              <h6>We Placed</h6>
+            </div>
+            <div className="grid grid-cols-3 gap-[1.5] font-(family-name:--font-onest) font-normal text-[#404040] text-[.75rem] md:text-[.875rem] leading-[1.125] mb-[1rem]">
+              <p>{course.average_salary}</p>
+              <p>{course.mode_of_conduct}</p>
+              <p>{course.placed_students} + Students</p>
+            </div>
+            <button className="cursor-pointer flex justify-center items-center font-(family-name:--font-onest) font-medium text-[#172554] bg-[#DBEAFE] w-full h-[3.5625rem] rounded-[5.125rem] mb-[.25rem]">
+              See Full Details
+            </button>
+            <p className="font-(family-name:--font-onest) text-[#525252] text-[.75rem] md:text-[.875rem] text-center">
+              EMI option available
+            </p>
           </div>
-          <div className="grid grid-cols-3 gap-[1.5] font-(family-name:--font-onest) font-normal text-[#404040] text-[.75rem] md:text-[.875rem] leading-[1.125] mb-[1rem]">
-            <p>{course.average_salary}</p>
-            <p>{course.mode_of_conduct}</p>
-            <p>{course.placed_students} + Students</p>
-          </div>
-          <button className="cursor-pointer flex justify-center items-center font-(family-name:--font-onest) font-medium text-[#172554] bg-[#DBEAFE] w-full h-[3.5625rem] rounded-[5.125rem] mb-[.25rem]">
-            See Full Details
-          </button>
-          <p className="font-(family-name:--font-onest) text-[#525252] text-[.75rem] md:text-[.875rem] text-center">
-            EMI option available
-          </p>
         </div>
       </div>
     </Link>
