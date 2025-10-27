@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
-
 const Footer = () => {
   const courseLinks = [
     { href: "#", label: "Data and Analytics" },
@@ -30,15 +29,14 @@ const Footer = () => {
         <div>
           <div className="flex-shrink-0 mb-[2.75rem]">
             <Image
-              src="https://routesacademy.b-cdn.net/images/logo.svg"
+              src="https://routesacademy.b-cdn.net/icons/Route%20Logo%20new%20SVG.svg"
               alt="Routes academy Logo"
               width={89}
               height={26}
             />
           </div>
           <h4 className="font-normal text-neutral-700 text-[1rem] sm:text-[1.125rem] leading-[1.75rem] mb-[2.75rem]">
-            Lorem ipsum dolor sit amet consectetur <br /> adipiscing elit
-            aliquam mauris sed ma
+            Learn Build Expand
           </h4>
           <div className="flex gap-[1rem] mb-[6rem]">
             <Link href="#">
@@ -50,7 +48,12 @@ const Footer = () => {
               />
             </Link>
             <Link href="#">
-              <Image src="https://routesacademy.b-cdn.net/icons/Twitter.svg" alt="Twitter Logo" width={36} height={36} />
+              <Image
+                src="https://routesacademy.b-cdn.net/icons/Twitter.svg"
+                alt="Twitter Logo"
+                width={36}
+                height={36}
+              />
             </Link>
             <Link href="#">
               <Image
@@ -69,7 +72,12 @@ const Footer = () => {
               />
             </Link>
             <Link href="#">
-              <Image src="https://routesacademy.b-cdn.net/icons/YouTube.svg" alt="YouTube Logo" width={36} height={36} />
+              <Image
+                src="https://routesacademy.b-cdn.net/icons/YouTube.svg"
+                alt="YouTube Logo"
+                width={36}
+                height={36}
+              />
             </Link>
           </div>
         </div>
@@ -142,8 +150,18 @@ const Footer = () => {
       </div>
       <div className="flex justify-center items-center pt-[2rem] pb-[1rem] mt-[2rem]">
         <h5 className="text-center text-neutral-700 font-normal text-[1rem] leading-[1.5rem]">
-          © {new Date().getFullYear()} ROUTE | Terms | Privacy<br />
-          <p className="opacity-70">Made by <Link href="https://nexotech.cc/" target="new" className="underline hover:text-blue-500">Nexotech</Link></p>
+          © {new Date().getFullYear()} ROUTE | Terms | Privacy
+          <br />
+          <p className="opacity-70">
+            Made by{" "}
+            <Link
+              href="https://nexotech.cc/"
+              target="new"
+              className="underline hover:text-blue-500"
+            >
+              Nexotech
+            </Link>
+          </p>
         </h5>
       </div>
     </footer>

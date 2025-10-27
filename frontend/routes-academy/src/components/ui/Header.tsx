@@ -1,10 +1,9 @@
 "use client";
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import Link from 'next/link';
-import ButtonLink from '../elements/ButtonLink';
-import Image from 'next/image';
-
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import ButtonLink from "../elements/ButtonLink";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +13,9 @@ const Header = () => {
   };
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '#', label: 'Resume Builder' },
-    { href: '/#contact', label: 'Contact' },
+    { href: "/", label: "Home" },
+    { href: "#", label: "Resume Builder" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   return (
@@ -25,11 +24,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link 
-              href="/" 
-              
-            >
-              <Image src="https://routesacademy.b-cdn.net/images/logo.svg" alt='Routes academy Logo' width={80} height={20}/>
+            <Link href="/">
+              <Image
+                src="https://routesacademy.b-cdn.net/icons/Route%20Logo%20new%20SVG.svg"
+                alt="Routes academy Logo"
+                width={80}
+                height={20}
+              />
             </Link>
           </div>
 
@@ -43,8 +44,8 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <ButtonLink href='#contact' label='Login' variant='secondary' />
-            <ButtonLink href='/courses' label='See Courses' variant='primary' />
+            <ButtonLink href="#contact" label="Login" variant="secondary" />
+            <ButtonLink href="/courses" label="See Courses" variant="primary" />
           </nav>
 
           {/* Mobile Menu Button */}
@@ -53,7 +54,11 @@ const Header = () => {
               onClick={toggleMenu}
               className="p-3 text-gray-600 rounded-md bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
             >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -72,11 +77,21 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-             <div className="pt-4 pb-3 border-t border-gray-200">
-                <div className="flex flex-col items-start px-2 space-y-2">
-                    <ButtonLink href="#" label="Login" variant="secondary" className="w-full"/>
-                    <ButtonLink href="/courses" label="See Courses" variant="primary" className="w-full"/>
-                </div>
+            <div className="pt-4 pb-3 border-t border-gray-200">
+              <div className="flex flex-col items-start px-2 space-y-2">
+                <ButtonLink
+                  href="#"
+                  label="Login"
+                  variant="secondary"
+                  className="w-full"
+                />
+                <ButtonLink
+                  href="/courses"
+                  label="See Courses"
+                  variant="primary"
+                  className="w-full"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -86,4 +101,3 @@ const Header = () => {
 };
 
 export default Header;
-

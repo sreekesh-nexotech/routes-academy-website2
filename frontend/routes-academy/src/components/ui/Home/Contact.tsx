@@ -119,17 +119,17 @@ const Contact: React.FC = () => {
           <div className="pt-4 space-y-4">
             <ContactDetail
               icon={<Mail className="w-6 h-6 text-[#1E3A8A]" />}
-              text="contact@company.com"
+              text="contact@routesacademy.com"
               link="mailto:contact@company.com"
             />
             <ContactDetail
               icon={<Phone className="w-6 h-6 text-[#1E3A8A]" />}
-              text="(123) 456 - 789"
-              link="tel:123456789"
+              text="+91 79078 93192"
+              link="tel:7907893192"
             />
             <ContactDetail
               icon={<MapPin className="w-6 h-6 text-[#1E3A8A]" />}
-              text="794 Mcallister St San Francisco, 94102"
+              text="Tower 1, 6th Floor, Hilite Business Park, Calicut"
             />
           </div>
         </div>
