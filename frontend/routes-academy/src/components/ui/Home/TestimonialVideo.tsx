@@ -71,8 +71,8 @@ const TestimonialVideo: React.FC = () => {
         </div>
       </div> */}
       <div className="rounded-lg sm:rounded-xl md:rounded-2xl border-0" style={{ transform: `scaleX(${zoomScale})` }}>
-            <video controls width="250" poster="/video-thump.png" className="w-full max-h-[500px]">
-            <source src="/VIDEO ROUTE DATE 18;10;25.mp4" type="video/mp4" />
+            <video controls width="250" poster="https://routesacademy.b-cdn.net/video/video-thump.png" className="w-full max-h-[500px]">
+            <source src="https://routesacademy.b-cdn.net/video/VIDEO%20ROUTE%20DATE%2018%3B10%3B25.mp4" type="video/mp4" />
           </video>
           </div>
     </section>
