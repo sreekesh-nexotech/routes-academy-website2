@@ -27,24 +27,9 @@ const Courses = () => {
               <GuideMe />
             </div>
           </div>
-          <div className="lg:col-span-3 lg:h-screen lg:overflow-y-auto scrollbar-1">
+          <div className="lg:col-span-3">
             <CourseList />
           </div>
-        </div>
-        <div className="flex gap-[1rem] md:gap-[3.0625rem]">
-          <hr className="w-full h-[1px] my-8 bg-[#104EFF] border-0 rounded-sm dark:bg-gray-700"></hr>
-          <button className="cursor-pointer bg-[#104EFF] min-w-[12.625rem] h-[3.5625rem] rounded-[.25rem] flex gap-[.625rem] justify-center items-center">
-            <h6 className="font-semibold text-[#FFFFFF] text-[1rem] leading-[1.375rem]">
-              See All Courses
-            </h6>
-            <Image
-              src="/mingcute_down-line.svg"
-              alt=""
-              width={33}
-              height={33}
-            />
-          </button>
-          <hr className="w-full h-[1px] my-8 bg-[#104EFF] border-0 rounded-sm dark:bg-gray-700"></hr>
         </div>
       </div>
     </div>
@@ -98,38 +83,42 @@ function CourseList() {
 }
 function CourseCard({ course }: { course: Course }) {
   return (
-    <Link href={`/courses/${course.id}`} className="max-w-[26.65625rem]">
-      <div className="rounded-[1rem] bg-[#FFFFFF] shadow-md">
+    <Link href={`/courses/${course.id}`}>
+      <div className="max-w-[28rem] h-full rounded-[1rem] bg-[#FFFFFF] shadow-md flex flex-col">
         <Image
           src={course.image_url}
           alt={`coursecard-${course.id} image`}
           width={426.5}
-          height={168}
-          className="rounded-t-[1rem]"
+          height={158}
+          className={`rounded-t-[1rem] w-full object-cover h-[18vh] ${
+            course.id === 2 ? "object-[center_62%]" : ""
+          }`}
         />
-        <div className="p-[1rem]">
-          <h5 className="font-bold text-[#172554] text-[1.125rem] md:text-[1.3125rem] leading-[1.5rem] md:leading-[1.875rem] mb-[1rem]">
+        <div className="p-[1rem] flex flex-col flex-grow">
+          <h5 className="font-bold text-[#172554] text-[1.125rem] md:text-[1.3125rem] leading-[1.5rem] md:leading-[1.875rem] mb-[0.1rem] min-h-[3rem]">
             {course.title}
           </h5>
-          <p className="font-(family-name:--font-onest) font-normal text-[#404040] text-[.75rem] md:text-[.875rem] leading-[1.125rem] mb-[1rem]">
+          <p className="font-(family-name:--font-onest) font-normal text-[#404040] text-[.75rem] md:text-[.875rem] leading-[1.125rem] mb-[1rem] flex-grow">
             {course.description}
           </p>
-          <div className="grid grid-cols-3 gap-[1.5] font-medium text-[#172554] text-[.875rem] md:text-[1rem] leading-[1.3125rem] md:leading-[1.5rem] mb-[.25rem]">
-            <h6>Average Salary</h6>
-            <h6>Mode of Conduct</h6>
-            <h6>We Placed</h6>
+          <div className="mt-auto">
+            <div className="grid grid-cols-3 gap-[1.5] font-medium text-[#172554] text-[.875rem] md:text-[1rem] leading-[1.3125rem] md:leading-[1.5rem] mb-[.25rem]">
+              <h6>Average Salary</h6>
+              <h6>Mode of Conduct</h6>
+              <h6>We Placed</h6>
+            </div>
+            <div className="grid grid-cols-3 gap-[1.5] font-(family-name:--font-onest) font-normal text-[#404040] text-[.75rem] md:text-[.875rem] leading-[1.125] mb-[1rem]">
+              <p>{course.average_salary}</p>
+              <p>{course.mode_of_conduct}</p>
+              <p>{course.placed_students} + Students</p>
+            </div>
+            <button className="cursor-pointer flex justify-center items-center font-(family-name:--font-onest) font-medium text-[#172554] bg-[#DBEAFE] w-full h-[3.5625rem] rounded-[5.125rem] mb-[.25rem]">
+              See Full Details
+            </button>
+            <p className="font-(family-name:--font-onest) text-[#525252] text-[.75rem] md:text-[.875rem] text-center">
+              EMI option available
+            </p>
           </div>
-          <div className="grid grid-cols-3 gap-[1.5] font-(family-name:--font-onest) font-normal text-[#404040] text-[.75rem] md:text-[.875rem] leading-[1.125] mb-[1rem]">
-            <p>{course.average_salary}</p>
-            <p>{course.mode_of_conduct}</p>
-            <p>{course.placed_students} + Students</p>
-          </div>
-          <button className="cursor-pointer flex justify-center items-center font-(family-name:--font-onest) font-medium text-[#172554] bg-[#DBEAFE] w-full h-[3.5625rem] rounded-[5.125rem] mb-[.25rem]">
-            See Full Details
-          </button>
-          <p className="font-(family-name:--font-onest) text-[#525252] text-[.75rem] md:text-[.875rem] text-center">
-            EMI option available
-          </p>
         </div>
       </div>
     </Link>
