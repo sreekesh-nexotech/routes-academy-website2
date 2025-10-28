@@ -56,7 +56,7 @@ const TestimonialVideo: React.FC = () => {
       </h2>
 
       {/* Video area */}
-      {/* <div className="relative w-full h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] flex items-center justify-center mt-4 sm:mt-8 md:mt-12 lg:mt-16 mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+      <div className="relative w-full h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] flex items-center justify-center mt-4 sm:mt-8 md:mt-12 lg:mt-16 mb-8 sm:mb-12 md:mb-16 lg:mb-20">
         <div 
           className="relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 w-[90vw] sm:w-[84vw] md:w-[80vw] lg:w-[70vw] h-[35vh] sm:h-[50vh] md:h-[60vh] lg:h-[67vh] transition-transform duration-500 ease-out origin-center"
           style={{ transform: `scaleX(${zoomScale})` }}
@@ -69,12 +69,12 @@ const TestimonialVideo: React.FC = () => {
             priority
           />
         </div>
-      </div> */}
-      <div className="rounded-lg sm:rounded-xl md:rounded-2xl border-0" style={{ transform: `scaleX(${zoomScale})` }}>
+      </div>
+      {/* <div className="rounded-lg sm:rounded-xl md:rounded-2xl border-0" style={{ transform: `scaleX(${zoomScale})` }}>
             <video controls width="250" poster="https://routesacademy.b-cdn.net/video/video-thump.png" className="w-full max-h-[500px]">
             <source src="https://routesacademy.b-cdn.net/video/VIDEO%20ROUTE%20DATE%2018%3B10%3B25.mp4" type="video/mp4" />
           </video>
-          </div>
+          </div> */}
     </section>
   );
 };
