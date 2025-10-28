@@ -50,7 +50,7 @@ export interface Course {
 export const courses: Course[] = [
   {
     id: 1,
-    title: "CPAT",
+    title: "Career Program in Accounting & Taxation",
     description:
       "The CPAT (Career Program in Accounting & Taxation) is a 6-month comprehensive program designed to bridge the gap 'From Campus to Corporate' by providing extensive training in both foundational and advanced accounting and taxation skills, along with Placement Assistance.",
     average_salary: "7-15 LPA",
@@ -59,10 +59,10 @@ export const courses: Course[] = [
     class_schedule:"As per convenience",
     enrolled_students: 0,
     emi: true,
-    image_url: "https://routesacademy.b-cdn.net/images/pics-5.png",
+    image_url: "https://routesacademy.b-cdn.net/images/CPAT%20image%20-%20course%20page.png",
     specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero.svg",
     rating: 4.9,
-    home_img_url: "https://routesacademy.b-cdn.net/images/pics-5.png", 
+    home_img_url: "https://routesacademy.b-cdn.net/images/CPAT%20image%20-%20landing%20page.png", 
     duration: "6 months",
     session_duration: 1,
     actual_price: 47200,
