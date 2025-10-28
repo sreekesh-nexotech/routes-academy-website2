@@ -119,8 +119,8 @@ const Contact: React.FC = () => {
           <div className="pt-4 space-y-4">
             <ContactDetail
               icon={<Mail className="w-6 h-6 text-[#1E3A8A]" />}
-              text="contact@routesacademy.com"
-              link="mailto:contact@company.com"
+              text="info@routesacademy.com"
+              link="mailto:info@routesacademy.com"
             />
             <ContactDetail
               icon={<Phone className="w-6 h-6 text-[#1E3A8A]" />}
