@@ -39,7 +39,11 @@ const Footer = () => {
             Learn Build Expand
           </h4>
           <div className="flex gap-[1rem] mb-[6rem]">
-            <Link href="#">
+            <Link
+              href="https://www.facebook.com/share/1GXvuJf6Ms/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src="https://routesacademy.b-cdn.net/icons/Facebook.svg"
                 alt="Facebook Logo"
@@ -47,7 +51,7 @@ const Footer = () => {
                 height={36}
               />
             </Link>
-            <Link href="#">
+            <Link href="#" target="_blank" rel="noopener noreferrer">
               <Image
                 src="https://routesacademy.b-cdn.net/icons/Twitter.svg"
                 alt="Twitter Logo"
@@ -55,7 +59,11 @@ const Footer = () => {
                 height={36}
               />
             </Link>
-            <Link href="#">
+            <Link
+              href="https://www.instagram.com/routeacademyofficial?igsh=MXJpeGlnMmNoaGY3dQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src="https://routesacademy.b-cdn.net/icons/Instagram.svg"
                 alt="Instagram Logo"
@@ -63,7 +71,11 @@ const Footer = () => {
                 height={36}
               />
             </Link>
-            <Link href="#">
+            <Link
+              href="https://www.linkedin.com/company/routes-academy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src="https://routesacademy.b-cdn.net/icons/LinkedIn.svg"
                 alt="LinkedIn Logo"
@@ -71,7 +83,11 @@ const Footer = () => {
                 height={36}
               />
             </Link>
-            <Link href="#">
+            <Link
+              href="https://youtube.com/@routesacademyofficial?si=BQj0Jng_TXJXD7zE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src="https://routesacademy.b-cdn.net/icons/YouTube.svg"
                 alt="YouTube Logo"

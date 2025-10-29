@@ -12,6 +12,10 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "#", label: "Resume Builder" },
@@ -72,6 +76,7 @@ const Header = () => {
               <Link
                 key={link.label}
                 href={link.href}
+                onClick={closeMenu}
                 className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
               >
                 {link.label}
@@ -84,12 +89,14 @@ const Header = () => {
                   label="Login"
                   variant="secondary"
                   className="w-full"
+                  onClick={closeMenu}
                 />
                 <ButtonLink
                   href="/courses"
                   label="See Courses"
                   variant="primary"
                   className="w-full"
+                  onClick={closeMenu}
                 />
               </div>
             </div>

@@ -1,27 +1,41 @@
-import { ExternalLink } from 'lucide-react';
-import Link from 'next/link';
-import React from 'react';
+import { ExternalLink } from "lucide-react";
+import Link from "next/link";
+import React from "react";
 
 // Reusable ButtonLink component
 interface ButtonLinkProps {
   href: string;
   label: string;
-  variant?: 'primary' | 'secondary';
+  variant?: "primary" | "secondary";
   className?: string;
+  onClick?: () => void;
 }
 
-const ButtonLink = ({ href, label, variant = 'secondary', className = '' }: ButtonLinkProps) => {
-  const baseClasses = "px-4 py-2 rounded-md transition-colors duration-200 block text-center";
-  
-  const primaryClasses = "text-white bg-blue-600 hover:bg-blue-700";
-  const secondaryClasses = "text-gray-700 border border-gray-300 hover:bg-gray-100";
+const ButtonLink = ({
+  href,
+  label,
+  variant = "secondary",
+  className = "",
+  onClick,
+}: ButtonLinkProps) => {
+  const baseClasses =
+    "px-4 py-2 rounded-md transition-colors duration-200 block text-center";
 
-  const variantClasses = variant === 'primary' ? primaryClasses : secondaryClasses;
+  const primaryClasses = "text-white bg-blue-600 hover:bg-blue-700";
+  const secondaryClasses =
+    "text-gray-700 border border-gray-300 hover:bg-gray-100";
+
+  const variantClasses =
+    variant === "primary" ? primaryClasses : secondaryClasses;
 
   return (
-    <Link href={href} className={`${baseClasses} ${variantClasses} ${className} flex items-center justify-center gap-2`}>
+    <Link
+      href={href}
+      className={`${baseClasses} ${variantClasses} ${className} flex items-center justify-center gap-2`}
+      onClick={onClick}
+    >
       {label}
-      {variant === 'primary' && (<ExternalLink size={20}/>)}
+      {variant === "primary" && <ExternalLink size={20} />}
     </Link>
   );
 };
