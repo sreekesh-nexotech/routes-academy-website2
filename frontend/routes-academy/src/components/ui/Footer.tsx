@@ -31,8 +31,8 @@ const Footer = () => {
             <Image
               src="https://routesacademy.b-cdn.net/icons/Route%20Logo%20new%20SVG.svg"
               alt="Routes academy Logo"
-              width={89}
-              height={26}
+              width={120}
+              height={36}
             />
           </div>
           <h4 className="font-normal text-neutral-700 text-[1rem] sm:text-[1.125rem] leading-[1.75rem] mb-[2.75rem]">
