@@ -14,6 +14,7 @@ export interface Course {
   id: number;
   title: string;
   description: string;
+  category: string;
   average_salary: string;
   mode_of_conduct: string;
   placed_students: number;
@@ -50,9 +51,10 @@ export interface Course {
 export const courses: Course[] = [
   {
     id: 1,
-    title: "Career Program in Accounting & Taxation",
+    title: "Career Program in Accounting & Taxation",
     description:
       "The CPAT (Career Program in Accounting & Taxation) is a 6-month comprehensive program designed to bridge the gap 'From Campus to Corporate' by providing extensive training in both foundational and advanced accounting and taxation skills, along with Placement Assistance.",
+    category: "Finance, Accounting & ERP",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
     placed_students: 0,
@@ -107,6 +109,7 @@ export const courses: Course[] = [
     title: "Data Analysis",
     description:
       "Unlock the power of data with our comprehensive Data Analysis Course, designed to turn raw information into valuable business insights. This program blends technical tools and analytical thinking, helping you master real-world data handling and decision-making skills.",
+    category: "Data and Analytics",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
     placed_students: 0,
@@ -149,11 +152,11 @@ export const courses: Course[] = [
       { stars: 1, percentage: 2 },
     ],
     mentor: {
-      name: "Adithya",
+      name: "Shahid Pilakool",
       role: "Data Analysis Faculty",
-      image: "https://routesacademy.b-cdn.net/images/mentor.png",
+      image: "https://routesacademy.b-cdn.net/images/WhatsApp%20Image%202025-10-30%20at%2017.32.10_2dcca913.jpg",
       rating: 5.0,
-      bio: "Helps students turn messy data into useful insights, automate boring tasks and build the kind of sheets companies truly need.",
+      bio: "General Manager @ Apsara Bakes.",
       total_reviews: 150,
     },
     certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png",
@@ -163,6 +166,7 @@ export const courses: Course[] = [
     title: "Power BI and SQL Program",
     description:
       "SQL is the backbone of all data-driven companies. Power BI is the most in-demand tool for visualization & reporting. Together, they make you a complete Business Intelligence professional.",
+    category: "Data and Analytics",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
     placed_students: 0,
@@ -203,11 +207,11 @@ export const courses: Course[] = [
       { stars: 1, percentage: 2 },
     ],
     mentor: {
-      name: "Abhin Prakash",
-      role: "Business Intelligence Faculty",
-      image: "https://routesacademy.b-cdn.net/images/mentor.png",
+      name: "Veena M ",
+      role: "Badvanced excel and power BI Faculty",
+      image: "https://routesacademy.b-cdn.net/images/WhatsApp%20Image%202025-10-30%20at%2017.32.45_aedc213d.jpg",
       rating: 5.0,
-      bio: "Expert in Business Intelligence tools and data visualization, helping professionals master SQL and Power BI for real-world applications.",
+      bio: "Project Coordinator @ Wecan Social Innovators",
       total_reviews: 150,
     },
     certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png",
@@ -217,6 +221,7 @@ export const courses: Course[] = [
     title: "Power BI",
     description:
       "Power BI is a business-analytics tool/platform from Microsoft that lets you connect to a wide variety of data sources, transform & model data, build interactive reports & dashboards, and share/collaborate. Learning Power BI lets you turn raw data into actionable insights, support data-driven decision making, and often qualifies you for roles like data analyst, business intelligence developer or reporting specialist.",
+    category: "Data and Analytics",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
     placed_students: 0,
@@ -275,6 +280,7 @@ export const courses: Course[] = [
     title: "AI-Integrated Excel",
     description:
       "Unlock the next level of data management and analysis with our AI-Integrated Excel Course — designed to help you combine the power of Microsoft Excel with Artificial Intelligence tools. Whether you're a student, working professional, or entrepreneur, this course will teach you how to automate workflows, gain smarter insights, and make data-driven decisions with ease.",
+    category: "AI, ML& Cloud",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
     placed_students: 0,
@@ -332,6 +338,7 @@ export const courses: Course[] = [
     title: "SAP S/4HANA FICO",
     description:
       "The SAP S/4HANA FICO – Learning Hub Business Edition Program by ROUTE Academy is designed to equip learners with comprehensive knowledge of SAP Financial Accounting (FI) and Controlling (CO) modules. Through 80+ hours of hands-on, expert-led sessions, participants gain practical skills in financial configuration, account management, taxation, and compliance, along with access to live SAP servers for real-time practice.",
+    category: "Finance, Accounting & ERP",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
     placed_students: 0,

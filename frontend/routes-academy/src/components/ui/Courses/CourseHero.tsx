@@ -1,30 +1,37 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import PageIllustration from "@/components/elements/PageIllustration";
 
-
 const CourseHero = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const careerObjecives = [
     {
       title: "Career launch support",
-      active: true,
     },
     {
       title: "Hands-on learning",
-      active: false,
     },
     {
       title: "90%+ placement rate",
-      active: false,
     },
     {
       title: "Industry built curriculum",
-      active: false,
     },
   ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % careerObjecives.length);
+    }, 3000); // Change every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [careerObjecives.length]);
+
   return (
     <div className="grid md:grid-cols-2 xl:grid-cols-3 xl:relative mt-[5rem]">
-      <PageIllustration/>
+      <PageIllustration />
       {/* Hero content section */}
       <div className="z-10 md:col-span-1 md:ml-[3rem] flex md:items-end md:justify-items-end order-2 md:order-none px-[5rem] md:px-0 mt-[2rem] lg:mt-0">
         <div className="xl:absolute xl:top-[33%] xl:left-[10%] 2xl:left-[15%]">
@@ -55,14 +62,15 @@ const CourseHero = () => {
                   >
                     <path
                       d="M23.8 8.33335L10.2 21.9334L3.96667 15.7L5.56467 14.102L10.2 18.726L22.202 6.73535L23.8 8.33335Z"
-                      fill={item.active === true ? "#172554" : "#D1D5DC"}
+                      fill={index === activeIndex ? "#172554" : "#D1D5DC"}
                     />
-                    oklch(87.2% 0.01 258.338)
                   </svg>
 
                   <span
-                    className={`${
-                      item.active === true ? "text-[#172554]" : "text-gray-300"
+                    className={`transition-all duration-300 ${
+                      index === activeIndex
+                        ? "text-[#172554] scale-105 font-semibold"
+                        : "text-gray-300 scale-100"
                     }`}
                   >
                     {item.title}

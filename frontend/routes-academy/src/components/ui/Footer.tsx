@@ -9,7 +9,7 @@ const Footer = () => {
     { href: "#", label: "Finance, Accounting & ERP" },
     { href: "#", label: "AI, ML& Cloud" },
     { href: "#", label: "Digital Marketing & Growth" },
-    { href: "#", label: "Communication" },
+    { href: "#", label: "Logistics" },
   ];
 
   const supportLinks = [

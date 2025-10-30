@@ -6,6 +6,8 @@ import { Course, courses } from "./CourseData";
 import { useState } from "react";
 
 const Courses = () => {
+  const [activeCategoryId, setActiveCategoryId] = useState(1);
+
   return (
     <div>
       {/* Courses title */}
@@ -22,13 +24,16 @@ const Courses = () => {
       <div className="xl:container xl:mx-auto px-[1rem] xl:px-[5rem]">
         <div className="grid lg:grid-cols-4 lg:gap-[2.3125rem] justify-center">
           <div className="lg:col-span-1 mb-[1rem]">
-            <CoursesNav />
+            <CoursesNav
+              activeCategoryId={activeCategoryId}
+              setActiveCategoryId={setActiveCategoryId}
+            />
             <div className="hidden lg:block">
               <GuideMe />
             </div>
           </div>
           <div className="lg:col-span-3 lg:h-screen lg:overflow-y-auto scrollbar-1">
-            <CourseList />
+            <CourseList activeCategoryId={activeCategoryId} />
           </div>
         </div>
         <div className="flex gap-[1rem] md:gap-[3.0625rem]">
@@ -53,8 +58,13 @@ const Courses = () => {
 
 export default Courses;
 
-function CoursesNav() {
-  const [activeCategoryId, setActiveCategoryId] = useState(1);
+function CoursesNav({
+  activeCategoryId,
+  setActiveCategoryId,
+}: {
+  activeCategoryId: number;
+  setActiveCategoryId: (id: number) => void;
+}) {
   const courseCategories = [
     { id: 1, title: "All Courses" },
     { id: 2, title: "Data and Analytics" },
@@ -62,7 +72,7 @@ function CoursesNav() {
     { id: 4, title: "AI, ML& Cloud" },
     { id: 5, title: "Digital Marketing & Growth" },
     { id: 6, title: "HR & People Analytics" },
-    { id: 7, title: "Communication" },
+    { id: 7, title: "Logistics" },
   ];
   return (
     <div>
@@ -87,12 +97,40 @@ function CoursesNav() {
   );
 }
 
-function CourseList() {
+function CourseList({ activeCategoryId }: { activeCategoryId: number }) {
+  const categoryMap: { [key: number]: string } = {
+    1: "All Courses",
+    2: "Data and Analytics",
+    3: "Finance, Accounting & ERP",
+    4: "AI, ML& Cloud",
+    5: "Digital Marketing & Growth",
+    6: "HR & People Analytics",
+    7: "Logistics",
+  };
+
+  const filteredCourses =
+    activeCategoryId === 1
+      ? courses
+      : courses.filter(
+          (course) => course.category === categoryMap[activeCategoryId]
+        );
+
+  console.log("Active Category:", categoryMap[activeCategoryId]);
+  console.log("Filtered Courses:", filteredCourses.length);
+
   return (
     <div className="grid md:grid-cols-2 gap-[2rem] lg:pl-[1rem]">
-      {courses.map((course) => (
-        <CourseCard key={course.id} course={course} />
-      ))}
+      {filteredCourses.length > 0 ? (
+        filteredCourses.map((course) => (
+          <CourseCard key={course.id} course={course} />
+        ))
+      ) : (
+        <div className="col-span-2 text-center py-10">
+          <p className="text-gray-500 text-lg">
+            No courses available in this category yet.
+          </p>
+        </div>
+      )}
     </div>
   );
 }
