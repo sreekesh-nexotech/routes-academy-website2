@@ -32,8 +32,8 @@ const Header = () => {
               <Image
                 src="https://routesacademy.b-cdn.net/icons/Route%20Logo%20new%20SVG.svg"
                 alt="Routes academy Logo"
-                width={80}
-                height={20}
+                width={120}
+                height={35}
               />
             </Link>
           </div>
