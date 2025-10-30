@@ -39,7 +39,7 @@ const SuccessStories = () => {
   return (
     <section className="bg-[#F2F5FF] py-16 lg:py-24 3xl:py-32 w-full">
       
-      {/* Container to constrain text, but allow layout to stretch */}
+      {/* Container to constrain text*/}
       <div className="max-w-7xl 3xl:max-w-screen-3xl mx-auto px-6 lg:px-12">
         
         {/* 2. Enhanced Typography for Impact */}

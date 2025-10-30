@@ -93,7 +93,6 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
         <h2 className="text-2xl sm:text-3xl font-poppins font-semibold text-[#172554] mb-6">
           Meet Your Faculty
         </h2>
-        <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm">
           <div className="flex flex-col xl:flex-row items-start xl:items-center gap-6">
             {/* Mentor Image and Info Section */}
             <div className="flex items-start gap-4 sm:gap-6 flex-1 min-w-0">
@@ -139,7 +138,6 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
               />
             </div>
           </div>
-        </div>
       </div>
 
       {/* Student Review Section */}
@@ -147,7 +145,6 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
         <h3 className="text-xl sm:text-2xl font-poppins font-semibold text-[#172554] mb-4">
           Student Review
         </h3>
-        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-sm">
           <div className="flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8">
             {/* Rating Display */}
             <div className="flex flex-col items-center">
@@ -181,7 +178,6 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
               />
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
