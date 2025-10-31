@@ -6,6 +6,7 @@ import Image from "next/image";
 const TestimonialVideo: React.FC = () => {
   const [zoomScale, setZoomScale] = useState(1); // Start with normal scale (1)
   const sectionRef = useRef<HTMLElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,39 +15,59 @@ const TestimonialVideo: React.FC = () => {
       const section = sectionRef.current;
       const rect = section.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      
+
       // Calculate scroll progress through the component
       const sectionTop = rect.top;
       const sectionHeight = rect.height;
-      
+
       // Calculate how much of the component has been scrolled past
-      const scrollProgress = Math.max(0, Math.min(1, (windowHeight - sectionTop) / sectionHeight));
+      const scrollProgress = Math.max(
+        0,
+        Math.min(1, (windowHeight - sectionTop) / sectionHeight)
+      );
       const scrollPercentage = scrollProgress * 100;
-      
+
       // Start zooming when 40% of component is visible, complete at 100%
       if (scrollPercentage >= 40) {
         const zoomProgress = Math.min(1, (scrollPercentage - 40) / 60); // 60% range (40% to 100%)
         // Calculate scale factor to reach 80vw from current width
-        const currentWidthVw = window.innerWidth <= 640 ? 90 : 
-                             window.innerWidth <= 768 ? 84 : 
-                             window.innerWidth <= 1024 ? 80 : 70;
+        const currentWidthVw =
+          window.innerWidth <= 640
+            ? 90
+            : window.innerWidth <= 768
+            ? 84
+            : window.innerWidth <= 1024
+            ? 80
+            : 70;
         const targetWidthVw = 80;
         const scaleFactor = targetWidthVw / currentWidthVw;
-        const newScale = 1 + (zoomProgress * (scaleFactor - 1));
+        const newScale = 1 + zoomProgress * (scaleFactor - 1);
         setZoomScale(newScale);
+
+        // Play video when zoom starts
+        if (videoRef.current && videoRef.current.paused) {
+          videoRef.current
+            .play()
+            .catch((err) => console.log("Video play failed:", err));
+        }
       } else {
         setZoomScale(1); // Reset to normal scale
+
+        // Pause video when zoom hasn't started
+        if (videoRef.current && !videoRef.current.paused) {
+          videoRef.current.pause();
+        }
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // Check initial position
-    
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <section 
+    <section
       ref={sectionRef}
       className="w-screen min-h-[60vh] bg-white flex flex-col items-center justify-start gap-4 sm:gap-6 md:gap-8 py-12 sm:py-16 md:py-20 lg:py-24"
     >
@@ -57,16 +78,17 @@ const TestimonialVideo: React.FC = () => {
 
       {/* Video area */}
       <div className="relative w-full h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] flex items-center justify-center mt-4 sm:mt-8 md:mt-12 lg:mt-16 mb-8 sm:mb-12 md:mb-16 lg:mb-20">
-        <div 
+        <div
           className="relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 w-[90vw] sm:w-[84vw] md:w-[80vw] lg:w-[70vw] h-[35vh] sm:h-[50vh] md:h-[60vh] lg:h-[67vh] transition-transform duration-500 ease-out origin-center"
           style={{ transform: `scaleX(${zoomScale})` }}
         >
-          <Image
-            src="https://routesacademy.b-cdn.net/images/videoSmall.png"
-            alt="Video thumbnail"
-            fill
-            className="rounded-lg sm:rounded-xl md:rounded-2xl object-cover"
-            priority
+          <video
+            ref={videoRef}
+            src="https://routesacademy.b-cdn.net/video/IMG_7580.MP4"
+            loop
+            muted
+            playsInline
+            className="w-full h-full rounded-lg sm:rounded-xl md:rounded-2xl object-cover"
           />
         </div>
       </div>
