@@ -4,7 +4,7 @@ import ButtonLink from '../../elements/ButtonLink'
 
 const HeroHome = () => {
   return (
-    <div className="relative w-full overflow-hidden flex items-center justify-center min-h-screen">
+    <div className="relative w-full overflow-hidden flex items-center justify-center min-h-[75vh]">
       {/* Page Illustration */}
       <PageIllustration/>
 
