@@ -7,11 +7,23 @@ import { useState } from "react";
 
 const Courses = () => {
   const [activeCategoryId, setActiveCategoryId] = useState(1);
+  const coursesTopRef = React.useRef<HTMLDivElement>(null);
+
+  const handleSeeAllCourses = () => {
+    setActiveCategoryId(1);
+    coursesTopRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
   return (
     <div>
       {/* Courses title */}
-      <div className="px-[1rem] pt-[5rem] pb-[2rem] md:pt-[5.8125rem] md:pb-[5.4375rem]">
+      <div
+        ref={coursesTopRef}
+        className="px-[1rem] pt-[5rem] pb-[2rem] md:pt-[5.8125rem] md:pb-[5.4375rem]"
+      >
         <h3 className="text-center font-semibold text-[#172554] text-[1.5rem] md:text-[2.5rem] leading-[1.5rem] md:leading-[3rem] mb-[1.3125rem]">
           Our Courses
         </h3>
@@ -40,7 +52,7 @@ const Courses = () => {
           <hr className="w-full h-[1px] my-8 bg-[#104EFF] border-0 rounded-sm dark:bg-gray-700"></hr>
           <button
             className="hidden md:flex cursor-pointer bg-[#104EFF] min-w-[12.625rem] h-[3.5625rem] rounded-[.25rem] gap-[.625rem] justify-center items-center"
-            onClick={() => setActiveCategoryId(1)}
+            onClick={handleSeeAllCourses}
           >
             <h6 className="font-semibold text-[#FFFFFF] text-[1rem] leading-[1.375rem]">
               See All Courses
