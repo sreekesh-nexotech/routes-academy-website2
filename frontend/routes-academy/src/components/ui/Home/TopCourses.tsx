@@ -21,29 +21,33 @@ const TopCourses: React.FC = () => {
               Top Recommended Courses for Career Acceleration
             </h2>
             <p className="font-onest font-medium text-lg sm:text-xl leading-relaxed tracking-tight text-[#404040]">
-              Discover Industry-Validated Courses with Guaranteed Career Pathways
+              Discover Industry-Validated Courses with Guaranteed Career
+              Pathways
             </p>
           </div>
         </div>
 
         {/* Course Cards */}
         <div className="flex justify-center flex-wrap gap-6 sm:gap-12 w-full">
-          {topCourses.map((course) => (
-            <CourseCard
-              key={course.id}
-              title={course.title}
-              rating={course.rating.toFixed(1)}
-              lessons="N/A"
-              students={`${course.placed_students} Students`}
-              duration="Flexible"
-              skills={course.description}
-              price={`Avg Salary: ${course.average_salary}`}
-              image={course.home_img_url || course.image_url}
-              badgeText={course.mode_of_conduct}
-              bgColor="bg-[#F1F5F9]"
-              href={`/courses/${course.id}`}
-            />
-          ))}
+          {topCourses.map((course, index) => {
+            const moduleCounts = ["2 modules", "4 modules", "2 modules"];
+            return (
+              <CourseCard
+                key={course.id}
+                title={course.title}
+                rating={course.rating.toFixed(1)}
+                lessons={moduleCounts[index]}
+                students={`${course.placed_students} Students`}
+                duration="Flexible"
+                skills={course.description}
+                price={`Avg Salary: ${course.average_salary}`}
+                image={course.home_img_url || course.image_url}
+                badgeText={course.mode_of_conduct}
+                bgColor="bg-[#F1F5F9]"
+                href={`/courses/${course.id}`}
+              />
+            );
+          })}
         </div>
       </div>
 

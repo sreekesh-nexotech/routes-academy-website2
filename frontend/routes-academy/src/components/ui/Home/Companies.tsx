@@ -36,18 +36,18 @@ const Companies: React.FC = () => {
       </h2>
 
       {/* Logos Row */}
-      <div className="flex flex-wrap justify-center items-center gap-[2vw] md:gap-[3vw] w-full max-w-[95vw]">
+      <div className="flex flex-wrap justify-center items-center gap-[1.5vw] md:gap-[2.5vw] w-full max-w-[95vw]">
         {companiesData.map((cert, index) => (
           <div
             key={index}
-            className="flex items-center justify-center h-[9vh] w-[18vw] min-w-[90px] max-w-[140px]"
+            className="flex items-center justify-center h-[10vh] w-[16vw] min-w-[100px] max-w-[160px]"
           >
             <Image
               src={cert.src}
               alt={cert.alt}
-              width={180}
-              height={100}
-              className="object-contain w-[75%] h-[75%]"
+              width={160}
+              height={90}
+              className="object-contain w-[85%] h-[85%]"
               unoptimized
             />
           </div>

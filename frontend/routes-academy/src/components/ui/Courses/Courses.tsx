@@ -32,13 +32,16 @@ const Courses = () => {
               <GuideMe />
             </div>
           </div>
-          <div className="lg:col-span-3 lg:h-screen lg:overflow-y-auto scrollbar-1">
+          <div className="lg:col-span-3 lg:h-[115vh] lg:overflow-y-auto scrollbar-1">
             <CourseList activeCategoryId={activeCategoryId} />
           </div>
         </div>
         <div className="flex gap-[1rem] md:gap-[3.0625rem]">
           <hr className="w-full h-[1px] my-8 bg-[#104EFF] border-0 rounded-sm dark:bg-gray-700"></hr>
-          <button className="cursor-pointer bg-[#104EFF] min-w-[12.625rem] h-[3.5625rem] rounded-[.25rem] flex gap-[.625rem] justify-center items-center">
+          <button
+            className="hidden md:flex cursor-pointer bg-[#104EFF] min-w-[12.625rem] h-[3.5625rem] rounded-[.25rem] gap-[.625rem] justify-center items-center"
+            onClick={() => setActiveCategoryId(1)}
+          >
             <h6 className="font-semibold text-[#FFFFFF] text-[1rem] leading-[1.375rem]">
               See All Courses
             </h6>

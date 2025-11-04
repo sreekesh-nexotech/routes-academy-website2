@@ -1,12 +1,12 @@
-import PageIllustration from '../../elements/PageIllustration'
-import React from 'react'
-import ButtonLink from '../../elements/ButtonLink'
+import PageIllustration from "../../elements/PageIllustration";
+import React from "react";
+import ButtonLink from "../../elements/ButtonLink";
 
 const HeroHome = () => {
   return (
-    <div className="relative w-full overflow-hidden flex items-center justify-center min-h-[75vh]">
+    <div className="relative w-full overflow-hidden flex items-center justify-center min-h-[75vh] md:min-h-[55vh]">
       {/* Page Illustration */}
-      <PageIllustration/>
+      <PageIllustration />
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-5xl mx-auto text-center px-4 sm:px-6">
@@ -22,18 +22,23 @@ const HeroHome = () => {
 
         {/* Subheading */}
         <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          We build a four-stage journey—Learn, Apply, Experience, Launch, so graduates contribute from day one in real roles.
+          We build a four-stage journey—Learn, Apply, Experience, Launch, so
+          graduates contribute from day one in real roles.
         </p>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row   justify-center gap-4">
           <ButtonLink href="/courses" label="See Courses" variant="primary" />
-          <ButtonLink href="#contact" label="Contact us" variant="secondary"  className='bg-white'/>
+          <ButtonLink
+            href="#contact"
+            label="Contact us"
+            variant="secondary"
+            className="bg-white"
+          />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroHome
-
+export default HeroHome;
