@@ -4,14 +4,14 @@ import ButtonLink from "../../elements/ButtonLink";
 
 const HeroHome = () => {
   return (
-    <div className="relative w-full overflow-hidden flex items-center justify-center min-h-[75vh] md:min-h-[55vh]">
+    <div className="relative w-full overflow-hidden flex items-center justify-center mt-15 min-h-[56vh] md:min-h-[55vh] ">
       {/* Page Illustration */}
       <PageIllustration />
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-5xl mx-auto text-center px-4 sm:px-6">
         {/* Top Text */}
-        <p className="text-blue-600 font-medium mb-4 tex-xl md:text-2xl">
+        <p className="text-blue-600 font-medium mb-4 text-xl md:text-2xl">
           Learn. <span className="text-gray-900">Build.</span> Expand
         </p>
 

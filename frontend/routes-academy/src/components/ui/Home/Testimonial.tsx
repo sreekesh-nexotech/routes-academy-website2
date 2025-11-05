@@ -5,7 +5,7 @@ import TestimonialCard from '../../elements/TestimonialCard';
 // Sample data for the testimonials
 const testimonials = [
   {
-    image: 'https://routesacademy.b-cdn.net/images/pics.png',
+    image: 'https://routesacademy.b-cdn.net/images/pics.svg',
     name: 'Anathu Krishna',
     role: 'Jr. Data Scientist @ Nexotech',
     courses: [
@@ -25,7 +25,7 @@ const testimonials = [
     ],
   },
   {
-    image: 'https://routesacademy.b-cdn.net/images/pics.png',
+    image: 'https://routesacademy.b-cdn.net/images/pics.svg',
     name: 'Priya Sharma',
     role: 'Frontend Developer @ Innovate Inc.',
     courses: [
@@ -39,7 +39,7 @@ const testimonials = [
     ],
   },
   {
-    image: 'https://routesacademy.b-cdn.net/images/pics.png',
+    image: 'https://routesacademy.b-cdn.net/images/pics.svg',
     name: 'Anathu Krishna',
     role: 'Jr. Data Scientist @ Nexotech',
     courses: [
@@ -59,7 +59,7 @@ const testimonials = [
     ],
   },
   {
-    image: 'https://routesacademy.b-cdn.net/images/pics.png',
+    image: 'https://routesacademy.b-cdn.net/images/pics.svg',
     name: 'Priya Sharma',
     role: 'Frontend Developer @ Innovate Inc.',
     courses: [
