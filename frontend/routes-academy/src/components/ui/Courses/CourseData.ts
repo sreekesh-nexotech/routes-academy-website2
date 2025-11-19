@@ -443,13 +443,13 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "TBD",
-        designation: "SAP FICO Expert",
+        name: "Harsha T",
+        designation: "Accounts Trainer & Educator",
         totalReviews: 150,
-        engagingPercentage: 68,
-        helpfulPercentage: 70,
-        clarityPercentage: 66,
-        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+        engagingPercentage: 78,
+        helpfulPercentage: 92,
+        clarityPercentage: 88,
+        image: "https://routesacademy.b-cdn.net/images/mentor3.png"
       }
     ],
     certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
