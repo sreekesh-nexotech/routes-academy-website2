@@ -48,7 +48,7 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <ButtonLink href="#contact" label="Login" variant="secondary" />
+            <ButtonLink href="https://routesacademy.com/all-courses/" label="Login" variant="secondary"  isTarget={true} />
             <ButtonLink href="/courses" label="See Courses" variant="primary" />
           </nav>
 

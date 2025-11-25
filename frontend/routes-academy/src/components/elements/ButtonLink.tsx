@@ -8,6 +8,7 @@ interface ButtonLinkProps {
   label: string;
   variant?: "primary" | "secondary";
   className?: string;
+  isTarget?: boolean;
   onClick?: () => void;
 }
 
@@ -16,6 +17,7 @@ const ButtonLink = ({
   label,
   variant = "secondary",
   className = "",
+  isTarget = false,
   onClick,
 }: ButtonLinkProps) => {
   const baseClasses =
@@ -33,6 +35,7 @@ const ButtonLink = ({
       href={href}
       className={`${baseClasses} ${variantClasses} ${className} flex items-center justify-center gap-2`}
       onClick={onClick}
+      target={isTarget ? "_blank" : undefined}
     >
       {label}
       {variant === "primary" && <ExternalLink size={20} />}
