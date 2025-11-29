@@ -1,4 +1,3 @@
-
 import { use } from "react";
 import { courses } from "../../../components/ui/Courses/CourseData";
 import CourseHeroSection from "@/components/ui/Courses/SpecificCourse/CourseHero";
@@ -20,18 +19,15 @@ interface CoursePageProps {
   params: Promise<UnwrappedParams>;
 }
 
-
 export async function generateMetadata({ params }: { params: { id: string } }) {
   return getCourseSEO(params.id);
 }
-
 
 export default function CoursePage(props: CoursePageProps) {
   const { id } = use(props.params);
   const numericId = Number(id);
 
   const course = courses.find((c) => c.id === numericId);
-
 
   if (!course) {
     return (
@@ -54,9 +50,8 @@ export default function CoursePage(props: CoursePageProps) {
 
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-10" id="main-content-area">
-
             {/* Tabs */}
-              <StickyTabs/>
+            <StickyTabs />
 
             {/* Features */}
             <WhatYouWillLearnSection course={course} />
@@ -72,13 +67,10 @@ export default function CoursePage(props: CoursePageProps) {
 
             {/* Certification */}
             <CertificationSection img={course.certificate_img} />
-
-            
           </div>
         </div>
       </div>
-        <SuccessStories/>
-
+      <SuccessStories courseId={course.id} />
     </div>
   );
 }

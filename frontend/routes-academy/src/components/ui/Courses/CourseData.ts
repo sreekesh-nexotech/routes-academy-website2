@@ -453,5 +453,95 @@ export const courses: Course[] = [
       }
     ],
     certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+  },
+  {
+    id: 7,
+    title: "AI-Integrated Logistics & Supply Chain Management",
+    description:
+      "The AI-Integrated Logistics & Supply Chain Management program is designed to prepare learners for the future of global trade, operations, and supply chain intelligence. This program blends core logistics knowledge with modern AI applications, helping students master end-to-end supply chain workflows, automation tools, predictive analytics, and smart decision-making.",
+    category: "Logistics",
+    average_salary: "6-12 LPA",
+    mode_of_conduct: "Offline / Online",
+    placed_students: 85,
+    class_schedule: "As per convenience",
+    enrolled_students: 95,
+    emi: true,
+    image_url: "https://routesacademy.b-cdn.net/images/logistics-course.png",
+    specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero.svg",
+    rating: 4.9,
+    home_img_url: "https://routesacademy.b-cdn.net/images/logistics-course.png",
+    duration: "6 months",
+    session_duration: 1,
+    actual_price: 45000,
+    offer_price: 45000,
+    what_you_get: [
+      "100% Placement Support",
+      "International Certifications",
+      "AI-Powered Curriculum",
+      "Internship Exposure",
+      "NSDC & UGC-approved Training"
+    ],
+    curriculum_detailed: [
+      {
+        topic: "Module 1: Introduction to Logistics & Supply Chain",
+        details: "Fundamentals of logistics\nComponents of supply chain\nIndian & global logistics landscape\nDigitisation in supply chain"
+      },
+      {
+        topic: "Module 2: Warehousing & Inventory Management",
+        details: "Warehouse setup & operations\nInventory control techniques\nDemand forecasting\nAI-based warehouse automation systems"
+      },
+      {
+        topic: "Module 3: Transportation & Distribution",
+        details: "Fleet management\nRoute planning and load optimization\nAI-powered tracking, GPS & telematics\nLast-mile delivery trends"
+      },
+      {
+        topic: "Module 4: Procurement & Vendor Management",
+        details: "Purchasing strategies\nSupplier evaluation\nE-procurement systems\nData-driven decision making"
+      },
+      {
+        topic: "Module 5: Artificial Intelligence in Logistics",
+        details: "Predictive analytics\nMachine learning basics for logistics\nRobotics, IoT & automation\nDigital twins and smart supply chain"
+      },
+      {
+        topic: "Module 6: Logistics Software & Tools",
+        details: "SAP basics\nTally Prime for inventory\nWMS, ERP, CRM tools\nAI dashboards & BI tools"
+      },
+      {
+        topic: "Module 7: Soft Skills & Professional Development",
+        details: "Communication and documentation\nInterview training\nGroup discussions\nPersonality development"
+      },
+      {
+        topic: "Module 8: Internship / Practical Learning",
+        details: "Live projects\nIndustry visits\nHands-on logistics operations"
+      }
+    ],
+    featureDescription:
+      "The AI-Integrated Logistics & Supply Chain Management program blends core logistics knowledge with modern Artificial Intelligence applications. This industry-aligned curriculum ensures students become job-ready professionals capable of handling warehousing, transportation, inventory planning, procurement, and AI-enabled optimization processes used by top logistics companies worldwide.",
+    learnFeatures: [
+      { title: "AI-Powered Supply Chain" },
+      { title: "Warehouse Automation" },
+      { title: "Predictive Analytics" },
+      { title: "Smart Logistics Tools" }
+    ],
+    mentorRatingBreakdown: [
+      { stars: 5, percentage: 85 },
+      { stars: 4, percentage: 8 },
+      { stars: 3, percentage: 4 },
+      { stars: 2, percentage: 2 },
+      { stars: 1, percentage: 1 }
+    ],
+    mentor: [
+      {
+        id: 1,
+        name: "Industry Specialists",
+        designation: "Logistics & AI Experts",
+        totalReviews: 120,
+        engagingPercentage: 82,
+        helpfulPercentage: 90,
+        clarityPercentage: 86,
+        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+      }
+    ],
+    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
   }
 ];

@@ -1,5 +1,4 @@
-import Image from 'next/image';
-
+import Image from "next/image";
 
 interface Testimonial {
   id: number;
@@ -7,60 +6,236 @@ interface Testimonial {
   name: string;
   title: string;
   avatarSrc: string;
-  className?: string; // Optional class for unique styling (e.g., the offset card)
+  className?: string;
 }
 
-const testimonialsData: Testimonial[] = [
-  {
-    id: 1,
-    quote: "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
-    name: "Arjun Menon",
-    title: "Business Intelligence Analyst",
-    avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png", 
-  },
-  {
-    id: 2,
-    quote: "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach - they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
-    name: "Priya Sharma",
-    title: "Digital Marketing Executive",
-    avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
-  },
-  {
-    id: 3,
-    quote: "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands-on training made me feel ready for anything. Best decision I ever made...",
-    name: "Rohit Kumar",
-    title: "HR Business Assistant",
-    avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
-  },
-];
+// Success stories by course ID
+const testimonialsByCourse: { [key: number]: Testimonial[] } = {
+  // Course 1: Career Program in Accounting & Taxation
+  1: [
+    {
+      id: 1,
+      quote:
+        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
+      name: "Arjun Menon",
+      title: "Business Intelligence Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
+    },
+    {
+      id: 2,
+      quote:
+        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
+      name: "Priya Sharma",
+      title: "Digital Marketing Executive",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
+      name: "Rohit Kumar",
+      title: "HR Business Assistant",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
 
+  // Course 2: Data Analysis
+  2: [
+    {
+      id: 1,
+      quote:
+        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
+      name: "Arjun Menon",
+      title: "Business Intelligence Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
+    },
+    {
+      id: 2,
+      quote:
+        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
+      name: "Priya Sharma",
+      title: "Digital Marketing Executive",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
+      name: "Rohit Kumar",
+      title: "HR Business Assistant",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
 
-const SuccessStories = () => {
+  // Course 3: AI-Integrated Excel
+  3: [
+    {
+      id: 1,
+      quote:
+        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
+      name: "Arjun Menon",
+      title: "Business Intelligence Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
+    },
+    {
+      id: 2,
+      quote:
+        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
+      name: "Priya Sharma",
+      title: "Digital Marketing Executive",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
+      name: "Rohit Kumar",
+      title: "HR Business Assistant",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
+
+  // Course 4: SAP S/4HANA FICO
+  4: [
+    {
+      id: 1,
+      quote:
+        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
+      name: "Arjun Menon",
+      title: "Business Intelligence Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
+    },
+    {
+      id: 2,
+      quote:
+        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
+      name: "Priya Sharma",
+      title: "Digital Marketing Executive",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
+      name: "Rohit Kumar",
+      title: "HR Business Assistant",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
+
+  // Course 5: Digital Marketing & Growth
+  5: [
+    {
+      id: 1,
+      quote:
+        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
+      name: "Arjun Menon",
+      title: "Business Intelligence Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
+    },
+    {
+      id: 2,
+      quote:
+        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
+      name: "Priya Sharma",
+      title: "Digital Marketing Executive",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
+      name: "Rohit Kumar",
+      title: "HR Business Assistant",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
+
+  // Course 6: HR & People Analytics
+  6: [
+    {
+      id: 1,
+      quote:
+        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
+      name: "Arjun Menon",
+      title: "Business Intelligence Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
+    },
+    {
+      id: 2,
+      quote:
+        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
+      name: "Priya Sharma",
+      title: "Digital Marketing Executive",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
+      name: "Rohit Kumar",
+      title: "HR Business Assistant",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
+
+  // Course 7: AI-Integrated Logistics & Supply Chain Management
+  7: [
+    {
+      id: 1,
+      quote:
+        "Route Academy's logistics course gave me practical knowledge and confidence. AI modules helped me stand out in interviews.",
+      name: "Adarsh R.",
+      title: "Warehouse Coordinator",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
+    },
+    {
+      id: 2,
+      quote:
+        "Best institute for logistics. The faculty shared real industry experience, and the placement team supported till I got the job.",
+      name: "Fathima M.",
+      title: "Logistics Executive",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "AI-based tools and real-time case studies made learning easy. Highly recommended.",
+      name: "Mohammed S.",
+      title: "Supply Chain Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
+};
+
+const SuccessStories = ({ courseId }: { courseId: number }) => {
+  // Get testimonials for the specific course, fallback to course 2 if not found
+  const testimonialsData =
+    testimonialsByCourse[courseId] || testimonialsByCourse[2];
   return (
     <section className="bg-[#F2F5FF] py-16 lg:py-24 3xl:py-32 w-full">
-      
       {/* Container to constrain text*/}
       <div className="max-w-7xl 3xl:max-w-screen-3xl mx-auto px-6 lg:px-12">
-        
         {/* 2. Enhanced Typography for Impact */}
         <div className="text-left md:text-center mb-12 lg:mb-20">
           <h2 className="text-5xl font-semibold font-sans 3xl:text-8xl 3xl:tracking-wider">
-            200 + Success stories
-            Proven Results, Guaranteed Impact.
+            200 + Success stories Proven Results, Guaranteed Impact.
           </h2>
-          
+
           <p className="max-w-3xl mx-auto mt-6 text-gray-600 3xl:text-xl">
-            From classroom to boardroom - our 200+ placement record isn&apos;t just a number, it&apos;s a testament to excellence. Our industry-aligned curriculum and dedicated career support have helped thousands land their dream jobs at top companies. Your next career breakthrough awaits.
+            From classroom to boardroom - our 200+ placement record isn&apos;t
+            just a number, it&apos;s a testament to excellence. Our
+            industry-aligned curriculum and dedicated career support have helped
+            thousands land their dream jobs at top companies. Your next career
+            breakthrough awaits.
           </p>
         </div>
 
         {/* 3. The Asymmetrical Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 3xl:gap-12 items-start">
-          
           {testimonialsData.map((testimonial: Testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
           ))}
-
         </div>
       </div>
     </section>
@@ -68,17 +243,21 @@ const SuccessStories = () => {
 };
 
 // --- Testimonial Card Component ---
-const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }) => {
+const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({
+  testimonial,
+}) => {
   const { quote, name, title, avatarSrc, className } = testimonial;
 
   return (
     // Base styles (rounded, padding, shadow) applied to all
-    <div className={`
+    <div
+      className={`
       bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out
       transform hover:-translate-y-1 h-full flex flex-col justify-between
       3xl:p-12 3xl:rounded-3xl 3xl:shadow-2xl 3xl:hover:shadow-4xl
       ${className}
-    `}>
+    `}
+    >
       <p className="text-gray-700 italic mb-6 text-base 3xl:text-2xl 3xl:leading-relaxed">
         &ldquo;{quote}&rdquo;
       </p>
@@ -95,9 +274,13 @@ const TestimonialCard: React.FC<{ testimonial: Testimonial }> = ({ testimonial }
           />
         </div>
 
-        <div className={className ? 'text-white' : 'text-gray-900'}>
+        <div className={className ? "text-white" : "text-gray-900"}>
           <h3 className="font-bold text-lg 3xl:text-3xl">{name}</h3>
-          <p className={`text-sm 3xl:text-xl ${className ? 'text-white/80' : 'text-gray-500'}`}>
+          <p
+            className={`text-sm 3xl:text-xl ${
+              className ? "text-white/80" : "text-gray-500"
+            }`}
+          >
             {title}
           </p>
         </div>
