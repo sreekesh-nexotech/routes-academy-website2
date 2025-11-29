@@ -829,5 +829,111 @@ export const courses: Course[] = [
       }
     ],
     certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+  },
+  {
+    id: 11,
+    title: "AI Integrated Digital Marketing",
+    description:
+      "The AI Integrated Digital Marketing program is designed to create next-generation digital marketers who can leverage Artificial Intelligence to plan campaigns, analyze performance, and drive business growth. This program blends traditional digital marketing fundamentals with AI tools, automation platforms, content generation, analytics, and performance tracking, giving learners a strong competitive edge in today's digital-first world.",
+    category: "Digital Marketing & Growth",
+    average_salary: "6-13 LPA",
+    mode_of_conduct: "Offline / Online",
+    placed_students: 96,
+    class_schedule: "As per convenience",
+    enrolled_students: 115,
+    emi: true,
+    image_url: "https://routesacademy.b-cdn.net/images/ai-digital-marketing.png",
+    specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero.svg",
+    rating: 4.9,
+    home_img_url: "https://routesacademy.b-cdn.net/images/ai-digital-marketing.png",
+    duration: "6 months",
+    session_duration: 1,
+    actual_price: 45000,
+    offer_price: 45000,
+    what_you_get: [
+      "100% Placement Support",
+      "Live Google & Meta Ad Campaigns",
+      "Exclusive AI Lab for Marketing",
+      "Google + Meta Certifications",
+      "Real Project Execution"
+    ],
+    curriculum_detailed: [
+      {
+        topic: "Module 1: Introduction to Digital Marketing",
+        details: "Digital marketing ecosystem\nCustomer journey & funnel\nBrand positioning & strategy\nModern marketing trends"
+      },
+      {
+        topic: "Module 2: AI for Digital Marketing",
+        details: "AI content generation tools\nAI automation for social media\nAI for SEO, ads & market research\nPredictive analytics for campaigns\nChatGPT, Gemini & other AI tools"
+      },
+      {
+        topic: "Module 3: Social Media Marketing (SMM)",
+        details: "Facebook, Instagram & YouTube marketing\nContent planning & calendar creation\nAudience targeting\nOrganic growth strategies\nAI-assisted creative production"
+      },
+      {
+        topic: "Module 4: Search Engine Optimization (SEO)",
+        details: "On-page & off-page SEO\nKeyword research using AI\nBacklink strategies\nTechnical SEO basics\nSEO content writing & AI optimization"
+      },
+      {
+        topic: "Module 5: Google Ads & Performance Marketing",
+        details: "Google Ads setup & structure\nSearch, Display, Video & Remarketing ads\nCampaign budgeting\nConversion tracking\nAI tools for ad optimization"
+      },
+      {
+        topic: "Module 6: Meta Ads (Facebook & Instagram Ads)",
+        details: "Ad Manager introduction\nCreative testing strategies\nAudience segmentation\nPixel setup & event tracking\nAI-driven ad recommendations"
+      },
+      {
+        topic: "Module 7: Content Writing & AI Copywriting",
+        details: "Copywriting frameworks\nSocial media content writing\nLanding page content\nAI writing workflows\nBrand voice development"
+      },
+      {
+        topic: "Module 8: Website Development (No-Code Tools)",
+        details: "WordPress basics\nTheme customization\nOn-page SEO setup\nLanding page creation with no-code AI tools"
+      },
+      {
+        topic: "Module 9: Email Marketing & Automation",
+        details: "Email automation tools\nLead nurturing\nFunnel creation\nAI-driven personalization"
+      },
+      {
+        topic: "Module 10: Analytics & Reporting",
+        details: "Google Analytics 4 (GA4)\nSocial media analytics\nDashboard building\nAI dashboards & insight generation"
+      },
+      {
+        topic: "Module 11: Influencer & Branding Strategies",
+        details: "Influencer collaboration\nBrand building\nCustomer psychology & communication"
+      },
+      {
+        topic: "Module 12: AI Lab & Soft Skills",
+        details: "Real-time AI marketing experiments\nLive project execution\nPresentation skills\nInterview training & resume building"
+      }
+    ],
+    featureDescription:
+      "The AI Integrated Digital Marketing program combines complete digital marketing training with AI-based marketing automation. Students work on live ad campaigns on Google & Meta, participate in an exclusive AI Lab for marketing automation, and gain practical experience through real case studies. The program prepares learners to build brands, run ads, optimize strategies, and use AI to scale marketing faster and smarter.",
+    learnFeatures: [
+      { title: "AI Marketing Tools" },
+      { title: "Google & Meta Ads" },
+      { title: "SEO & Content Strategy" },
+      { title: "Analytics & Automation" }
+    ],
+    mentorRatingBreakdown: [
+      { stars: 5, percentage: 90 },
+      { stars: 4, percentage: 6 },
+      { stars: 3, percentage: 2 },
+      { stars: 2, percentage: 1 },
+      { stars: 1, percentage: 1 }
+    ],
+    mentor: [
+      {
+        id: 1,
+        name: "Digital Marketing Experts",
+        designation: "AI & Marketing Specialists",
+        totalReviews: 160,
+        engagingPercentage: 88,
+        helpfulPercentage: 94,
+        clarityPercentage: 91,
+        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+      }
+    ],
+    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
   }
 ];

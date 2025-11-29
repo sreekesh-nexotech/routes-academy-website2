@@ -290,6 +290,32 @@ const testimonialsByCourse: { [key: number]: Testimonial[] } = {
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
     },
   ],
+  11: [
+    {
+      id: 1,
+      quote:
+        "This course transformed my digital marketing career with AI tools. Highly recommended!",
+      name: "Ameena Y.",
+      title: "Social Media Executive",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 2,
+      quote:
+        "AI-powered strategies helped me 3x my ROI in just 3 months. Amazing course!",
+      name: "Afsal R.",
+      title: "Performance Marketer",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "Practical AI tools and live projects made all the difference in my marketing career.",
+      name: "Aleena Z.",
+      title: "Digital Marketer",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
 };
 
 const SuccessStories = ({ courseId }: { courseId: number }) => {
