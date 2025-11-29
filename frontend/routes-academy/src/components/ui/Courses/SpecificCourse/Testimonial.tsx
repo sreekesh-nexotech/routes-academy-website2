@@ -206,6 +206,90 @@ const testimonialsByCourse: { [key: number]: Testimonial[] } = {
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
     },
   ],
+
+  // Course 8: Certified Business & Financial Analyst (CBFA)
+  8: [
+    {
+      id: 1,
+      quote:
+        "The multi-software training made me confident. I got a UAE job within 45 days.",
+      name: "Farhana K.",
+      title: "Accounts Assistant – Dubai",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
+    },
+    {
+      id: 2,
+      quote:
+        "Route Academy gave me practical knowledge in GST, ITR, Tally, and Excel. Highly recommend the CBFA program!",
+      name: "Abhiram R.",
+      title: "Accounts Executive",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "Excellent trainers and industry-based modules. AI tools are a big advantage.",
+      name: "Shameer M.",
+      title: "Junior Financial Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
+
+  // Course 9: Certified Business Analyst (CBA)
+  9: [
+    {
+      id: 1,
+      quote:
+        "Power BI sessions were the best. I created three dashboards and got placed as a reporting analyst.",
+      name: "Mishal N.",
+      title: "Reporting Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
+    },
+    {
+      id: 2,
+      quote:
+        "AI-integrated Excel made everything easier. The course is very practical and job-focused.",
+      name: "Akhila S.",
+      title: "Business Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "Route Academy's BA program gave me confidence to work in a data environment for the first time.",
+      name: "Arjun P.",
+      title: "Data Analyst",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
+
+  // Course 10: Human Resource Business Program (HR BP)
+  10: [
+    {
+      id: 1,
+      quote:
+        "The Excel and HRMS modules gave me confidence in handling real HR tasks.",
+      name: "Rasna M.",
+      title: "HR Executive",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
+    },
+    {
+      id: 2,
+      quote:
+        "Perfect course for HR beginners. Recruitment, payroll, and compliance were taught with real examples.",
+      name: "Shruthi R.",
+      title: "HR Coordinator",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
+    },
+    {
+      id: 3,
+      quote:
+        "Route Academy helped me switch to HR successfully. Practical training was excellent.",
+      name: "Nithin K.",
+      title: "HR Associate",
+      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
+    },
+  ],
 };
 
 const SuccessStories = ({ courseId }: { courseId: number }) => {

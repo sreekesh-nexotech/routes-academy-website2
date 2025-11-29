@@ -543,5 +543,291 @@ export const courses: Course[] = [
       }
     ],
     certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+  },
+  {
+    id: 8,
+    title: "Certified Business & Financial Analyst (CBFA)",
+    description:
+      "The Certified Business & Financial Analyst (CBFA) program is crafted to build highly skilled finance and business professionals equipped with modern accounting tools, global taxation knowledge, and AI-powered analytical skills. This program blends practical software training with essential financial theory, preparing learners for real corporate roles in India and abroad, especially GCC countries.",
+    category: "Finance, Accounting & ERP",
+    average_salary: "8-16 LPA",
+    mode_of_conduct: "Offline / Online",
+    placed_students: 92,
+    class_schedule: "As per convenience",
+    enrolled_students: 108,
+    emi: true,
+    image_url: "https://routesacademy.b-cdn.net/images/cbfa-course.png",
+    specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero.svg",
+    rating: 4.9,
+    home_img_url: "https://routesacademy.b-cdn.net/images/cbfa-course.png",
+    duration: "6 months",
+    session_duration: 1,
+    actual_price: 48000,
+    offer_price: 48000,
+    what_you_get: [
+      "100% Placement Support (India & GCC)",
+      "10+ Global Accounting Platforms",
+      "Real Filing Practice (GST, ITR, UAE VAT)",
+      "AI-Integrated Financial Analysis",
+      "NSDC & UGC-approved Training"
+    ],
+    curriculum_detailed: [
+      {
+        topic: "Module 1: SAP for Finance & Business Operations",
+        details: "Introduction to SAP ERP\nSAP FICO basics\nLedger, asset & cost center management\nBusiness process integration in SAP"
+      },
+      {
+        topic: "Module 2: UAE VAT & Corporate Tax",
+        details: "UAE VAT concepts & compliance\nCorporate Tax framework (9% CT)\nReturn filing procedures\nDocumentation & business compliance\nGCC taxation overview"
+      },
+      {
+        topic: "Module 3: AI-Enabled Excel for Decision Making",
+        details: "Advanced formulas & functions\nPivot tables & dashboards\nAI-powered automation & insights\nPredictive analysis using Excel AI tools"
+      },
+      {
+        topic: "Module 4: Zoho Books Accounting",
+        details: "Company setup\nInvoicing, inventory & banking\nGST integration\nReports generation & automation"
+      },
+      {
+        topic: "Module 5: GST Filing & Theory (India)",
+        details: "GST concepts & applicability\nInput/output tax mechanisms\nRegistration & compliance rules\nGSTR-1, 3B & annual return filing"
+      },
+      {
+        topic: "Module 6: GST in Tally Prime (Practical)",
+        details: "GST setup in Tally\nLedger & voucher entries\nGST reports & reconciliation\nE-invoice & E-way bill integration"
+      },
+      {
+        topic: "Module 7: Peachtree (Sage 50) Accounting",
+        details: "Company creation\nVendor/customer management\nFinancial statements & reporting\nMiddle East job-oriented training"
+      },
+      {
+        topic: "Module 8: QuickBooks Online (International Accounting)",
+        details: "Cloud accounting setup\nBank reconciliation\nSales, purchases & payroll\nReporting for SMEs & startups"
+      },
+      {
+        topic: "Module 9: AI Lab & Soft Skill Development",
+        details: "AI tools for accounting & analysis\nAutomation in business operations\nCommunication skills\nInterview preparation & resume building\nCorporate etiquette & career readiness"
+      }
+    ],
+    featureDescription:
+      "The CBFA program combines hands-on training in 10+ global accounting platforms with AI-powered financial analysis. With industry-standard tools like SAP, QuickBooks, Zoho, Tally, and real filing practice in GST, ITR, and UAE VAT, students become job-ready from day one. This program opens doors to finance careers in India and GCC countries.",
+    learnFeatures: [
+      { title: "Global Accounting Tools" },
+      { title: "UAE VAT & Corporate Tax" },
+      { title: "AI-Powered Excel Analysis" },
+      { title: "Real GST & ITR Filing" }
+    ],
+    mentorRatingBreakdown: [
+      { stars: 5, percentage: 88 },
+      { stars: 4, percentage: 7 },
+      { stars: 3, percentage: 3 },
+      { stars: 2, percentage: 1 },
+      { stars: 1, percentage: 1 }
+    ],
+    mentor: [
+      {
+        id: 1,
+        name: "Expert Faculty Team",
+        designation: "Finance & Accounting Specialists",
+        totalReviews: 145,
+        engagingPercentage: 85,
+        helpfulPercentage: 93,
+        clarityPercentage: 89,
+        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+      }
+    ],
+    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+  },
+  {
+    id: 9,
+    title: "Certified Business Analyst (CBA)",
+    description:
+      "The Certified Business Analyst (CBA) program is designed to prepare students for high-demand analytical roles across corporate, IT, finance, and operational sectors. With a strong focus on AI-Integrated Excel and Power BI, this program equips learners with the ability to turn raw data into insights, build dashboards, automate workflows, and support strategic decision-making.",
+    category: "Data and Analytics",
+    average_salary: "7-14 LPA",
+    mode_of_conduct: "Offline / Online",
+    placed_students: 88,
+    class_schedule: "As per convenience",
+    enrolled_students: 102,
+    emi: true,
+    image_url: "https://routesacademy.b-cdn.net/images/cba-course.png",
+    specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero.svg",
+    rating: 4.9,
+    home_img_url: "https://routesacademy.b-cdn.net/images/cba-course.png",
+    duration: "6 months",
+    session_duration: 1,
+    actual_price: 46000,
+    offer_price: 46000,
+    what_you_get: [
+      "100% Placement Support",
+      "AI-powered Excel & Power BI Training",
+      "Real Business Case Studies",
+      "NSDC & UGC-approved Training",
+      "Industry Expert Trainers"
+    ],
+    curriculum_detailed: [
+      {
+        topic: "Module 1: Foundations of Business Analysis",
+        details: "Business processes & systems\nRequirements gathering\nProblem-solving frameworks\nIntroduction to analytics-driven decision making"
+      },
+      {
+        topic: "Module 2: AI-Integrated Excel (Advanced Analytics)",
+        details: "Advanced formulas & functions\nPivot tables, Power Query & data modeling\nDashboard creation\nAI-powered Excel tools for automation\nPredictive insights using Excel AI"
+      },
+      {
+        topic: "Module 3: Power BI (Data Visualization & BI Tools)",
+        details: "Power BI interface & workflow\nData cleaning & transformation\nDAX basics\nInteractive dashboards\nReal-time business intelligence reporting\nPublishing & sharing dashboards"
+      },
+      {
+        topic: "Module 4: SQL Fundamentals (Optional Add-On)",
+        details: "Basic queries\nFiltering, sorting & joins\nData extraction for analysis"
+      },
+      {
+        topic: "Module 5: Introduction to Python for Analytics (Optional Add-On)",
+        details: "Basics of data analysis\nWorking with pandas\nVisualization fundamentals"
+      },
+      {
+        topic: "Module 6: Corporate Reporting & Insights",
+        details: "Building business reports\nKPI identification and interpretation\nPreparing management-level insights\nIndustry case studies"
+      },
+      {
+        topic: "Module 7: AI Tools for Analysts",
+        details: "AI-driven data analysis tools\nReport automation\nAI-based forecasting\nWorkflow streamlining"
+      },
+      {
+        topic: "Module 8: Soft Skills & Professional Development",
+        details: "Communication for analysts\nPresentation skills\nResume building & interview training\nCorporate etiquette"
+      }
+    ],
+    featureDescription:
+      "The CBA program combines AI-powered learning with Excel and Power BI, offering fully practical, project-oriented training. Students work on real business case studies and dashboard projects, gaining skills used by top MNCs. Industry expert trainers with real corporate experience ensure students graduate job-ready for roles as Data Analysts, Business Analysts, Reporting Specialists, and Process Consultants.",
+    learnFeatures: [
+      { title: "AI-Integrated Excel" },
+      { title: "Power BI Mastery" },
+      { title: "Business Intelligence" },
+      { title: "Dashboard Creation" }
+    ],
+    mentorRatingBreakdown: [
+      { stars: 5, percentage: 87 },
+      { stars: 4, percentage: 6 },
+      { stars: 3, percentage: 4 },
+      { stars: 2, percentage: 2 },
+      { stars: 1, percentage: 1 }
+    ],
+    mentor: [
+      {
+        id: 1,
+        name: "Business Analytics Experts",
+        designation: "Data & Analytics Specialists",
+        totalReviews: 138,
+        engagingPercentage: 84,
+        helpfulPercentage: 91,
+        clarityPercentage: 88,
+        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+      }
+    ],
+    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+  },
+  {
+    id: 10,
+    title: "Human Resource Business Program (HR BP)",
+    description:
+      "The Human Resource Business Program (HR BP) prepares learners to become modern, strategic HR professionals who can manage people, processes, and organizational development. This program covers the complete HR lifecycle—from recruitment to payroll, compliance, performance management, HR analytics, Excel mastery, and HRMS tools—making students job-ready for HR roles in India and GCC.",
+    category: "HR & People Analytics",
+    average_salary: "6-12 LPA",
+    mode_of_conduct: "Offline / Online",
+    placed_students: 94,
+    class_schedule: "As per convenience",
+    enrolled_students: 110,
+    emi: true,
+    image_url: "https://routesacademy.b-cdn.net/images/hr-bp-course.png",
+    specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero.svg",
+    rating: 4.9,
+    home_img_url: "https://routesacademy.b-cdn.net/images/hr-bp-course.png",
+    duration: "6 months",
+    session_duration: 1,
+    actual_price: 44000,
+    offer_price: 44000,
+    what_you_get: [
+      "100% Placement Support",
+      "Complete HR Generalist Training",
+      "Dedicated Excel for HR Module",
+      "HRMS & Payroll Software Exposure",
+      "Real HR Document Preparation"
+    ],
+    curriculum_detailed: [
+      {
+        topic: "Module 1: Fundamentals of Human Resource Management",
+        details: "Scope and functions of HR\nHR roles in modern organizations\nHR strategy & business alignment\nHR policies & procedures"
+      },
+      {
+        topic: "Module 2: Talent Acquisition & Recruitment",
+        details: "Job description drafting\nSourcing techniques\nResume screening & shortlisting\nInterview coordination\nApplicant Tracking Systems (ATS)\nOnboarding & induction"
+      },
+      {
+        topic: "Module 3: Payroll Management",
+        details: "CTC structure & salary components\nAttendance & leave management\nPayroll processing\nPayslips, reimbursement & compliances\nHands-on payroll software"
+      },
+      {
+        topic: "Module 4: Performance Management",
+        details: "Goals, KPIs & KRAs\nAppraisal systems\n360-degree feedback\nEmployee engagement initiatives\nReward & recognition"
+      },
+      {
+        topic: "Module 5: Labour Laws & Compliance",
+        details: "Shops & Commercial Establishment Act\nPF, ESI, Bonus & Gratuity\nPOSH Act\nEmployer statutory responsibilities\nHR compliance documentation"
+      },
+      {
+        topic: "Module 6: Excel for HR (Practical Module)",
+        details: "HR-focused Excel skills\nVLOOKUP, XLOOKUP, Pivot Tables\nAttendance sheets, payroll sheets, salary breakup\nHR dashboards & MIS reporting\nData cleaning & automation for HR tasks"
+      },
+      {
+        topic: "Module 7: HR Analytics",
+        details: "HR metrics & KPIs\nHiring, attrition, productivity analytics\nDashboard building using Excel\nData-driven decision-making"
+      },
+      {
+        topic: "Module 8: HRMS & Digital HR Tools",
+        details: "Introduction to HRMS\nEmployee database management\nDigital attendance, payroll systems\nRecruitment & performance management tools\nCloud HR workflow tools"
+      },
+      {
+        topic: "Module 9: HR Operations & Administration",
+        details: "Employee lifecycle management\nHR documentation & letters\nHR audits & file management\nCorporate HR reporting"
+      },
+      {
+        topic: "Module 10: Soft Skills & Corporate Behaviour",
+        details: "Communication skills\nConflict management\nProfessional etiquette\nHR interview preparation\nResume building"
+      },
+      {
+        topic: "Module 11: Practical HR Training / Internship",
+        details: "Real HR document preparation\nPayroll and recruitment practice\nHRMS live simulations\nInternship support with HR departments"
+      }
+    ],
+    featureDescription:
+      "The HR BP program provides complete HR Generalist, HR Operations, and HR Analytics training with dedicated Excel for HR modules. Faculty with 10–20 years of HR industry experience teach using real HR documents and practical simulations. Students gain exposure to HRMS and payroll software, preparing them for HR roles in India and GCC countries.",
+    learnFeatures: [
+      { title: "Complete HR Lifecycle" },
+      { title: "Excel for HR Analytics" },
+      { title: "HRMS & Payroll Tools" },
+      { title: "Labour Law Compliance" }
+    ],
+    mentorRatingBreakdown: [
+      { stars: 5, percentage: 89 },
+      { stars: 4, percentage: 6 },
+      { stars: 3, percentage: 3 },
+      { stars: 2, percentage: 1 },
+      { stars: 1, percentage: 1 }
+    ],
+    mentor: [
+      {
+        id: 1,
+        name: "Senior HR Professionals",
+        designation: "HR & People Analytics Experts",
+        totalReviews: 152,
+        engagingPercentage: 86,
+        helpfulPercentage: 92,
+        clarityPercentage: 90,
+        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+      }
+    ],
+    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
   }
 ];
