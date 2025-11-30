@@ -5,7 +5,7 @@ import React from "react";
 const Statistics: React.FC = () => {
   const stats = [
     { number: "90%", title: "Placement" },
-    { number: "344+", title: "Students" },
+    { number: "1100+", title: "Students" },
     { number: "125+", title: "1:1 Mentoring" },
     { number: "40+", title: "Hired in GCC" },
   ];
