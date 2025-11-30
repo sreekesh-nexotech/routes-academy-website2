@@ -62,7 +62,7 @@ const testimonials = [
     ],
   },
   {
-    image: 'https://routesacademy.b-cdn.net/images/testimonial%20(1).png',
+    image: 'https://routesacademy.b-cdn.net/images/Student%20Review%20no.04%20-%20Hridya%20M.jpg',
     name: 'Hridya M',
     role: 'Placed at Malabar Gold & Diamonds',
     courses: [
