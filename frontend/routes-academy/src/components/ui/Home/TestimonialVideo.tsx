@@ -67,7 +67,7 @@ const TestimonialVideo: React.FC = () => {
     >
       {/* Heading */}
       <h2 className="w-[90vw] sm:w-[85vw] md:w-[80vw] lg:w-[70vw] px-4 sm:px-6 md:px-8 text-center font-semibold text-base sm:text-lg md:text-xl lg:text-2xl leading-tight text-blue-950">
-        A small glimpse of what our students say about us
+        Reset, Restart, Rebuild.
       </h2>
 
       {/* Video area */}

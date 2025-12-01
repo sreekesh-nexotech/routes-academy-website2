@@ -43,7 +43,7 @@ const testimonials = [
   {
     image: 'https://routesacademy.b-cdn.net/images/testimonial%20(4).png',
     name: 'Sreedhul K',
-    role: 'intern at an MNC',
+    role: 'Placed at Nandilath Gmart',
     courses: [
       
       { 
@@ -62,9 +62,9 @@ const testimonials = [
     ],
   },
   {
-    image: 'https://routesacademy.b-cdn.net/images/testimonial%20(1).png',
-    name: 'Karthikeyan T P',
-    role: 'intern at an MNC',
+    image: 'https://routesacademy.b-cdn.net/images/Student%20Review%20no.04%20-%20Hridya%20M.jpg',
+    name: 'Hridya M',
+    role: 'Placed at Malabar Gold & Diamonds',
     courses: [
       
       { 
