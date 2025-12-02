@@ -84,8 +84,6 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
   const swiperRef = useRef<SwiperClass | null>(null);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
- 
-
   return (
     <div
       className="bg-[#F8FAFF] rounded-2xl p-6 sm:p-8 space-y-8 scroll-mt-30"
@@ -101,13 +99,14 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
           spaceBetween={30}
           slidesPerView={1}
           className="w-full"
-          onSlideChange={(s) => setActiveIndex((((s as unknown) as SwiperClass).activeIndex) ?? 0)}
+          onSlideChange={(s) =>
+            setActiveIndex((s as unknown as SwiperClass).activeIndex ?? 0)
+          }
           onSwiper={(s) => (swiperRef.current = s as SwiperClass)}
         >
           {course.mentor.map((mentor: Mentor, index: number) => (
             <SwiperSlide key={index}>
               <div className="flex flex-col xl:flex-row items-start xl:items-center gap-6">
-                
                 <div className="flex items-start gap-4 sm:gap-6 flex-1 min-w-0">
                   <div className="rounded-full overflow-hidden w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 flex-shrink-0 border-4 border-gray-100 shadow-md">
                     <Image
@@ -127,12 +126,14 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
                       {mentor.designation}
                     </p>
                     <p className="text-sm sm:text-base text-gray-600 mt-2">
-                      {mentor.totalReviews ? `${mentor.totalReviews} reviews` : ""}
+                      {mentor.totalReviews
+                        ? `${mentor.totalReviews} reviews`
+                        : ""}
                     </p>
                   </div>
                 </div>
 
-                <div className="flex gap-4 sm:gap-6 lg:gap-8 flex-shrink-0 w-full xl:w-auto justify-center xl:justify-end">
+                <div className="flex gap-2 sm:gap-3 lg:gap-4 flex-shrink-0 w-full xl:w-auto justify-center xl:justify-end">
                   <CircularProgress
                     percentage={mentor.engagingPercentage ?? 78}
                     label="Engaging"
@@ -179,10 +180,10 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
 
         <div className="flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8">
           <div className="flex flex-col items-center">
-              <div className="text-5xl sm:text-6xl font-bold text-[#172554]">
-              {(course.rating && typeof course.rating === 'number')
+            <div className="text-5xl sm:text-6xl font-bold text-[#172554]">
+              {course.rating && typeof course.rating === "number"
                 ? course.rating.toFixed(1)
-                : '0.0'}
+                : "0.0"}
             </div>
             <div className="flex items-center gap-1 my-2">
               {[...Array(5)].map((_, i) => (

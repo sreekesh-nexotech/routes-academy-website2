@@ -29,10 +29,10 @@ const Footer = () => {
         <div>
           <div className="flex-shrink-0 mb-[2.75rem]">
             <Image
-              src="https://routesacademy.b-cdn.net/icons/Route%20Logo%20new%20SVG.svg"
+              src="https://routesacademy.b-cdn.net/images/ROUTE%20LOGO-06.png"
               alt="Routes academy Logo"
-              width={120}
-              height={36}
+              width={130}
+              height={46}
             />
           </div>
           <h4 className="font-normal text-neutral-700 text-[1rem] sm:text-[1.125rem] leading-[1.75rem] mb-[2.75rem]">
