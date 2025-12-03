@@ -17,7 +17,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   stats,
 }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-8">
+    <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-8 min-h-[600px] md:min-h-[400px]">
       {/* Testimonial Image */}
       <div className="w-48 h-48 md:w-1/3 md:h-auto md:aspect-square flex-shrink-0">
         <img
