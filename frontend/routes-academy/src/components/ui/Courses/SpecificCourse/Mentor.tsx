@@ -126,9 +126,7 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
                       {mentor.designation}
                     </p>
                     <p className="text-sm sm:text-base text-gray-600 mt-2">
-                      {mentor.totalReviews
-                        ? `${mentor.totalReviews} reviews`
-                        : ""}
+                      {mentor.qualification}
                     </p>
                   </div>
                 </div>

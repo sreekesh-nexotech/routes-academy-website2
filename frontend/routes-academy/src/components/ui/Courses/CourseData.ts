@@ -13,7 +13,7 @@ export interface Mentor {
   id: number;
   name: string;
   designation: string;
-  totalReviews: number;
+  qualification: string;
   image: string;
   engagingPercentage?: number;
   helpfulPercentage?: number;
@@ -100,8 +100,8 @@ export const courses: Course[] = [
       {
         id: 1,
         name: "Harsha T",
-        designation: "Accounts Trainer & Educator",
-        totalReviews: 150,
+        designation: "Accounting, GST , Tally Prime, SAP & Zoho Books",
+        qualification: "M.Com (Finance)",
         engagingPercentage: 78,
         helpfulPercentage: 92,
         clarityPercentage: 88,
@@ -164,8 +164,8 @@ export const courses: Course[] = [
       {
         id: 1,
         name: "Abhin Prakash",
-        designation: "Data Analyst & Instructor",
-        totalReviews: 150,
+        designation: "Data Analytics, Excel & Power BI",
+        qualification: "BBA in Finance",
         engagingPercentage: 85,
         helpfulPercentage: 90,
         clarityPercentage: 92,
@@ -175,8 +175,8 @@ export const courses: Course[] = [
       {
         id: 2,
         name: "Adithya P T",
-        designation: "Data Analyst & Trainer",
-        totalReviews: 150,
+        designation: "Microsoft Certified Trainer, SQL & Python",
+        qualification: "M.Sc. Computer Science (Data Science)",
         engagingPercentage: 80,
         helpfulPercentage: 88,
         clarityPercentage: 86,
@@ -238,8 +238,8 @@ export const courses: Course[] = [
       {
         id: 1,
         name: "Adithya P T",
-        designation: "Data Analyst & Trainer",
-        totalReviews: 150,
+        designation: "Microsoft Certified Trainer, SQL & Python",
+        qualification: "M.Sc. Computer Science (Data Science)",
         engagingPercentage: 80,
         helpfulPercentage: 88,
         clarityPercentage: 86,
@@ -305,8 +305,8 @@ export const courses: Course[] = [
       {
         id: 1,
         name: "Abhin Prakash",
-        designation: "Data Analyst & Instructor",
-        totalReviews: 150,
+        designation: "Data Analytics, Excel & Power BI",
+        qualification: "BBA in Finance",
         engagingPercentage: 85,
         helpfulPercentage: 90,
         clarityPercentage: 92,
@@ -316,8 +316,8 @@ export const courses: Course[] = [
       {
         id: 2,
         name: "Adithya P T",
-        designation: "Data Analyst & Trainer",
-        totalReviews: 150,
+        designation: "Microsoft Certified Trainer, SQL & Python",
+        qualification: "M.Sc. Computer Science (Data Science)",
         engagingPercentage: 80,
         helpfulPercentage: 88,
         clarityPercentage: 86,
@@ -382,8 +382,8 @@ export const courses: Course[] = [
       {
         id: 1,
         name: "Shilpa C",
-        designation: "Excel Faculty & Data Entry Specialist",
-        totalReviews: 150,
+        designation: "Excel Training, Accounting & Data Management",
+        qualification: "B.Com (Co-operation), ITI (COPA)",
         engagingPercentage: 70,
         helpfulPercentage: 75,
         clarityPercentage: 72,
@@ -444,8 +444,8 @@ export const courses: Course[] = [
       {
         id: 1,
         name: "Harsha T",
-        designation: "Accounts Trainer & Educator",
-        totalReviews: 150,
+        designation: "Accounting, GST , Tally Prime, SAP & Zoho Books",
+        qualification: "M.Com (Finance)",
         engagingPercentage: 78,
         helpfulPercentage: 92,
         clarityPercentage: 88,
@@ -535,7 +535,7 @@ export const courses: Course[] = [
         id: 1,
         name: "Industry Specialists",
         designation: "Logistics & AI Experts",
-        totalReviews: 120,
+        qualification: "BBA in Finance",
         engagingPercentage: 82,
         helpfulPercentage: 90,
         clarityPercentage: 86,
@@ -629,7 +629,7 @@ export const courses: Course[] = [
         id: 1,
         name: "Expert Faculty Team",
         designation: "Finance & Accounting Specialists",
-        totalReviews: 145,
+        qualification: "BBA in Finance",
         engagingPercentage: 85,
         helpfulPercentage: 93,
         clarityPercentage: 89,
@@ -719,7 +719,7 @@ export const courses: Course[] = [
         id: 1,
         name: "Business Analytics Experts",
         designation: "Data & Analytics Specialists",
-        totalReviews: 138,
+        qualification: "BBA in Finance",
         engagingPercentage: 84,
         helpfulPercentage: 91,
         clarityPercentage: 88,
@@ -821,7 +821,7 @@ export const courses: Course[] = [
         id: 1,
         name: "Senior HR Professionals",
         designation: "HR & People Analytics Experts",
-        totalReviews: 152,
+        qualification: "BBA in Finance",
         engagingPercentage: 86,
         helpfulPercentage: 92,
         clarityPercentage: 90,
@@ -927,7 +927,7 @@ export const courses: Course[] = [
         id: 1,
         name: "Digital Marketing Experts",
         designation: "AI & Marketing Specialists",
-        totalReviews: 160,
+        qualification: "BBA in Finance",
         engagingPercentage: 88,
         helpfulPercentage: 94,
         clarityPercentage: 91,
