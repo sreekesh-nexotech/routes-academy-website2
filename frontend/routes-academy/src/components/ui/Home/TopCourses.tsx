@@ -39,7 +39,7 @@ const TopCourses: React.FC = () => {
                 lessons={moduleCounts[index]}
                 students={`${course.placed_students} Students`}
                 duration="Flexible"
-                skills={course.description}
+                skills={course.card_description}
                 price={`Avg Salary: ${course.average_salary}`}
                 image={course.home_img_url || course.image_url}
                 badgeText={course.mode_of_conduct}

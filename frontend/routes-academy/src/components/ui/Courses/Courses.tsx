@@ -163,11 +163,11 @@ function CourseCard({ course }: { course: Course }) {
           }`}
         />
         <div className="p-[1rem] flex flex-col flex-grow">
-          <h5 className="font-bold text-[#172554] text-[1.125rem] md:text-[1.3125rem] leading-[1.5rem] md:leading-[1.875rem] mb-[0.1rem] min-h-[3rem]">
+          <h5 className="font-bold text-[#172554] text-[1.125rem] md:text-[1.3125rem] leading-[1.5rem] md:leading-[1.875rem] mb-[0.1rem] min-h-[3.5rem]">
             {course.title}
           </h5>
           <p className="font-(family-name:--font-onest) font-normal text-[#404040] text-[.75rem] md:text-[.875rem] leading-[1.125rem] mb-[1rem] flex-grow">
-            {course.description}
+            {course.card_description}
           </p>
           <div className="mt-auto">
             <div className="grid grid-cols-3 gap-[1.5] font-medium text-[#172554] text-[.875rem] md:text-[1rem] leading-[1.3125rem] md:leading-[1.5rem] mb-[.25rem]">
