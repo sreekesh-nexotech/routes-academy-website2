@@ -29,6 +29,10 @@ const companiesData = [
     src: "https://routesacademy.b-cdn.net/icons/SAP_2011_logo.png",
     alt: "SAP",
   },
+  {
+    src: "https://routesacademy.b-cdn.net/icons/American%20Board%20of%20Education%20LOGO.png",
+    alt: "American Board Education Logo",
+  },
   
 ];
 
