@@ -167,7 +167,7 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "Abhin Prakash",
+        name: "Abin Prakash",
         designation: "Data Analytics, Excel & Power BI",
         qualification: "BBA in Finance",
         engagingPercentage: 85,
@@ -310,7 +310,7 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "Abhin Prakash",
+        name: "Abin Prakash",
         designation: "Data Analytics, Excel & Power BI",
         qualification: "BBA in Finance",
         engagingPercentage: 85,
@@ -389,7 +389,7 @@ export const courses: Course[] = [
       {
         id: 1,
         name: "Shilpa C",
-        designation: "Excel Training, Accounting & Data Management",
+        designation: "Microsoft Certifed Trainer , Account",
         qualification: "B.Com (Co-operation), ITI (COPA)",
         engagingPercentage: 70,
         helpfulPercentage: 75,
