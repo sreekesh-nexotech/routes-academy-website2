@@ -31,23 +31,23 @@ const CourseCard: React.FC<CourseCardProps> = ({
   href,
 }) => {
   return (
-    <div className="bg-white rounded-3xl shadow-xl p-4 flex flex-col justify-between gap-4 flex-1 min-w-[18rem] max-w-sm sm:max-w-md lg:min-w-[20rem] xl:max-w-md">
+    <div className="bg-white rounded-3xl shadow-xl p-4 flex flex-col gap-4 flex-1 min-w-[18rem] max-w-sm sm:max-w-md lg:min-w-[20rem] xl:max-w-md min-h-[35rem]">
       {/* Course Image */}
-      <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden">
+      <div className="relative h-64 sm:h-72 rounded-3xl overflow-hidden flex-shrink-0">
         {/* Use object-center for better vertical alignment and aspect ratio control */}
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover object-center"
+          className="object-cover object-top"
         />
       </div>
 
       {/* Course Details */}
-      <div className="flex flex-col gap-6 px-1">
+      <div className="flex flex-col gap-6 px-1 flex-grow">
         {/* Title and Rating */}
         <div className="flex flex-col gap-4">
-          <div className="flex justify-between items-start gap-4">
+          <div className="flex justify-between items-start gap-4 min-h-[3.5rem]">
             <h4 className="font-onest font-semibold text-xl sm:text-2xl leading-7 tracking-tight text-[#18181B] flex-1">
               {title}
             </h4>
@@ -60,21 +60,21 @@ const CourseCard: React.FC<CourseCardProps> = ({
           </div>
 
           {/* Course Stats */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm sm:text-base">
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-2">
                 <Book className="w-5 h-5 text-[#104EFF]" strokeWidth={1.5} />
                 <span className="font-onest font-normal text-[#737373]">
                   {lessons}
                 </span>
               </div>
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-2">
                 <User className="w-5 h-5 fill-[#104EFF] text-[#104EFF]" />
                 <span className="font-onest font-normal text-[#737373]">
                   {students}
                 </span>
               </div>
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5 text-[#104EFF]" strokeWidth={1.5} />
                 <span className="font-onest font-normal text-[#737373]">
                   {duration}
@@ -88,7 +88,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
         </div>
 
         {/* Divider */}
-        <div className="border-t border-[#27272A] opacity-20 w-full my-1"></div>
+        <div className="border-t border-[#27272A] opacity-20 w-full my-1 mt-auto"></div>
 
         {/* Price and CTA */}
         <div className="flex justify-between items-center gap-4">

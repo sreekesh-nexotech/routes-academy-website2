@@ -30,10 +30,10 @@ const Header = () => {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                src="https://routesacademy.b-cdn.net/icons/Route%20Logo%20new%20SVG.svg"
+                src="https://routesacademy.b-cdn.net/images/ROUTE%20LOGO-06.png"
                 alt="Routes academy Logo"
-                width={120}
-                height={35}
+                width={130}
+                height={45}
               />
             </Link>
           </div>
@@ -48,7 +48,12 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <ButtonLink href="https://routesacademy.com/all-courses/" label="Login" variant="secondary"  isTarget={true} />
+            <ButtonLink
+              href="https://routesacademy.com/all-courses/"
+              label="Login"
+              variant="secondary"
+              isTarget={true}
+            />
             <ButtonLink href="/courses" label="See Courses" variant="primary" />
           </nav>
 

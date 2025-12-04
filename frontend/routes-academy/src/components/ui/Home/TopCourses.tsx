@@ -20,7 +20,7 @@ const TopCourses: React.FC = () => {
             <h2 className="font-poppins font-medium text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-[#172554]">
               Top Recommended Courses for Career Acceleration
             </h2>
-            <p className="font-onest font-medium text-lg sm:text-xl leading-relaxed tracking-tight text-[#404040]">
+            <p className="font-onest mb-5 font-medium text-lg sm:text-xl leading-relaxed tracking-tight text-[#404040]">
               Discover Industry-Validated Courses with Guaranteed Career
               Pathways
             </p>

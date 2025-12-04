@@ -14,6 +14,10 @@ const companiesData = [
     alt: "BFSI",
   },
   {
+    src: "https://routesacademy.b-cdn.net/images/zoho.png",
+    alt: "Zoho",
+  },
+  {
     src: "https://routesacademy.b-cdn.net/icons/732d296dbd6c95ab945e2be9ce1e0d16.png",
     alt: "Certification",
   },
@@ -25,6 +29,7 @@ const companiesData = [
     src: "https://routesacademy.b-cdn.net/icons/SAP_2011_logo.png",
     alt: "SAP",
   },
+  
 ];
 
 const Companies: React.FC = () => {
