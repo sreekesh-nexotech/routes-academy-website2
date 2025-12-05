@@ -24,6 +24,7 @@ export interface Course {
   id: number;
   title: string;
   description: string;
+  card_description: string;
   category: string;
   average_salary: string;
   mode_of_conduct: string;
@@ -57,6 +58,8 @@ export const courses: Course[] = [
     title: "Career Program in Accounting & Taxation",
     description:
       "The CPAT (Career Program in Accounting & Taxation) is a 6-month comprehensive program designed to bridge the gap 'From Campus to Corporate'...",
+    card_description:
+      "Master accounting, taxation, GST, Tally Prime, SAP & Zoho Books in this 6-month comprehensive corporate-ready program.",
     category: "Finance, Accounting & ERP",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
@@ -119,6 +122,7 @@ export const courses: Course[] = [
     id: 2,
     title: "Data Analysis",
     description: "Unlock the power of data...",
+    card_description: "Transform raw data into actionable insights using Advanced Excel, SQL, Power BI & Python for strategic decisions.",
     category: "Data and Analytics",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
@@ -163,7 +167,7 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "Abhin Prakash",
+        name: "Abin Prakash",
         designation: "Data Analytics, Excel & Power BI",
         qualification: "BBA in Finance",
         engagingPercentage: 85,
@@ -195,6 +199,7 @@ export const courses: Course[] = [
     id: 3,
     title: "Power BI and SQL Program",
     description: "SQL is the backbone...",
+    card_description: "Master SQL database querying and Power BI visualization to build interactive dashboards and data models.",
     category: "Data and Analytics",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
@@ -258,6 +263,7 @@ export const courses: Course[] = [
     id: 4,
     title: "Power BI",
     description: "Power BI is a business analytics tool...",
+    card_description: "Create stunning interactive dashboards with Power BI, master DAX formulas and unlock AI-powered business insights.",
     category: "Data and Analytics",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
@@ -304,7 +310,7 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "Abhin Prakash",
+        name: "Abin Prakash",
         designation: "Data Analytics, Excel & Power BI",
         qualification: "BBA in Finance",
         engagingPercentage: 85,
@@ -336,6 +342,7 @@ export const courses: Course[] = [
     id: 5,
     title: "AI-Integrated Excel",
     description: "Unlock the next level of data management...",
+    card_description: "Elevate your Excel skills with AI-powered analytics, smart automation and advanced data management techniques.",
     category: "AI, ML& Cloud",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
@@ -382,7 +389,7 @@ export const courses: Course[] = [
       {
         id: 1,
         name: "Shilpa C",
-        designation: "Excel Training, Accounting & Data Management",
+        designation: "Microsoft Certifed Trainer , Account",
         qualification: "B.Com (Co-operation), ITI (COPA)",
         engagingPercentage: 70,
         helpfulPercentage: 75,
@@ -401,6 +408,7 @@ export const courses: Course[] = [
     id: 6,
     title: "SAP S/4HANA FICO",
     description: "The SAP S/4HANA FICO – Learning Hub Program...",
+    card_description: "Learn SAP Financial Accounting & Controlling with hands-on server access and real-world configuration practice.",
     category: "Finance, Accounting & ERP",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
@@ -459,6 +467,8 @@ export const courses: Course[] = [
     title: "AI-Integrated Logistics & Supply Chain Management",
     description:
       "The AI-Integrated Logistics & Supply Chain Management program is designed to prepare learners for the future of global trade, operations, and supply chain intelligence. This program blends core logistics knowledge with modern AI applications, helping students master end-to-end supply chain workflows, automation tools, predictive analytics, and smart decision-making.",
+    card_description:
+      "Prepare for the future of global trade with AI-powered logistics & supply chain intelligence.",
     category: "Logistics",
     average_salary: "6-12 LPA",
     mode_of_conduct: "Offline / Online",
@@ -549,6 +559,8 @@ export const courses: Course[] = [
     title: "Certified Business & Financial Analyst (CBFA)",
     description:
       "The Certified Business & Financial Analyst (CBFA) program is crafted to build highly skilled finance and business professionals equipped with modern accounting tools, global taxation knowledge, and AI-powered analytical skills. This program blends practical software training with essential financial theory, preparing learners for real corporate roles in India and abroad, especially GCC countries.",
+    card_description:
+      "Build finance & business analysis skills with modern accounting tools, global taxation, and AI analytics.",
     category: "Finance, Accounting & ERP",
     average_salary: "8-16 LPA",
     mode_of_conduct: "Offline / Online",
@@ -643,6 +655,8 @@ export const courses: Course[] = [
     title: "Certified Business Analyst (CBA)",
     description:
       "The Certified Business Analyst (CBA) program is designed to prepare students for high-demand analytical roles across corporate, IT, finance, and operational sectors. With a strong focus on AI-Integrated Excel and Power BI, this program equips learners with the ability to turn raw data into insights, build dashboards, automate workflows, and support strategic decision-making.",
+    card_description:
+      "Master AI-Integrated Excel and Power BI to turn data into insights and support strategic decision-making.",
     category: "Data and Analytics",
     average_salary: "7-14 LPA",
     mode_of_conduct: "Offline / Online",
@@ -733,6 +747,8 @@ export const courses: Course[] = [
     title: "Human Resource Business Program (HR BP)",
     description:
       "The Human Resource Business Program (HR BP) prepares learners to become modern, strategic HR professionals who can manage people, processes, and organizational development. This program covers the complete HR lifecycle—from recruitment to payroll, compliance, performance management, HR analytics, Excel mastery, and HRMS tools—making students job-ready for HR roles in India and GCC.",
+    card_description:
+      "Master the complete HR lifecycle from recruitment to payroll with HR analytics and HRMS tools.",
     category: "HR & People Analytics",
     average_salary: "6-12 LPA",
     mode_of_conduct: "Offline / Online",
@@ -835,6 +851,8 @@ export const courses: Course[] = [
     title: "AI Integrated Digital Marketing",
     description:
       "The AI Integrated Digital Marketing program is designed to create next-generation digital marketers who can leverage Artificial Intelligence to plan campaigns, analyze performance, and drive business growth. This program blends traditional digital marketing fundamentals with AI tools, automation platforms, content generation, analytics, and performance tracking, giving learners a strong competitive edge in today's digital-first world.",
+    card_description:
+      "Leverage AI to plan campaigns, analyze performance & drive business growth in digital marketing.",
     category: "Digital Marketing & Growth",
     average_salary: "6-13 LPA",
     mode_of_conduct: "Offline / Online",
