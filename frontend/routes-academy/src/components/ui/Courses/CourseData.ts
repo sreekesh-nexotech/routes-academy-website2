@@ -49,7 +49,8 @@ export interface Course {
   learnFeatures: LearnFeature[];
   mentorRatingBreakdown: MentorReviewBreakdown[];
   mentor: Mentor[];
-  certificate_img: string;
+  certificate_img: string | string[];
+  certificate_title?: string | string[];
 }
 
 export const courses: Course[] = [
@@ -111,7 +112,14 @@ export const courses: Course[] = [
         image: "https://routesacademy.b-cdn.net/images/mentor3.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/Microsoft%20Certificate.png",
+      "https://routesacademy.b-cdn.net/images/Zoho%20Certificate.png"
+    ],
+    certificate_title: [
+      "Certification By Microsoft",
+      "Certification By ZOHO"
+    ]
   },
 
   // ------------------------------
@@ -188,7 +196,16 @@ export const courses: Course[] = [
           "https://routesacademy.b-cdn.net/images/mentor2.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
+      "https://routesacademy.b-cdn.net/images/Microsoft%20Certificate.png",
+      "https://routesacademy.b-cdn.net/images/IBM%20certificate%20.jpeg.jpg"
+    ],
+    certificate_title: [
+      "Certification By National Skill Development Council",
+      "Certification By Microsoft",
+      "Certification By IBM"
+    ]
   },
 
   // ------------------------------
@@ -252,7 +269,14 @@ export const courses: Course[] = [
           "https://routesacademy.b-cdn.net/images/mentor2.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
+      "https://routesacademy.b-cdn.net/images/certificate1.png"
+    ],
+    certificate_title: [
+      "Certification By National Skill Development Council",
+      "Certification By National Skill Development Council2"
+    ]
   },
 
   // ------------------------------
@@ -331,7 +355,12 @@ export const courses: Course[] = [
           "https://routesacademy.b-cdn.net/images/mentor2.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
+    ],
+    certificate_title: [
+      "Certification By National Skill Development Council",
+    ]
   },
 
   // ------------------------------
@@ -397,7 +426,12 @@ export const courses: Course[] = [
         image: "https://routesacademy.b-cdn.net/images/mentor4.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png"
+    ],
+    certificate_title: [
+      "Certification By National Skill Development Council"
+    ]
   },
 
   // ------------------------------
@@ -460,7 +494,14 @@ export const courses: Course[] = [
         image: "https://routesacademy.b-cdn.net/images/mentor3.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/Microsoft%20Certificate.png",
+      "https://routesacademy.b-cdn.net/images/Zoho%20Certificate.png"
+    ],
+    certificate_title: [
+      "Certification By Microsoft",
+      "Certification By ZOHO"
+    ]
   },
   {
     id: 7,
@@ -552,7 +593,12 @@ export const courses: Course[] = [
         image: "https://routesacademy.b-cdn.net/images/mentor.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/ACE%20certificate.jpeg.jpg",
+    ],
+    certificate_title: [
+      "Certification by American Board of Education"
+    ]
   },
   {
     id: 8,
@@ -648,7 +694,12 @@ export const courses: Course[] = [
         image: "https://routesacademy.b-cdn.net/images/mentor.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png"
+    ],
+    certificate_title: [
+      "Certification By National Skill Development Council"
+    ]
   },
   {
     id: 9,
@@ -740,7 +791,12 @@ export const courses: Course[] = [
         image: "https://routesacademy.b-cdn.net/images/mentor.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png"
+    ],
+    certificate_title: [
+      "Certification By National Skill Development Council"
+    ]
   },
   {
     id: 10,
@@ -844,7 +900,12 @@ export const courses: Course[] = [
         image: "https://routesacademy.b-cdn.net/images/mentor.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png"
+    ],
+    certificate_title: [
+      "Certification By National Skill Development Council"
+    ]
   },
   {
     id: 11,
@@ -952,6 +1013,11 @@ export const courses: Course[] = [
         image: "https://routesacademy.b-cdn.net/images/mentor.png"
       }
     ],
-    certificate_img: "https://routesacademy.b-cdn.net/images/certificate1.png"
+    certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png"
+    ],
+    certificate_title: [
+      "Certification By National Skill Development Council"
+    ]
   }
 ];

@@ -66,7 +66,10 @@ export default function CoursePage(props: CoursePageProps) {
             <BookACallBanner />
 
             {/* Certification */}
-            <CertificationSection img={course.certificate_img} />
+            <CertificationSection
+              img={course.certificate_img}
+              title={course.certificate_title}
+            />
           </div>
         </div>
       </div>
