@@ -1,8 +1,9 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import type { Swiper as SwiperClass } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const CertificationSection: React.FC<{
@@ -41,6 +42,12 @@ const CertificationSection: React.FC<{
               setActiveIndex((s as unknown as SwiperClass).activeIndex ?? 0)
             }
             onSwiper={(s) => (swiperRef.current = s as SwiperClass)}
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
           >
             {certificates.map((certificate, index) => (
               <SwiperSlide key={index}>
