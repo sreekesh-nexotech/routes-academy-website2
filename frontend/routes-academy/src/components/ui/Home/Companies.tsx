@@ -22,8 +22,8 @@ const companiesData = [
     alt: "Certification",
   },
   {
-    src: "https://routesacademy.b-cdn.net/icons/STED.a89f7934.png",
-    alt: "STED",
+    src: "https://routesacademy.b-cdn.net/images/UGC%20-%20NCVET%20Logo.png",
+    alt: "UGC logo",
   },
   {
     src: "https://routesacademy.b-cdn.net/icons/SAP_2011_logo.png",
@@ -33,7 +33,6 @@ const companiesData = [
     src: "https://routesacademy.b-cdn.net/icons/American%20Board%20of%20Education%20LOGO.png",
     alt: "American Board Education Logo",
   },
-  
 ];
 
 const Companies: React.FC = () => {
@@ -56,7 +55,11 @@ const Companies: React.FC = () => {
               alt={cert.alt}
               width={160}
               height={90}
-              className="object-contain w-[85%] h-[85%]"
+              className={`object-contain ${
+                cert.alt === "UGC logo"
+                  ? "w-[180%] h-[180%]"
+                  : "w-[85%] h-[85%]"
+              }`}
               unoptimized
             />
           </div>
