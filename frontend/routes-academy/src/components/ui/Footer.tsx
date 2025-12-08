@@ -40,7 +40,7 @@ const Footer = () => {
           </h4>
           <div className="flex gap-[1rem] mb-[6rem]">
             <Link
-              href="https://www.facebook.com/share/1GXvuJf6Ms/?mibextid=wwXIfr"
+              href="https://share.google/IcyUIRRI7VGYSQ9Yi"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -60,7 +60,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://www.instagram.com/routeacademyofficial?igsh=MXJpeGlnMmNoaGY3dQ=="
+              href="https://www.instagram.com/routeupskillacademy?igsh=azZ5ZjA0OWJtOTc2&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -72,7 +72,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://www.linkedin.com/company/routes-academy/"
+              href="https://www.linkedin.com/company/route-upskill-academy/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -84,7 +84,7 @@ const Footer = () => {
               />
             </Link>
             <Link
-              href="https://youtube.com/@routesacademyofficial?si=BQj0Jng_TXJXD7zE"
+              href="https://www.youtube.com/channel/UCTrWMOUWTOkL3pFq8LyM2bg"
               target="_blank"
               rel="noopener noreferrer"
             >
