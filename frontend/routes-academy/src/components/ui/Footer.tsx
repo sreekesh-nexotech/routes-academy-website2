@@ -40,7 +40,7 @@ const Footer = () => {
           </h4>
           <div className="flex gap-[1rem] mb-[6rem]">
             <Link
-              href="https://share.google/IcyUIRRI7VGYSQ9Yi"
+              href="www.facebook.com/share/1GXvuJf6Ms/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
             >
