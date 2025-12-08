@@ -271,11 +271,9 @@ export const courses: Course[] = [
     ],
     certificate_img: [
       "https://routesacademy.b-cdn.net/images/certificate1.png",
-      "https://routesacademy.b-cdn.net/images/certificate1.png"
     ],
     certificate_title: [
       "Certification By National Skill Development Council",
-      "Certification By National Skill Development Council2"
     ]
   },
 
