@@ -112,11 +112,14 @@ export const courses: Course[] = [
         image: "https://routesacademy.b-cdn.net/images/mentor3.png"
       }
     ],
+
     certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
       "https://routesacademy.b-cdn.net/images/Microsoft%20Certificate.png",
       "https://routesacademy.b-cdn.net/images/Zoho%20Certificate.png"
     ],
     certificate_title: [
+      "Certification By National Skill Development Council",
       "Certification By Microsoft",
       "Certification By ZOHO"
     ]
@@ -493,14 +496,21 @@ export const courses: Course[] = [
       }
     ],
     certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
       "https://routesacademy.b-cdn.net/images/Microsoft%20Certificate.png",
       "https://routesacademy.b-cdn.net/images/Zoho%20Certificate.png"
     ],
     certificate_title: [
+      "Certification By National Skill Development Council",
       "Certification By Microsoft",
       "Certification By ZOHO"
     ]
   },
+
+  // ------------------------------
+  // COURSE 7
+  // ------------------------------
+
   {
     id: 7,
     title: "AI-Integrated Logistics & Supply Chain Management",
@@ -592,12 +602,18 @@ export const courses: Course[] = [
       }
     ],
     certificate_img: [
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
       "https://routesacademy.b-cdn.net/images/ACE%20certificate.jpeg.jpg",
     ],
     certificate_title: [
+      "Certification By National Skill Development Council",      
       "Certification by American Board of Education"
     ]
   },
+
+  // ------------------------------
+  // COURSE 8
+  // ------------------------------
   {
     id: 8,
     title: "Certified Business & Financial Analyst (CBFA)",
@@ -699,6 +715,11 @@ export const courses: Course[] = [
       "Certification By National Skill Development Council"
     ]
   },
+
+
+  // ------------------------------
+  // COURSE 9
+  // ------------------------------
   {
     id: 9,
     title: "Certified Business Analyst (CBA)",
@@ -796,6 +817,11 @@ export const courses: Course[] = [
       "Certification By National Skill Development Council"
     ]
   },
+
+  // ------------------------------
+  // COURSE 10
+  // ------------------------------
+
   {
     id: 10,
     title: "Human Resource Business Program (HR BP)",
@@ -905,6 +931,12 @@ export const courses: Course[] = [
       "Certification By National Skill Development Council"
     ]
   },
+
+
+  // ------------------------------
+  // COURSE 11
+  // ------------------------------
+  
   {
     id: 11,
     title: "AI Integrated Digital Marketing",
