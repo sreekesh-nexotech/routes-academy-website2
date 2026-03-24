@@ -1,26 +1,18 @@
-import { Course } from "../CourseData";
 import ButtonLink from "@/components/elements/ButtonLink";
-
-
-
+import { Course } from "../CourseData";
 
 const CourseDetailsCard: React.FC<{ course: Course }> = ({ course }) => {
-  const actualPrice = Number(course.actual_price);
-  const offerPrice = Number(course.offer_price);
-
-
   return (
     <div className="bg-[#F2F5FF] rounded-2xl  p-6 ">
-        <div className="text-center mt-3 space-y-3">
-          <ButtonLink
-            href='#course-contact'
-            label={`Enroll Now${course.emi ? '. EMI Available' : ''}`}
-            variant='primary'
-            className="rounded-b-3xl rounded-t-3xl py-3"
-           />
-            <p className="text-xs text-gray-500">100 % Placement Support</p>
-        </div>
-      
+      <div className="text-center mt-3 space-y-3">
+        <ButtonLink
+          href="#course-contact"
+          label={`Enroll Now${course.emi ? ". EMI Available" : ""}`}
+          variant="primary"
+          className="rounded-b-3xl rounded-t-3xl py-3"
+        />
+        <p className="text-xs text-gray-500">100 % Placement Support</p>
+      </div>
 
       <ul className="space-y-3 text-gray-700 mt-10">
         <li className="flex justify-between items-center text-sm border-b border-[#a0a0a080] pb-2">
@@ -65,10 +57,7 @@ const CourseDetailsCard: React.FC<{ course: Course }> = ({ course }) => {
           </span>
           <p className="text-gray-800">{course.enrolled_students}+ Students</p>
         </li>
-        
       </ul>
-      
-  
     </div>
   );
 };

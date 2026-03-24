@@ -1,10 +1,11 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import type { Swiper as SwiperClass } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import Image from "next/image";
 
 const CertificationSection: React.FC<{
   img: string | string[];
@@ -52,12 +53,12 @@ const CertificationSection: React.FC<{
             {certificates.map((certificate, index) => (
               <SwiperSlide key={index}>
                 <div className="max-w-3xl mx-auto">
-                  <img
+                  <Image
                     src={certificate}
                     alt={`Certificate ${index + 1}`}
                     width={700}
                     height={500}
-                    className="mx-auto rounded-lg shadow-xl border border-gray-200"
+                    className="mx-auto rounded-lg shadow-xl border border-gray-200 h-auto"
                   />
                 </div>
               </SwiperSlide>
@@ -82,12 +83,12 @@ const CertificationSection: React.FC<{
         </>
       ) : (
         <div className="max-w-3xl mx-auto mb-6">
-          <img
+          <Image
             src={certificates[0]}
             alt="NSDC Certificate"
             width={700}
             height={500}
-            className="mx-auto rounded-lg shadow-xl border border-gray-200"
+            className="mx-auto rounded-lg shadow-xl border border-gray-200 h-auto"
           />
         </div>
       )}
