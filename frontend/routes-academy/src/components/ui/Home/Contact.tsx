@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Mail, Phone, MapPin, Loader2, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin, CheckCircle } from "lucide-react";
 import toast from "react-hot-toast";
 import {
   ContactFormData,
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
       ) {
         setFormSubmitted(true);
         setIsLeadAlreadyExists(
-          response.message.includes("Lead already exists:")
+          response.message.includes("Lead already exists:"),
         );
         toast.success(response.message || "Message sent successfully!");
       } else {
@@ -105,16 +105,22 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="scroll-mt-30 py-16 sm:py-24 bg-[#F1F5F9] font-sans">
+    <section
+      id="contact"
+      className="scroll-mt-30 py-16 sm:py-24 bg-[#F1F5F9] font-sans"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 lg:gap-20 items-start justify-center">
         {/* Left Section */}
         <div className="space-y-3">
-          <p className="text-xl font-medium text-[#525252]">Still have doubts?</p>
+          <p className="text-xl font-medium text-[#525252]">
+            Still have doubts?
+          </p>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold  text-[#1E3A8A] leading-tight">
             Get in touch with us
           </h2>
           <p className="text-lg text-gray-600 max-w-lg">
-            Got questions? Our dedicated support team is ready to guide you towards your dream career. Reach out and unlock your potential!
+            Got questions? Our dedicated support team is ready to guide you
+            towards your dream career. Reach out and unlock your potential!
           </p>
           <div className="pt-4 space-y-4">
             <ContactDetail
@@ -143,9 +149,7 @@ const Contact: React.FC = () => {
           {formSubmitted ? (
             <div
               className={`p-8 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-500 ${
-                isLeadAlreadyExists
-                  ? " text-[#1E3A8A]"
-                  : " text-green-800"
+                isLeadAlreadyExists ? " text-[#1E3A8A]" : " text-green-800"
               }`}
             >
               <CheckCircle
@@ -196,10 +200,9 @@ const Contact: React.FC = () => {
                 isLoading={isLoading}
                 disabled={isLoading}
                 className="w-full mt-auto min-h-[3rem]"
-                >
+              >
                 Submit Form
-               </Button>
-
+              </Button>
             </form>
           )}
         </div>
@@ -207,7 +210,6 @@ const Contact: React.FC = () => {
     </section>
   );
 };
-
 
 const FormInput: React.FC<{
   name: string;

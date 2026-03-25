@@ -1,5 +1,6 @@
 import { Course } from "../CourseData";
 import React from "react";
+import Image from "next/image";
 
 const CourseHeroSection: React.FC<{ course: Course }> = ({ course }) => (
   <div className="mb-12 relative">
@@ -32,12 +33,12 @@ const CourseHeroSection: React.FC<{ course: Course }> = ({ course }) => (
       </div>
 
       <div className="z-10 order-1 sm:order-2 justify-self-center">
-        <img
+        <Image
           src={course.specific_course_img}
-          alt="Student Graphic"
+          alt="Route Academy course illustration"
           width={400}
           height={400}
-          className="w-full max-w-sm lg:max-w-none"
+          className="w-full max-w-sm lg:max-w-none h-auto"
         />
       </div>
     </div>

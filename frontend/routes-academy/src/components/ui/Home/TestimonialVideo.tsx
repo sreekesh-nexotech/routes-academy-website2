@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
 
 const TestimonialVideo: React.FC = () => {
   const [zoomScale, setZoomScale] = useState(0.5); // Start with 50% scale
@@ -27,8 +26,8 @@ const TestimonialVideo: React.FC = () => {
         0,
         Math.min(
           1,
-          (windowHeight - sectionTop) / (sectionHeight + windowHeight)
-        )
+          (windowHeight - sectionTop) / (sectionHeight + windowHeight),
+        ),
       );
 
       // Scale from 0.5 (50%) to 1.0 (100%) based on scroll progress

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 // --- TestimonialCard Component ---
 interface TestimonialCardProps {
   image: string;
@@ -20,9 +22,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
     <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-8 min-h-[600px] md:min-h-[400px]">
       {/* Testimonial Image */}
       <div className="w-48 h-48 md:w-1/3 md:h-auto md:aspect-square flex-shrink-0">
-        <img
+        <Image
           src={image}
           alt={name}
+          width={400}
+          height={400}
           className="w-full h-full object-cover object-center rounded-2xl"
         />
       </div>

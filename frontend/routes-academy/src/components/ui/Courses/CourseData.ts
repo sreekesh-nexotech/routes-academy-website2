@@ -58,9 +58,9 @@ export const courses: Course[] = [
     id: 1,
     title: "Career Program in Accounting & Taxation",
     description:
-      "The CPAT (Career Program in Accounting & Taxation) is a 6-month comprehensive program designed to bridge the gap 'From Campus to Corporate'...",
+      "The CPAT (Career Program in Accounting & Taxation) is a 6-month comprehensive program in Kerala that bridges the gap 'From Campus to Corporate' for Calicut talent ready to move into finance roles...",
     card_description:
-      "Master accounting, taxation, GST, Tally Prime, SAP & Zoho Books in this 6-month comprehensive corporate-ready program.",
+      "Best upskill training in Kerala for accounting, taxation, GST, Tally Prime, SAP & Zoho Books—built in Calicut for corporate-ready careers.",
     category: "Finance, Accounting & ERP",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
@@ -132,8 +132,8 @@ export const courses: Course[] = [
   {
     id: 2,
     title: "Data Analysis",
-    description: "Unlock the power of data...",
-    card_description: "Transform raw data into actionable insights using Advanced Excel, SQL, Power BI & Python for strategic decisions.",
+    description: "Experience the best upskill training for Data Analytics in Calicut, designed for Kerala’s growing tech job market. Unlock the power of data...",
+    card_description: "Experience the best upskill training for Data Analytics in Calicut, combining Advanced Excel, SQL, Power BI & Python for strategic decisions.",
     category: "Data and Analytics",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
@@ -218,8 +218,8 @@ export const courses: Course[] = [
   {
     id: 3,
     title: "Power BI and SQL Program",
-    description: "SQL is the backbone...",
-    card_description: "Master SQL database querying and Power BI visualization to build interactive dashboards and data models.",
+    description: "Calicut-focused upskill program where SQL is the backbone and Power BI brings data to life for Kerala's hiring market...",
+    card_description: "Best upskill path in Calicut for SQL querying and Power BI dashboards, tailored to Kerala's data careers.",
     category: "Data and Analytics",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
@@ -287,8 +287,8 @@ export const courses: Course[] = [
   {
     id: 4,
     title: "Power BI",
-    description: "Power BI is a business analytics tool...",
-    card_description: "Create stunning interactive dashboards with Power BI, master DAX formulas and unlock AI-powered business insights.",
+    description: "Power BI is a business analytics tool—and this Calicut-based course is tuned for Kerala professionals who need job-ready dashboards fast...",
+    card_description: "Build Power BI dashboards with DAX and AI-powered insights in Kerala's leading Calicut upskill academy.",
     category: "Data and Analytics",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
@@ -371,8 +371,8 @@ export const courses: Course[] = [
   {
     id: 5,
     title: "AI-Integrated Excel",
-    description: "Unlock the next level of data management...",
-    card_description: "Elevate your Excel skills with AI-powered analytics, smart automation and advanced data management techniques.",
+    description: "Unlock the next level of data management with Calicut-delivered, Kerala-ready AI-Integrated Excel training...",
+    card_description: "AI-powered Excel upskill course in Calicut—analytics, smart automation, and advanced data management for Kerala pros.",
     category: "AI, ML& Cloud",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
@@ -442,8 +442,8 @@ export const courses: Course[] = [
   {
     id: 6,
     title: "SAP S/4HANA FICO",
-    description: "The SAP S/4HANA FICO – Learning Hub Program...",
-    card_description: "Learn SAP Financial Accounting & Controlling with hands-on server access and real-world configuration practice.",
+    description: "The SAP S/4HANA FICO – Learning Hub Program in Calicut prepares Kerala finance talent with practical FI/CO server access and configuration...",
+    card_description: "SAP FICO upskill training from Calicut for Kerala professionals—hands-on server access and real-world configuration.",
     category: "Finance, Accounting & ERP",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
@@ -515,9 +515,9 @@ export const courses: Course[] = [
     id: 7,
     title: "AI-Integrated Logistics & Supply Chain Management",
     description:
-      "The AI-Integrated Logistics & Supply Chain Management program is designed to prepare learners for the future of global trade, operations, and supply chain intelligence. This program blends core logistics knowledge with modern AI applications, helping students master end-to-end supply chain workflows, automation tools, predictive analytics, and smart decision-making.",
+      "The AI-Integrated Logistics & Supply Chain Management program, delivered from Calicut for Kerala's logistics corridor, prepares learners for global trade, operations, and AI-driven supply chain intelligence. Students master end-to-end workflows, automation tools, predictive analytics, and smart decision-making.",
     card_description:
-      "Prepare for the future of global trade with AI-powered logistics & supply chain intelligence.",
+      "Best upskill academy in Calicut for AI-powered logistics & supply chain intelligence across Kerala.",
     category: "Logistics",
     average_salary: "6-12 LPA",
     mode_of_conduct: "Offline / Online",
@@ -618,9 +618,9 @@ export const courses: Course[] = [
     id: 8,
     title: "Certified Business & Financial Analyst (CBFA)",
     description:
-      "The Certified Business & Financial Analyst (CBFA) program is crafted to build highly skilled finance and business professionals equipped with modern accounting tools, global taxation knowledge, and AI-powered analytical skills. This program blends practical software training with essential financial theory, preparing learners for real corporate roles in India and abroad, especially GCC countries.",
+      "The Certified Business & Financial Analyst (CBFA) program from Calicut equips Kerala professionals with modern accounting tools, global taxation knowledge, and AI-powered analytical skills—ready for roles in India and GCC markets.",
     card_description:
-      "Build finance & business analysis skills with modern accounting tools, global taxation, and AI analytics.",
+      "Kerala's best Calicut-based CBFA upskill path: finance tools, global taxation, and AI analytics for corporate roles.",
     category: "Finance, Accounting & ERP",
     average_salary: "8-16 LPA",
     mode_of_conduct: "Offline / Online",
@@ -724,9 +724,9 @@ export const courses: Course[] = [
     id: 9,
     title: "Certified Business Analyst (CBA)",
     description:
-      "The Certified Business Analyst (CBA) program is designed to prepare students for high-demand analytical roles across corporate, IT, finance, and operational sectors. With a strong focus on AI-Integrated Excel and Power BI, this program equips learners with the ability to turn raw data into insights, build dashboards, automate workflows, and support strategic decision-making.",
+      "The Certified Business Analyst (CBA) program, crafted in Calicut for Kerala's corporate market, prepares students for high-demand analytical roles with AI-Integrated Excel and Power BI—turning raw data into actionable insight and automation.",
     card_description:
-      "Master AI-Integrated Excel and Power BI to turn data into insights and support strategic decision-making.",
+      "Calicut-based CBA upskill program for Kerala: AI-Integrated Excel, Power BI dashboards, and workflow automation.",
     category: "Data and Analytics",
     average_salary: "7-14 LPA",
     mode_of_conduct: "Offline / Online",

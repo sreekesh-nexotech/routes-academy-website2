@@ -16,9 +16,16 @@ const HeroHome = () => {
         </p>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-6 leading-tight">
-          Industry Built Programs That Turn Learning Into Hiring
+        <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 mb-4 leading-tight">
+          The Best Upskill Academy in Kerala for Career Growth.
         </h1>
+
+        {/* Topic authority proof */}
+        <p className="text-lg md:text-xl text-gray-700 mb-4 max-w-3xl mx-auto">
+          Providing industry-standard certifications (IBM, Microsoft, Zoho) to
+          students across Kerala, helping them secure high-package roles in
+          global markets.
+        </p>
 
         {/* Subheading */}
         <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
