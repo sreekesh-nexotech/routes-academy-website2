@@ -54,9 +54,9 @@ const TestimonialVideo: React.FC = () => {
       </h2>
 
       {/* Video area */}
-      <div className="relative w-full h-[40vh] sm:h-[45vh] md:h-[50vh] lg:h-[55vh] flex items-center justify-center mt-4 sm:mt-8 md:mt-12 lg:mt-3 mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+      <div className="relative w-full flex items-center justify-center mt-4 sm:mt-8 md:mt-12 lg:mt-3 mb-8 sm:mb-12 md:mb-16 lg:mb-20">
         <div
-          className="relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 w-[90vw] sm:w-[84vw] md:w-[80vw] lg:w-[70vw] h-[35vh] sm:h-[50vh] md:h-[60vh] lg:h-[67vh] transition-transform duration-500 ease-out origin-center"
+          className="relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 w-full aspect-video overflow-hidden transition-transform duration-500 ease-out origin-center"
           style={{ transform: `scale(${zoomScale})` }}
         >
           <iframe
@@ -65,8 +65,12 @@ const TestimonialVideo: React.FC = () => {
             loading="lazy"
             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
             allowFullScreen={true}
-            className="w-full h-full rounded-lg sm:rounded-xl md:rounded-2xl"
-            style={{ border: 'none' }}
+            className="h-full"
+            style={{
+              border: "none",
+              width: "calc(100% + 64px)",
+              marginLeft: "-32px",
+            }}
           ></iframe>
         </div>
       </div>
