@@ -5,7 +5,6 @@ import { useState, useEffect, useRef } from "react";
 const TestimonialVideo: React.FC = () => {
   const [zoomScale, setZoomScale] = useState(0.5); // Start with 50% scale
   const sectionRef = useRef<HTMLElement>(null);
-  const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,15 +58,19 @@ const TestimonialVideo: React.FC = () => {
           className="relative mt-4 sm:mt-6 md:mt-8 lg:mt-10 w-[90vw] sm:w-[84vw] md:w-[80vw] lg:w-[70vw] h-[35vh] sm:h-[50vh] md:h-[60vh] lg:h-[67vh] transition-transform duration-500 ease-out origin-center"
           style={{ transform: `scale(${zoomScale})` }}
         >
-          <iframe
-            ref={iframeRef}
-            src="https://player.mediadelivery.net/play/628814/541977cc-4f9b-412a-b493-85d8e9e0c2e9?autoplay=true&muted=true&loop=true"
-            loading="lazy"
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-            allowFullScreen={true}
-            className="w-full h-full rounded-lg sm:rounded-xl md:rounded-2xl"
-            style={{ border: "none" }}
-          ></iframe>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            className="w-full h-full rounded-lg sm:rounded-xl md:rounded-2xl object-cover"
+          >
+            <source
+              src="https://routesacademy.b-cdn.net/video/Route%20Students%20Review%20(website).mp4"
+              type="video/mp4"
+            />
+          </video>
         </div>
       </div>
       {/* <div className="rounded-lg sm:rounded-xl md:rounded-2xl border-0" style={{ transform: `scaleX(${zoomScale})` }}>
