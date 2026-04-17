@@ -8,7 +8,9 @@ import MentorAndReviewsSection from "@/components/ui/Courses/SpecificCourse/Ment
 import CertificationSection from "@/components/ui/Courses/SpecificCourse/Certification";
 import CourseSidebar from "@/components/ui/Courses/SpecificCourse/CourseSidebar";
 import BookACallBanner from "@/components/ui/Courses/SpecificCourse/BookACallBanner";
-import SuccessStories from "@/components/ui/Courses/SpecificCourse/Testimonial";
+import SuccessStories, {
+  getTestimonialsForCourse,
+} from "@/components/ui/Courses/SpecificCourse/Testimonial";
 import { getCourseSEO } from "@/utils/seo";
 
 interface UnwrappedParams {
@@ -57,10 +59,13 @@ export default function CoursePage(props: CoursePageProps) {
             <WhatYouWillLearnSection course={course} />
 
             {/* Modules */}
-            <CourseContentSection curriculum={course.curriculum_detailed} />
+            <CourseContentSection course={course} />
 
             {/* Faculty & Review */}
-            <MentorAndReviewsSection course={course} />
+            <MentorAndReviewsSection
+              course={course}
+              showReviews={getTestimonialsForCourse(course.id).length > 0}
+            />
 
             {/* Book a Call */}
             <BookACallBanner />

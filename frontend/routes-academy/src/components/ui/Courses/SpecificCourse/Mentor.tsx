@@ -79,7 +79,10 @@ const HorizontalBar: React.FC<{
   </div>
 );
 
-const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
+const MentorAndReviewsSection: React.FC<{
+  course: Course;
+  showReviews?: boolean;
+}> = ({ course, showReviews = true }) => {
   // swiper state and ref for indicator bar
   const swiperRef = useRef<SwiperClass | null>(null);
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -171,41 +174,47 @@ const MentorAndReviewsSection: React.FC<{ course: Course }> = ({ course }) => {
       </div>
 
       {/* STUDENT REVIEW SECTION */}
-      <div id="review">
-        <h3 className="text-xl sm:text-2xl font-poppins font-semibold text-[#172554] mb-4">
-          Student Review
-        </h3>
+      {showReviews ? (
+        <div id="review">
+          <h3 className="text-xl sm:text-2xl font-poppins font-semibold text-[#172554] mb-4">
+            Student Review
+          </h3>
 
-        <div className="flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8">
-          <div className="flex flex-col items-center">
-            <div className="text-5xl sm:text-6xl font-bold text-[#172554]">
-              {course.rating && typeof course.rating === "number"
-                ? course.rating.toFixed(1)
-                : "0.0"}
+          <div className="flex flex-col sm:flex-row items-center sm:items-center gap-6 sm:gap-8">
+            <div className="flex flex-col items-center">
+              <div className="text-5xl sm:text-6xl font-bold text-[#172554]">
+                {course.rating && typeof course.rating === "number"
+                  ? course.rating.toFixed(1)
+                  : "0.0"}
+              </div>
+              <div className="flex items-center gap-1 my-2">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="w-6 h-6 sm:w-7 sm:h-7"
+                    fill="#F97316"
+                    strokeWidth={0}
+                  />
+                ))}
+              </div>
+              <p className="text-sm sm:text-base text-gray-600 font-medium">
+                Course rating
+              </p>
             </div>
-            <div className="flex items-center gap-1 my-2">
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className="w-6 h-6 sm:w-7 sm:h-7"
-                  fill="#F97316"
-                  strokeWidth={0}
-                />
-              ))}
-            </div>
-            <p className="text-sm sm:text-base text-gray-600 font-medium">
-              Course rating
-            </p>
-          </div>
 
-          <div className="flex-1 space-y-3 sm:space-y-4 w-full">
-            <HorizontalBar label="Exceeded" percentage={97} color="#F97316" />
-            <HorizontalBar label="Yes" percentage={3} color="#F97316" />
-            <HorizontalBar label="Somewhat" percentage={0} color="#E5E7EB" />
-            <HorizontalBar label="Not really" percentage={0} color="#E5E7EB" />
+            <div className="flex-1 space-y-3 sm:space-y-4 w-full">
+              <HorizontalBar label="Exceeded" percentage={97} color="#F97316" />
+              <HorizontalBar label="Yes" percentage={3} color="#F97316" />
+              <HorizontalBar label="Somewhat" percentage={0} color="#E5E7EB" />
+              <HorizontalBar
+                label="Not really"
+                percentage={0}
+                color="#E5E7EB"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      ) : null}
     </div>
   );
 };

@@ -38,9 +38,12 @@ export interface Course {
   home_img_url: string;
   duration: string;
   session_duration: number;
+  session_duration_display?: string;
   actual_price: number;
+  actual_price_display?: string;
   offer_price: number;
   what_you_get: string[];
+  content_list?: string[];
   curriculum_detailed: {
     topic: string;
     details: string;
@@ -56,7 +59,7 @@ export interface Course {
 export const courses: Course[] = [
   {
     id: 1,
-    title: "Career Program in Accounting & Taxation",
+    title: "Career Program in Accounting & Taxation (CPAT)",
     description:
       "The CPAT (Career Program in Accounting & Taxation) is a 6-month comprehensive program in Kerala that bridges the gap 'From Campus to Corporate' for Calicut talent ready to move into finance roles...",
     card_description:
@@ -64,27 +67,40 @@ export const courses: Course[] = [
     category: "Finance, Accounting & ERP",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
-    placed_students: 98,
+    placed_students: 150,
     class_schedule: "As per convenience",
-    enrolled_students: 112,
+    enrolled_students: 180,
     emi: true,
     image_url: "https://routesacademy.b-cdn.net/images/CPAT%20image%20-%20course%20page.png",
     specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero.svg",
     rating: 4.9,
     home_img_url: "https://routesacademy.b-cdn.net/images/CPAT%20image%20-%20landing%20page.png",
-    duration: "6 months",
-    session_duration: 1,
-    actual_price: 47200,
-    offer_price: 47200,
+    duration: "6 Months",
+    session_duration: 600,
+    session_duration_display: "600 Hours",
+    actual_price: 50000,
+    actual_price_display: "₹50,000",
+    offer_price: 50000,
     what_you_get: [
       "24/7 Doubt Support",
       "Dedicated Placement Support",
       "Industry Relevant Curriculum",
       "Flexible Learning Options"
     ],
+    content_list: [
+      "SAP FICO",
+      "Zoho Books",
+      "GST Filing",
+      "Excel AI",
+      "Tally Prime",
+      "Manual Accounting"
+    ],
     curriculum_detailed: [
-      { topic: "Foundation Level", details: "Practical Accounting\nTally Prime\nGST..." },
-      { topic: "Associate Level", details: "AI-Enabled Excel\nZoho Books..." }
+      {
+        topic: "Course Content",
+        details:
+          "SAP FICO\nZoho Books\nGST Filing\nExcel AI\nTally Prime\nManual Accounting"
+      }
     ],
     featureDescription: "The CPAT program is designed to transform students...",
     learnFeatures: [
@@ -131,42 +147,57 @@ export const courses: Course[] = [
 
   {
     id: 2,
-    title: "Data Analysis",
-    description: "Experience the best upskill training for Data Analytics in Calicut, designed for Kerala’s growing tech job market. Unlock the power of data...",
-    card_description: "Experience the best upskill training for Data Analytics in Calicut, combining Advanced Excel, SQL, Power BI & Python for strategic decisions.",
-    category: "Data and Analytics",
+    title: "Career Program in Accounting & Taxation (GCC CPAT)",
+    description:
+      "GCC-focused accounting and taxation program covering UAE VAT, Corporate Tax, and global accounting tools with SAP and Zoho.",
+    card_description:
+      "GCC CPAT with UAE VAT, Corporate Tax, SAP FICO, Zoho Books, QuickBooks, and Peachtree.",
+    category: "Finance, Accounting & ERP",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
-    placed_students: 89,
+    placed_students: 130,
     class_schedule: "As per convenience",
-    enrolled_students: 105,
+    enrolled_students: 150,
     emi: true,
     image_url: "https://routesacademy.b-cdn.net/images/pics-2.png",
     specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero2.svg",
     rating: 4.9,
     home_img_url: "https://routesacademy.b-cdn.net/images/pics-2.png",
-    duration: "6 months",
-    session_duration: 1,
-    actual_price: 47200,
-    offer_price: 47200,
+    duration: "6 Months",
+    session_duration: 600,
+    session_duration_display: "600 Hours",
+    actual_price: 50000,
+    actual_price_display: "₹50,000",
+    offer_price: 50000,
     what_you_get: [
       "24/7 Doubt Support",
       "Dedicated Placement Support",
       "Industry Relevant Curriculum",
       "Flexible Learning Options"
     ],
-    curriculum_detailed: [
-      { topic: "Module 1", details: "Advanced Excel" },
-      { topic: "Module 2", details: "SQL" },
-      { topic: "Module 3", details: "Power BI" },
-      { topic: "Module 4", details: "Python" }
+    content_list: [
+      "UAE VAT",
+      "Corporate Tax",
+      "Peachtree (Sage 50)",
+      "Manual Accounting",
+      "QuickBooks",
+      "SAP FICO",
+      "Zoho Books",
+      "Excel AI"
     ],
-    featureDescription: "Data analysis transforms raw data...",
+    curriculum_detailed: [
+      {
+        topic: "Course Content",
+        details:
+          "UAE VAT\nCorporate Tax\nPeachtree (Sage 50)\nManual Accounting\nQuickBooks\nSAP FICO\nZoho Books\nExcel AI"
+      }
+    ],
+    featureDescription: "GCC CPAT builds practical accounting skills...",
     learnFeatures: [
-      { title: "Advanced Excel Mastery" },
-      { title: "SQL Database Skills" },
-      { title: "Power BI Dashboards" },
-      { title: "Python Data Tools" }
+      { title: "UAE VAT & Corporate Tax" },
+      { title: "Global Accounting Tools" },
+      { title: "Practical Manual Accounting" },
+      { title: "Job-Ready Tax Filing Skills" }
     ],
     mentorRatingBreakdown: [
       { stars: 5, percentage: 87 },
@@ -217,40 +248,57 @@ export const courses: Course[] = [
 
   {
     id: 3,
-    title: "Power BI and SQL Program",
-    description: "Calicut-focused upskill program where SQL is the backbone and Power BI brings data to life for Kerala's hiring market...",
-    card_description: "Best upskill path in Calicut for SQL querying and Power BI dashboards, tailored to Kerala's data careers.",
+    title: "AI Integrated Data Analytics & BI Specialist (1 Year)",
+    description:
+      "One-year analytics program covering Excel & AI, BI tools, SQL, Python, ML basics, cloud computing, and capstone projects.",
+    card_description:
+      "1-year AI-integrated analytics with Excel & AI, Power BI, Tableau, SQL, Python, and capstones.",
     category: "Data and Analytics",
     average_salary: "7-15 LPA",
     mode_of_conduct: "Offline / Online",
-    placed_students: 94,
+    placed_students: 130,
     class_schedule: "As per convenience",
-    enrolled_students: 118,
+    enrolled_students: 160,
     emi: true,
     image_url: "https://routesacademy.b-cdn.net/images/pics-3.png",
     specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero3.svg",
     rating: 4.9,
     home_img_url: "https://routesacademy.b-cdn.net/images/pics-3.png",
-    duration: "40 hours",
-    session_duration: 1,
-    actual_price: 9500,
-    offer_price: 9500,
+    duration: "1 Year",
+    session_duration: 1200,
+    session_duration_display: "1200 Hours",
+    actual_price: 110000,
+    actual_price_display: "₹1,10,000/-",
+    offer_price: 110000,
     what_you_get: [
       "24/7 Doubt Support",
       "Dedicated Placement Support",
       "Industry Relevant Curriculum",
       "Flexible Learning Options"
     ],
-    curriculum_detailed: [
-      { topic: "Module 1", details: "SQL" },
-      { topic: "Module 2", details: "Power BI" }
+    content_list: [
+      "Excel & AI",
+      "Power BI",
+      "Tableau",
+      "SQL",
+      "Python",
+      "Introduction to Machine Learning",
+      "Cloud Computing",
+      "2 Capstone Projects"
     ],
-    featureDescription: "Master the complete BI stack...",
+    curriculum_detailed: [
+      {
+        topic: "Course Content",
+        details:
+          "Excel & AI\nPower BI\nTableau\nSQL\nPython\nIntroduction to Machine Learning\nCloud Computing\n2 Capstone Projects"
+      }
+    ],
+    featureDescription: "Build analytics expertise with AI tools...",
     learnFeatures: [
-      { title: "SQL Database Mastery" },
-      { title: "Advanced Querying" },
-      { title: "Power BI Dashboards" },
-      { title: "Data Modeling & DAX" }
+      { title: "Excel & AI" },
+      { title: "Power BI & Tableau" },
+      { title: "SQL & Python" },
+      { title: "Capstone Projects" }
     ],
     mentorRatingBreakdown: [
       { stars: 5, percentage: 87 },
@@ -286,44 +334,55 @@ export const courses: Course[] = [
 
   {
     id: 4,
-    title: "Power BI",
-    description: "Power BI is a business analytics tool—and this Calicut-based course is tuned for Kerala professionals who need job-ready dashboards fast...",
-    card_description: "Build Power BI dashboards with DAX and AI-powered insights in Kerala's leading Calicut upskill academy.",
+    title: "AI Integrated Data Analytics & BI Specialist (6 Months)",
+    description:
+      "Six-month AI-integrated analytics program focused on Excel & AI, BI tools, SQL, Python, and ML basics.",
+    card_description:
+      "6-month AI-integrated analytics with Excel & AI, Power BI, Tableau, SQL, and Python.",
     category: "Data and Analytics",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
-    placed_students: 81,
+    placed_students: 120,
     class_schedule: "As per convenience",
-    enrolled_students: 96,
+    enrolled_students: 140,
     emi: true,
     image_url: "https://routesacademy.b-cdn.net/images/pics-1.png",
     specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero4.svg",
     rating: 4.9,
     home_img_url: "https://routesacademy.b-cdn.net/images/course3.png",
-    duration: "15 hours",
-    session_duration: 1,
-    actual_price: 3500,
-    offer_price: 3500,
+    duration: "6 Months",
+    session_duration: 600,
+    session_duration_display: "600 Hours",
+    actual_price: 55000,
+    actual_price_display: "₹55,000/-",
+    offer_price: 55000,
     what_you_get: [
       "24/7 Doubt Support",
       "Dedicated Placement Support",
       "Industry Relevant Curriculum",
       "Flexible Learning Options"
     ],
-    curriculum_detailed: [
-      { topic: "Module 1", details: "Introduction to Power BI" },
-      { topic: "Module 2", details: "Data Extraction & Transformation" },
-      { topic: "Module 3", details: "Data Modeling" },
-      { topic: "Module 4", details: "DAX" },
-      { topic: "Module 5", details: "Visualization" },
-      { topic: "Module 6", details: "Advanced Power BI" }
+    content_list: [
+      "Excel & AI",
+      "Power BI",
+      "Tableau",
+      "SQL",
+      "Python",
+      "Introduction to Machine Learning"
     ],
-    featureDescription: "With organisations increasingly needing...",
+    curriculum_detailed: [
+      {
+        topic: "Course Content",
+        details:
+          "Excel & AI\nPower BI\nTableau\nSQL\nPython\nIntroduction to Machine Learning"
+      }
+    ],
+    featureDescription: "Build analytics skills with AI tooling...",
     learnFeatures: [
-      { title: "Data Connectivity" },
-      { title: "DAX Mastery" },
-      { title: "Interactive Dashboards" },
-      { title: "AI-Powered Insights" }
+      { title: "Excel & AI" },
+      { title: "Power BI & Tableau" },
+      { title: "SQL & Python" },
+      { title: "ML Basics" }
     ],
     mentorRatingBreakdown: [
       { stars: 5, percentage: 87 },
@@ -370,43 +429,51 @@ export const courses: Course[] = [
 
   {
     id: 5,
-    title: "AI-Integrated Excel",
-    description: "Unlock the next level of data management with Calicut-delivered, Kerala-ready AI-Integrated Excel training...",
-    card_description: "AI-powered Excel upskill course in Calicut—analytics, smart automation, and advanced data management for Kerala pros.",
-    category: "AI, ML& Cloud",
+    title: "AI Integrated Excel with Power BI & SQL",
+    description:
+      "Short-term Excel and BI upskill covering AI-assisted Excel and Power BI for quick career upgrades.",
+    card_description:
+      "Excel & AI with Power BI and SQL basics for fast upskilling.",
+    category: "Data and Analytics",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
-    placed_students: 86,
+    placed_students: 1000,
     class_schedule: "As per convenience",
-    enrolled_students: 103,
+    enrolled_students: 1000,
     emi: true,
     image_url: "https://routesacademy.b-cdn.net/images/pics-4.png",
     specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero5.svg",
     rating: 4.9,
     home_img_url: "https://routesacademy.b-cdn.net/images/course3.png",
-    duration: "20 hours",
-    session_duration: 1,
-    actual_price: 5800,
-    offer_price: 5800,
+    duration: "2 Months",
+    session_duration: 200,
+    session_duration_display: "200 Hours",
+    actual_price: 15000,
+    actual_price_display: "₹15,000/-",
+    offer_price: 15000,
     what_you_get: [
       "24/7 Doubt Support",
       "Dedicated Placement Support",
       "Industry Relevant Curriculum",
       "Flexible Learning Options"
     ],
-    curriculum_detailed: [
-      { topic: "Module 1", details: "Advanced Excel" },
-      { topic: "Module 2", details: "AI Features" },
-      { topic: "Module 3", details: "Automation" },
-      { topic: "Module 4", details: "AI Integrations" },
-      { topic: "Module 5", details: "Real Projects" }
+    content_list: [
+      "Excel & AI",
+      "Power BI",
+      "SQL"
     ],
-    featureDescription: "Transform your Excel skills...",
+    curriculum_detailed: [
+      {
+        topic: "Course Content",
+        details: "Excel & AI\nPower BI\nSQL"
+      }
+    ],
+    featureDescription: "Level up Excel and BI skills fast...",
     learnFeatures: [
-      { title: "Advanced Excel Techniques" },
-      { title: "AI-Powered Analytics" },
-      { title: "Smart Automation" },
-      { title: "AI Tool Integration" }
+      { title: "Excel & AI" },
+      { title: "Power BI Dashboards" },
+      { title: "SQL Basics" },
+      { title: "Quick Upskilling" }
     ],
     mentorRatingBreakdown: [
       { stars: 5, percentage: 87 },
@@ -441,40 +508,62 @@ export const courses: Course[] = [
 
   {
     id: 6,
-    title: "SAP S/4HANA FICO",
-    description: "The SAP S/4HANA FICO – Learning Hub Program in Calicut prepares Kerala finance talent with practical FI/CO server access and configuration...",
-    card_description: "SAP FICO upskill training from Calicut for Kerala professionals—hands-on server access and real-world configuration.",
+    title: "AI Integrated Certified Business & Financial Analyst - CBFA (1 Year)",
+    description:
+      "One-year CBFA program combining accounting platforms, taxation filings, BI tools, and AI-enabled analysis for finance careers.",
+    card_description:
+      "1-year CBFA with SAP FICO, UAE VAT/Corporate Tax, Power BI, SQL, and global accounting tools.",
     category: "Finance, Accounting & ERP",
     average_salary: "TBD",
     mode_of_conduct: "Offline / Online",
-    placed_students: 91,
+    placed_students: 200,
     class_schedule: "As per convenience",
-    enrolled_students: 108,
+    enrolled_students: 250,
     emi: true,
     image_url: "https://routesacademy.b-cdn.net/images/pics-6.png",
     specific_course_img: "https://routesacademy.b-cdn.net/images/Course%20Image%20(1).png",
     rating: 4.9,
     home_img_url: "https://routesacademy.b-cdn.net/images/course3.png",
-    duration: "TBD",
-    session_duration: 1,
-    actual_price: 0,
-    offer_price: 0,
+    duration: "1 Year",
+    session_duration: 1200,
+    session_duration_display: "1200 Hours",
+    actual_price: 95000,
+    actual_price_display: "₹95,000/-",
+    offer_price: 95000,
     what_you_get: [
       "24/7 Doubt Support",
       "Dedicated Placement Support",
       "Industry Relevant Curriculum",
       "Flexible Learning Options"
     ],
-    curriculum_detailed: [
-      { topic: "Module 1", details: "SAP FI" },
-      { topic: "Module 2", details: "SAP CO" }
+    content_list: [
+      "SAP FICO",
+      "UAE VAT Filing",
+      "Corporate Tax Filing",
+      "Power BI",
+      "SQL",
+      "ITR Filing",
+      "GST Filing",
+      "ZOHO Books",
+      "Peachtree (Sage 50)",
+      "QuickBooks",
+      "Excel AI",
+      "Manual Accounting",
+      "Tally Prime"
     ],
-    featureDescription: "Master SAP FICO with hands-on training...",
+    curriculum_detailed: [
+      {
+        topic: "Course Content",
+        details:
+          "SAP FICO\nUAE VAT Filing\nCorporate Tax Filing\nPower BI\nSQL\nITR Filing\nGST Filing\nZOHO Books\nPeachtree (Sage 50)\nQuickBooks\nExcel AI\nManual Accounting\nTally Prime"
+      }
+    ],
+    featureDescription: "CBFA blends accounting tools with AI analytics...",
     learnFeatures: [
-      { title: "SAP FI Basics" },
-      { title: "SAP CO Basics" },
-      { title: "SAP Server Access" },
-      { title: "Hands-on Configuration" }
+      { title: "Global Accounting Platforms" },
+      { title: "Tax Filing Practice" },
+      { title: "Power BI & SQL" },
+      { title: "AI-Enabled Analysis" }
     ],
     mentorRatingBreakdown: [
       { stars: 5, percentage: 87 },
@@ -513,26 +602,28 @@ export const courses: Course[] = [
 
   {
     id: 7,
-    title: "AI-Integrated Logistics & Supply Chain Management",
+    title: "AI Integrated Logistics & Supply Chain Management (1 Year)",
     description:
-      "The AI-Integrated Logistics & Supply Chain Management program, delivered from Calicut for Kerala's logistics corridor, prepares learners for global trade, operations, and AI-driven supply chain intelligence. Students master end-to-end workflows, automation tools, predictive analytics, and smart decision-making.",
+      "One-year logistics program covering end-to-end supply chain operations, digital tools, and professional skills.",
     card_description:
-      "Best upskill academy in Calicut for AI-powered logistics & supply chain intelligence across Kerala.",
+      "AI-integrated logistics program covering warehousing, transport, procurement, and supply chain strategy.",
     category: "Logistics",
     average_salary: "6-12 LPA",
     mode_of_conduct: "Offline / Online",
-    placed_students: 85,
+    placed_students: 250,
     class_schedule: "As per convenience",
-    enrolled_students: 95,
+    enrolled_students: 3000,
     emi: true,
     image_url: "https://routesacademy.b-cdn.net/images/new_pics-4.png",
     specific_course_img: "https://routesacademy.b-cdn.net/images/Course%20Image%20(2).png",
     rating: 4.9,
     home_img_url: "https://routesacademy.b-cdn.net/images/new_pics-4.png",
-    duration: "6 months",
-    session_duration: 1,
-    actual_price: 45000,
-    offer_price: 45000,
+    duration: "1 Year",
+    session_duration: 1200,
+    session_duration_display: "1200 Hours",
+    actual_price: 130000,
+    actual_price_display: "₹1,30,000/-",
+    offer_price: 130000,
     what_you_get: [
       "100% Placement Support",
       "International Certifications",
@@ -540,47 +631,36 @@ export const courses: Course[] = [
       "Internship Exposure",
       "NSDC & UGC-approved Training"
     ],
+    content_list: [
+      "Principles of Logistics and Supply Chain Management",
+      "Transportation and Distribution Management",
+      "Warehousing and Inventory Management",
+      "Procurement and Materials Management",
+      "Business Communication & Professional Skills",
+      "MS Office and Logistics Software Applications",
+      "International Logistics and Documentation",
+      "Port, Shipping and Cargo Management",
+      "Supply Chain Planning and Operations Strategy",
+      "E-Commerce and Digital Supply Chain",
+      "Financial and Legal Aspects in Logistics",
+      "Entrepreneurship and Project Management",
+      "Learning Outcomes",
+      "Career Opportunities"
+    ],
     curriculum_detailed: [
       {
-        topic: "Module 1: Introduction to Logistics & Supply Chain",
-        details: "Fundamentals of logistics\nComponents of supply chain\nIndian & global logistics landscape\nDigitisation in supply chain"
-      },
-      {
-        topic: "Module 2: Warehousing & Inventory Management",
-        details: "Warehouse setup & operations\nInventory control techniques\nDemand forecasting\nAI-based warehouse automation systems"
-      },
-      {
-        topic: "Module 3: Transportation & Distribution",
-        details: "Fleet management\nRoute planning and load optimization\nAI-powered tracking, GPS & telematics\nLast-mile delivery trends"
-      },
-      {
-        topic: "Module 4: Procurement & Vendor Management",
-        details: "Purchasing strategies\nSupplier evaluation\nE-procurement systems\nData-driven decision making"
-      },
-      {
-        topic: "Module 5: Artificial Intelligence in Logistics",
-        details: "Predictive analytics\nMachine learning basics for logistics\nRobotics, IoT & automation\nDigital twins and smart supply chain"
-      },
-      {
-        topic: "Module 6: Logistics Software & Tools",
-        details: "SAP basics\nTally Prime for inventory\nWMS, ERP, CRM tools\nAI dashboards & BI tools"
-      },
-      {
-        topic: "Module 7: Soft Skills & Professional Development",
-        details: "Communication and documentation\nInterview training\nGroup discussions\nPersonality development"
-      },
-      {
-        topic: "Module 8: Internship / Practical Learning",
-        details: "Live projects\nIndustry visits\nHands-on logistics operations"
+        topic: "Course Content",
+        details:
+          "Principles of Logistics and Supply Chain Management\nTransportation and Distribution Management\nWarehousing and Inventory Management\nProcurement and Materials Management\nBusiness Communication & Professional Skills\nMS Office and Logistics Software Applications\nInternational Logistics and Documentation\nPort, Shipping and Cargo Management\nSupply Chain Planning and Operations Strategy\nE-Commerce and Digital Supply Chain\nFinancial and Legal Aspects in Logistics\nEntrepreneurship and Project Management\nLearning Outcomes\nCareer Opportunities"
       }
     ],
     featureDescription:
-      "The AI-Integrated Logistics & Supply Chain Management program blends core logistics knowledge with modern Artificial Intelligence applications. This industry-aligned curriculum ensures students become job-ready professionals capable of handling warehousing, transportation, inventory planning, procurement, and AI-enabled optimization processes used by top logistics companies worldwide.",
+      "The logistics program blends core operations knowledge with modern tools to build job-ready supply chain professionals.",
     learnFeatures: [
-      { title: "AI-Powered Supply Chain" },
-      { title: "Warehouse Automation" },
-      { title: "Predictive Analytics" },
-      { title: "Smart Logistics Tools" }
+      { title: "Supply Chain Fundamentals" },
+      { title: "Warehouse & Inventory" },
+      { title: "Transport & Distribution" },
+      { title: "Digital Logistics Tools" }
     ],
     mentorRatingBreakdown: [
       { stars: 5, percentage: 85 },
@@ -616,78 +696,68 @@ export const courses: Course[] = [
   // ------------------------------
   {
     id: 8,
-    title: "Certified Business & Financial Analyst (CBFA)",
+    title: "AI Integrated Data Science & Agentic AI",
     description:
-      "The Certified Business & Financial Analyst (CBFA) program from Calicut equips Kerala professionals with modern accounting tools, global taxation knowledge, and AI-powered analytical skills—ready for roles in India and GCC markets.",
+      "One-year data science and Agentic AI program covering ML, deep learning, NLP, computer vision, and deployment.",
     card_description:
-      "Kerala's best Calicut-based CBFA upskill path: finance tools, global taxation, and AI analytics for corporate roles.",
-    category: "Finance, Accounting & ERP",
+      "Agentic AI and data science track with ML, DL, NLP, CV, and deployment skills.",
+    category: "AI, ML& Cloud",
     average_salary: "8-16 LPA",
     mode_of_conduct: "Offline / Online",
-    placed_students: 92,
+    placed_students: 100,
     class_schedule: "As per convenience",
-    enrolled_students: 108,
+    enrolled_students: 120,
     emi: true,
     image_url: "https://routesacademy.b-cdn.net/images/new_pics-2.png",
     specific_course_img: "https://routesacademy.b-cdn.net/images/Course%20Image%20(3).png",
     rating: 4.9,
     home_img_url: "https://routesacademy.b-cdn.net/images/new_pics-2.png",
-    duration: "6 months",
-    session_duration: 1,
-    actual_price: 48000,
-    offer_price: 48000,
+    duration: "1 Year",
+    session_duration: 1200,
+    session_duration_display: "1200 Hours",
+    actual_price: 140000,
+    actual_price_display: "₹1,40,000/-",
+    offer_price: 140000,
     what_you_get: [
-      "100% Placement Support (India & GCC)",
-      "10+ Global Accounting Platforms",
-      "Real Filing Practice (GST, ITR, UAE VAT)",
-      "AI-Integrated Financial Analysis",
-      "NSDC & UGC-approved Training"
+      "Hands-on AI Curriculum",
+      "Capstone Projects",
+      "Industry Internship Support",
+      "Career Guidance",
+      "Flexible Learning Options"
+    ],
+    content_list: [
+      "Python for Data Science & Automation",
+      "Statistics & Mathematics for AI",
+      "SQL & Big Data Foundation",
+      "Advanced Machine Learning",
+      "Deep Learning & Neural Networks",
+      "Natural Language Processing (NLP)",
+      "Computer Vision & Intelligent Systems",
+      "Agentic AI & Generative System",
+      "Model Deployment & AI Applications",
+      "Capstone Projects & Career Launch",
+      "Advanced Agentic AI & Autonomous Systems",
+      "RAG Pipelines & LLM Engineering",
+      "Recommendation Systems Engineering",
+      "Cloud Computing for Data Science",
+      "LOps & Production Deployment",
+      "Industry Internship & Research Projects",
+      "Career Acceleration & Leadership"
     ],
     curriculum_detailed: [
       {
-        topic: "Module 1: SAP for Finance & Business Operations",
-        details: "Introduction to SAP ERP\nSAP FICO basics\nLedger, asset & cost center management\nBusiness process integration in SAP"
-      },
-      {
-        topic: "Module 2: UAE VAT & Corporate Tax",
-        details: "UAE VAT concepts & compliance\nCorporate Tax framework (9% CT)\nReturn filing procedures\nDocumentation & business compliance\nGCC taxation overview"
-      },
-      {
-        topic: "Module 3: AI-Enabled Excel for Decision Making",
-        details: "Advanced formulas & functions\nPivot tables & dashboards\nAI-powered automation & insights\nPredictive analysis using Excel AI tools"
-      },
-      {
-        topic: "Module 4: Zoho Books Accounting",
-        details: "Company setup\nInvoicing, inventory & banking\nGST integration\nReports generation & automation"
-      },
-      {
-        topic: "Module 5: GST Filing & Theory (India)",
-        details: "GST concepts & applicability\nInput/output tax mechanisms\nRegistration & compliance rules\nGSTR-1, 3B & annual return filing"
-      },
-      {
-        topic: "Module 6: GST in Tally Prime (Practical)",
-        details: "GST setup in Tally\nLedger & voucher entries\nGST reports & reconciliation\nE-invoice & E-way bill integration"
-      },
-      {
-        topic: "Module 7: Peachtree (Sage 50) Accounting",
-        details: "Company creation\nVendor/customer management\nFinancial statements & reporting\nMiddle East job-oriented training"
-      },
-      {
-        topic: "Module 8: QuickBooks Online (International Accounting)",
-        details: "Cloud accounting setup\nBank reconciliation\nSales, purchases & payroll\nReporting for SMEs & startups"
-      },
-      {
-        topic: "Module 9: AI Lab & Soft Skill Development",
-        details: "AI tools for accounting & analysis\nAutomation in business operations\nCommunication skills\nInterview preparation & resume building\nCorporate etiquette & career readiness"
+        topic: "Course Content",
+        details:
+          "Python for Data Science & Automation\nStatistics & Mathematics for AI\nSQL & Big Data Foundation\nAdvanced Machine Learning\nDeep Learning & Neural Networks\nNatural Language Processing (NLP)\nComputer Vision & Intelligent Systems\nAgentic AI & Generative System\nModel Deployment & AI Applications\nCapstone Projects & Career Launch\nAdvanced Agentic AI & Autonomous Systems\nRAG Pipelines & LLM Engineering\nRecommendation Systems Engineering\nCloud Computing for Data Science\nLOps & Production Deployment\nIndustry Internship & Research Projects\nCareer Acceleration & Leadership"
       }
     ],
     featureDescription:
-      "The CBFA program combines hands-on training in 10+ global accounting platforms with AI-powered financial analysis. With industry-standard tools like SAP, QuickBooks, Zoho, Tally, and real filing practice in GST, ITR, and UAE VAT, students become job-ready from day one. This program opens doors to finance careers in India and GCC countries.",
+      "The program builds end-to-end AI skills, from data foundations to deployment and agentic systems.",
     learnFeatures: [
-      { title: "Global Accounting Tools" },
-      { title: "UAE VAT & Corporate Tax" },
-      { title: "AI-Powered Excel Analysis" },
-      { title: "Real GST & ITR Filing" }
+      { title: "Machine Learning" },
+      { title: "Deep Learning & NLP" },
+      { title: "Deployment & MLOps" },
+      { title: "Agentic AI" }
     ],
     mentorRatingBreakdown: [
       { stars: 5, percentage: 88 },
@@ -700,7 +770,7 @@ export const courses: Course[] = [
       {
         id: 1,
         name: "Expert Faculty Team",
-        designation: "Finance & Accounting Specialists",
+        designation: "AI & Data Science Specialists",
         qualification: "BBA in Finance",
         engagingPercentage: 85,
         helpfulPercentage: 93,
