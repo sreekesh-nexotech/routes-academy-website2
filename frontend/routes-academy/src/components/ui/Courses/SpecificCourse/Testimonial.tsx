@@ -16,224 +16,158 @@ const testimonialsByCourse: { [key: number]: Testimonial[] } = {
     {
       id: 1,
       quote:
-        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
-      name: "Arjun Menon",
-      title: "Business Intelligence Analyst",
+        "I recently completed SAP from Route Academy. It was a really great experience. The syllabus and way of teaching is nice. It was fully practical oriented classes. The classes I got really engaging. Thank you dearest Teachers Harsha Ma'am, Aditya Ma'am, Suhail sir, and Route Academy.",
+      name: "Shanoos",
+      title: "CPAT Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
     },
     {
       id: 2,
       quote:
-        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
-      name: "Priya Sharma",
-      title: "Digital Marketing Executive",
+        "I learned Tally from here and the training was very clear. I recommended Route Upskill Academy to others. Best academy. Thanks to our tutors Adithya Ma'am and Harsha Ma'am.",
+      name: "Muhammed Jifan",
+      title: "CPAT Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
-    },
-    {
-      id: 3,
-      quote:
-        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
-      name: "Rohit Kumar",
-      title: "HR Business Assistant",
-      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
     },
   ],
 
-  // Course 2: Data Analysis
-  2: [
-    {
-      id: 1,
-      quote:
-        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
-      name: "Arjun Menon",
-      title: "Business Intelligence Analyst",
-      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
-    },
-    {
-      id: 2,
-      quote:
-        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
-      name: "Priya Sharma",
-      title: "Digital Marketing Executive",
-      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
-    },
-    {
-      id: 3,
-      quote:
-        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
-      name: "Rohit Kumar",
-      title: "HR Business Assistant",
-      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
-    },
-  ],
+  // Course 2: Career Program in Accounting & Taxation (GCC CPAT)
+  2: [],
 
-  // Course 3: AI-Integrated Excel
+  // Course 3: AI Integrated Data Analytics & BI Specialist (1 Year)
   3: [
     {
       id: 1,
       quote:
-        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
-      name: "Arjun Menon",
-      title: "Business Intelligence Analyst",
+        "I completed data analytics course at Route Academy, nice experience. Faculties are very nice and they are available anytime to clear your doubts.",
+      name: "Fathima Zahra",
+      title: "Data Analytics Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
     },
     {
       id: 2,
       quote:
-        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
-      name: "Priya Sharma",
-      title: "Digital Marketing Executive",
+        "I recently completed the AI Integrated Data Analytics course at Route Upskill Academy in Calicut. The course covered Excel & AI, Power BI, Tableau, SQL, Python, statistics, and machine learning. The trainers are Microsoft certified trainers and very supportive. Highly recommended for students who want practical data skills.",
+      name: "Anan Nisar",
+      title: "Data Analytics Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
     },
     {
       id: 3,
       quote:
-        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
-      name: "Rohit Kumar",
-      title: "HR Business Assistant",
+        "As a working professional, I joined Route Upskill Academy to upgrade my skills in Excel, Power BI, SQL, and Python. Their AI integrated courses helped me understand modern data analytics tools. The teachers are very knowledgeable. I strongly recommend this academy.",
+      name: "Sameer Ali",
+      title: "Working Professional",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
     },
   ],
 
-  // Course 4: SAP S/4HANA FICO
+  // Course 4: AI Integrated Data Analytics & BI Specialist (6 Months)
   4: [
     {
       id: 1,
       quote:
-        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
-      name: "Arjun Menon",
-      title: "Business Intelligence Analyst",
+        "My son completed a data analysis course from Route Upskill Academy. He changed a lot and is now working as a business analyst in Bangalore. During admission, Suhail sir said they could make him a perfect professional, and it was true. He got extremely good classes and practical experiences. Mentors are supportive. The word 'upskill' really means full in Route Upskill Academy. Thank you to everyone who helped my son grow.",
+      name: "Suresh Sureshpt",
+      title: "Parent",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
     },
     {
       id: 2,
       quote:
-        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
-      name: "Priya Sharma",
-      title: "Digital Marketing Executive",
+        "Wonderful place for learning and personal development. Highly recommend this institution to anyone looking for quality education!",
+      name: "Asna Ayoob",
+      title: "Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
     },
     {
       id: 3,
       quote:
-        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
-      name: "Rohit Kumar",
-      title: "HR Business Assistant",
+        "Currently learning the Data Analytics and BI course here. The classes are simple and helpful, especially for beginners. I feel this is one of the best academies for skill development. Thank you for the support and guidance. I would definitely recommend this academy.",
+      name: "Fathima Fidha",
+      title: "Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
     },
   ],
 
-  // Course 5: Digital Marketing & Growth
+  // Course 5: AI Integrated Excel with Power BI & SQL
   5: [
     {
       id: 1,
       quote:
-        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
-      name: "Arjun Menon",
-      title: "Business Intelligence Analyst",
+        "I studied advanced MS Excel from Routes Academy. The class was excellent, especially my lecturer Aadhitya. She was such a good and talented one, she helped me a lot. She cleared any doubts at any time. Thank you Aadhitya and Route's Academy.",
+      name: "Preethu Prasad",
+      title: "Excel Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
     },
     {
       id: 2,
       quote:
-        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
-      name: "Priya Sharma",
-      title: "Digital Marketing Executive",
+        "I recently completed the online Excel training from Route Upskill Academy, and I'm extremely happy with the experience. The classes were well-structured, easy to follow, and perfect for both beginners and working professionals. The instructor Ms. Adithtya explained every concept clearly with practical examples, which made learning much easier. Thanks team, great support.",
+      name: "Sandeep MS",
+      title: "Excel Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
     },
     {
       id: 3,
       quote:
-        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
-      name: "Rohit Kumar",
-      title: "HR Business Assistant",
+        "I got best experience in Route Academy Calicut, Kerala. I completed advanced Excel with AI integrated.",
+      name: "Shameema Shame",
+      title: "Excel Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
     },
   ],
 
-  // Course 6: HR & People Analytics
+  // Course 6: AI Integrated Certified Business & Financial Analyst - CBFA (1 Year)
   6: [
     {
       id: 1,
       quote:
-        "The mock interviews gave me confidence I never knew I had. When I got the call saying I landed my first BI Analyst role, I literally cried happy tears. My family couldn't believe it!",
-      name: "Arjun Menon",
-      title: "Business Intelligence Analyst",
+        "The upskilling program really helped me build a strong foundation. The classes were clear and easy to understand. The campus experience at Hilite Business Park was also great - professional environment, good facilities, and a comfortable place to learn. Overall, it was a very positive and helpful experience for improving my accounting skills.",
+      name: "Soorya Satheesh",
+      title: "CBFA Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
     },
     {
       id: 2,
       quote:
-        "Coming from a small town, I felt so lost about digital marketing. The teachers here didn't just teach – they believed in me when I didn't believe in myself. Now I'm running campaigns for big brands and my parents are so proud. This place truly changed my life!",
-      name: "Priya Sharma",
-      title: "Digital Marketing Executive",
+        "I got best experience at Route Upskill Academy Calicut. I completed accounting courses at Route Academy.",
+      name: "Nainu Vanus",
+      title: "CBFA Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
-    },
-    {
-      id: 3,
-      quote:
-        "I was just another HR admin before Route Academy. Now I sit in board meetings and executives actually listen to my insights! The hands–on training made me feel ready for anything. Best decision I ever made...",
-      name: "Rohit Kumar",
-      title: "HR Business Assistant",
-      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
     },
   ],
 
-  // Course 7: AI-Integrated Logistics & Supply Chain Management
+  // Course 7: AI Integrated Logistics & Supply Chain Management (1 Year)
   7: [
     {
       id: 1,
       quote:
-        "Route Academy's logistics course gave me practical knowledge and confidence. AI modules helped me stand out in interviews.",
-      name: "Adarsh R.",
-      title: "Warehouse Coordinator",
+        "Logistics training was excellent with real industry examples. Route Upskill Academy is highly recommended.",
+      name: "Muhammed Shahal",
+      title: "Logistics Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
     },
     {
       id: 2,
       quote:
-        "Best institute for logistics. The faculty shared real industry experience, and the placement team supported till I got the job.",
-      name: "Fathima M.",
-      title: "Logistics Executive",
+        "I learned SAP MM from Route Upskill Academy and placed as Receiver incharge at Nesto Group. Thank you Route Upskill Academy. The best upskilling academy in Kerala.",
+      name: "Sabith Sabith",
+      title: "SAP MM Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
     },
     {
       id: 3,
       quote:
-        "AI-based tools and real-time case studies made learning easy. Highly recommended.",
-      name: "Mohammed S.",
-      title: "Supply Chain Analyst",
+        "I completed SAP MM course at Route Upskill Academy, and I placed after the course at Nandilath G-Mart. I strongly recommend Route Upskill Academy for your future courses. Best upskilling academy in Kerala.",
+      name: "Sreedhul Sree",
+      title: "SAP MM Student",
       avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
     },
   ],
 
-  // Course 8: Certified Business & Financial Analyst (CBFA)
-  8: [
-    {
-      id: 1,
-      quote:
-        "The multi-software training made me confident. I got a UAE job within 45 days.",
-      name: "Farhana K.",
-      title: "Accounts Assistant – Dubai",
-      avatarSrc: "https://routesacademy.b-cdn.net/images/succes.png",
-    },
-    {
-      id: 2,
-      quote:
-        "Route Academy gave me practical knowledge in GST, ITR, Tally, and Excel. Highly recommend the CBFA program!",
-      name: "Abhiram R.",
-      title: "Accounts Executive",
-      avatarSrc: "https://routesacademy.b-cdn.net/images/succes2.png",
-    },
-    {
-      id: 3,
-      quote:
-        "Excellent trainers and industry-based modules. AI tools are a big advantage.",
-      name: "Shameer M.",
-      title: "Junior Financial Analyst",
-      avatarSrc: "https://routesacademy.b-cdn.net/images/succes3.png",
-    },
-  ],
+  // Course 8: AI Integrated Data Science & Agentic AI
+  8: [],
 
   // Course 9: Certified Business Analyst (CBA)
   9: [
@@ -318,10 +252,15 @@ const testimonialsByCourse: { [key: number]: Testimonial[] } = {
   ],
 };
 
+export const getTestimonialsForCourse = (courseId: number): Testimonial[] =>
+  testimonialsByCourse[courseId] ?? [];
+
 const SuccessStories = ({ courseId }: { courseId: number }) => {
-  // Get testimonials for the specific course, fallback to course 2 if not found
-  const testimonialsData =
-    testimonialsByCourse[courseId] || testimonialsByCourse[2];
+  const testimonialsData = getTestimonialsForCourse(courseId);
+
+  if (testimonialsData.length === 0) {
+    return null;
+  }
   return (
     <section className="bg-[#F2F5FF] py-16 lg:py-24 3xl:py-32 w-full">
       {/* Container to constrain text*/}

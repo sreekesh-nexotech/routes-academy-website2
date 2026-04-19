@@ -19,7 +19,9 @@ const CourseDetailsCard: React.FC<{ course: Course }> = ({ course }) => {
           <span className="flex items-center space-x-2">
             <span className="font-medium">Course Fees ( with Tax ):</span>
           </span>
-          <p className="text-gray-800">{course.actual_price}</p>
+          <p className="text-gray-800">
+            {course.actual_price_display ?? course.actual_price}
+          </p>
         </li>
         <li className="flex justify-between items-center text-sm border-b border-[#a0a0a080] pb-2">
           <span className="flex items-center space-x-2">
@@ -31,7 +33,10 @@ const CourseDetailsCard: React.FC<{ course: Course }> = ({ course }) => {
           <span className="flex items-center space-x-2">
             <span className="font-medium">Session Duration:</span>
           </span>
-          <p className="text-gray-800">{course.session_duration} Hrs/week</p>
+          <p className="text-gray-800">
+            {course.session_duration_display ??
+              `${course.session_duration} Hrs/week`}
+          </p>
         </li>
         <li className="flex justify-between items-center text-sm border-b border-[#a0a0a080] pb-2">
           <span className="flex items-center space-x-2">
