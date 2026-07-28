@@ -56,6 +56,24 @@ export interface Course {
   certificate_title?: string | string[];
 }
 
+// ---------------------------------------------------------------------------
+// Accreditation and completion certificates shared across courses.
+// ---------------------------------------------------------------------------
+
+const MEDHAVI_CERTIFICATE_IMG =
+  "https://routesacademy.b-cdn.net/images/Medhavi%20Skill%20University%20certificate.jpeg";
+const MEDHAVI_CERTIFICATE_TITLE = "Certification By Medhavi Skill University";
+
+// Served locally because the CDN only has this one as a PDF, which next/image
+// cannot render. Swap in a CDN URL here once the artwork is uploaded as an image.
+const ABE_CERTIFICATE_IMG = "/images/abe-certificate.jpg";
+const ABE_CERTIFICATE_TITLE = "Certification by American Board of Education";
+
+const ROUTE_COMPLETION_CERTIFICATE_IMG =
+  "https://routesacademy.b-cdn.net/images/Routes%20Academy%20Certificate.png";
+const ROUTE_COMPLETION_CERTIFICATE_TITLE =
+  "Course Completion Certificate By Routes Academy";
+
 export const courses: Course[] = [
   {
     id: 1,
@@ -78,9 +96,9 @@ export const courses: Course[] = [
     duration: "6 Months",
     session_duration: 600,
     session_duration_display: "600 Hours",
-    actual_price: 50000,
-    actual_price_display: "₹50,000",
-    offer_price: 50000,
+    actual_price: 60000,
+    actual_price_display: "₹60,000",
+    offer_price: 60000,
     what_you_get: [
       "24/7 Doubt Support",
       "Dedicated Placement Support",
@@ -131,13 +149,13 @@ export const courses: Course[] = [
 
     certificate_img: [
       "https://routesacademy.b-cdn.net/images/certificate1.png",
-      "https://routesacademy.b-cdn.net/images/Microsoft%20Certificate.png",
-      "https://routesacademy.b-cdn.net/images/Zoho%20Certificate.png"
+      "https://routesacademy.b-cdn.net/images/Zoho%20Certificate.png",
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
       "Certification By National Skill Development Council",
-      "Certification By Microsoft",
-      "Certification By ZOHO"
+      "Certification By ZOHO",
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   },
 
@@ -166,9 +184,9 @@ export const courses: Course[] = [
     duration: "6 Months",
     session_duration: 600,
     session_duration_display: "600 Hours",
-    actual_price: 50000,
-    actual_price_display: "₹50,000",
-    offer_price: 50000,
+    actual_price: 60000,
+    actual_price_display: "₹60,000",
+    offer_price: 60000,
     what_you_get: [
       "24/7 Doubt Support",
       "Dedicated Placement Support",
@@ -233,12 +251,14 @@ export const courses: Course[] = [
     certificate_img: [
       "https://routesacademy.b-cdn.net/images/certificate1.png",
       "https://routesacademy.b-cdn.net/images/Microsoft%20Certificate.png",
-      "https://routesacademy.b-cdn.net/images/IBM%20certificate%20.jpeg.jpg"
+      "https://routesacademy.b-cdn.net/images/IBM%20certificate%20.jpeg.jpg",
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
       "Certification By National Skill Development Council",
       "Certification By Microsoft",
-      "Certification By IBM"
+      "Certification By IBM",
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   },
 
@@ -258,7 +278,7 @@ export const courses: Course[] = [
     mode_of_conduct: "Offline / Online",
     placed_students: 130,
     class_schedule: "As per convenience",
-    enrolled_students: 160,
+    enrolled_students: 300,
     emi: true,
     image_url: "https://routesacademy.b-cdn.net/images/Course_Card_Image.png",
     specific_course_img: "https://routesacademy.b-cdn.net/images/specific-courses-hero3.svg",
@@ -322,9 +342,15 @@ export const courses: Course[] = [
     ],
     certificate_img: [
       "https://routesacademy.b-cdn.net/images/certificate1.png",
+      MEDHAVI_CERTIFICATE_IMG,
+      ABE_CERTIFICATE_IMG,
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
       "Certification By National Skill Development Council",
+      MEDHAVI_CERTIFICATE_TITLE,
+      ABE_CERTIFICATE_TITLE,
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   },
 
@@ -417,9 +443,11 @@ export const courses: Course[] = [
     ],
     certificate_img: [
       "https://routesacademy.b-cdn.net/images/certificate1.png",
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
       "Certification By National Skill Development Council",
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   },
 
@@ -495,10 +523,12 @@ export const courses: Course[] = [
       }
     ],
     certificate_img: [
-      "https://routesacademy.b-cdn.net/images/certificate1.png"
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
-      "Certification By National Skill Development Council"
+      "Certification By National Skill Development Council",
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   },
 
@@ -587,12 +617,18 @@ export const courses: Course[] = [
     certificate_img: [
       "https://routesacademy.b-cdn.net/images/certificate1.png",
       "https://routesacademy.b-cdn.net/images/Microsoft%20Certificate.png",
-      "https://routesacademy.b-cdn.net/images/Zoho%20Certificate.png"
+      "https://routesacademy.b-cdn.net/images/Zoho%20Certificate.png",
+      MEDHAVI_CERTIFICATE_IMG,
+      ABE_CERTIFICATE_IMG,
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
       "Certification By National Skill Development Council",
       "Certification By Microsoft",
-      "Certification By ZOHO"
+      "Certification By ZOHO",
+      MEDHAVI_CERTIFICATE_TITLE,
+      ABE_CERTIFICATE_TITLE,
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   },
 
@@ -683,11 +719,15 @@ export const courses: Course[] = [
     ],
     certificate_img: [
       "https://routesacademy.b-cdn.net/images/certificate1.png",
-      "https://routesacademy.b-cdn.net/images/ACE%20certificate.jpeg.jpg",
+      ABE_CERTIFICATE_IMG,
+      MEDHAVI_CERTIFICATE_IMG,
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
-      "Certification By National Skill Development Council",      
-      "Certification by American Board of Education"
+      "Certification By National Skill Development Council",
+      ABE_CERTIFICATE_TITLE,
+      MEDHAVI_CERTIFICATE_TITLE,
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   },
 
@@ -779,10 +819,16 @@ export const courses: Course[] = [
       }
     ],
     certificate_img: [
-      "https://routesacademy.b-cdn.net/images/certificate1.png"
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
+      MEDHAVI_CERTIFICATE_IMG,
+      ABE_CERTIFICATE_IMG,
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
-      "Certification By National Skill Development Council"
+      "Certification By National Skill Development Council",
+      MEDHAVI_CERTIFICATE_TITLE,
+      ABE_CERTIFICATE_TITLE,
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   },
 
@@ -882,10 +928,12 @@ export const courses: Course[] = [
       }
     ],
     certificate_img: [
-      "https://routesacademy.b-cdn.net/images/certificate1.png"
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
-      "Certification By National Skill Development Council"
+      "Certification By National Skill Development Council",
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   },
 
@@ -996,10 +1044,12 @@ export const courses: Course[] = [
       }
     ],
     certificate_img: [
-      "https://routesacademy.b-cdn.net/images/certificate1.png"
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
-      "Certification By National Skill Development Council"
+      "Certification By National Skill Development Council",
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   },
 
@@ -1115,10 +1165,12 @@ export const courses: Course[] = [
       }
     ],
     certificate_img: [
-      "https://routesacademy.b-cdn.net/images/certificate1.png"
+      "https://routesacademy.b-cdn.net/images/certificate1.png",
+      ROUTE_COMPLETION_CERTIFICATE_IMG
     ],
     certificate_title: [
-      "Certification By National Skill Development Council"
+      "Certification By National Skill Development Council",
+      ROUTE_COMPLETION_CERTIFICATE_TITLE
     ]
   }
 ];
