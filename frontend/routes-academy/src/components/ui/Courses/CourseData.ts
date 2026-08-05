@@ -15,6 +15,8 @@ export interface Mentor {
   designation: string;
   qualification: string;
   image: string;
+  /** Tailwind overrides for the circular crop when the default top-centre framing cuts the face off. */
+  imageClassName?: string;
   engagingPercentage?: number;
   helpfulPercentage?: number;
   clarityPercentage?: number;
@@ -62,6 +64,12 @@ export interface Course {
 
 const TOMSY_JOJAN_IMG =
   "https://routesacademy.b-cdn.net/images/Tomcy%20Jojan%20Financial%20Analyst%20Mentor.png";
+const ADITHYA_PT_IMG =
+  "https://routesacademy.b-cdn.net/images/Adithya%20PT%20Senior%20Data%20Analyst%20-%20HOD.png";
+const HARSHA_T_IMG =
+  "https://routesacademy.b-cdn.net/images/Harsha%20T%20Senior%20Financial%20Analyst%20-%20HOD.png";
+const SHILPA_C_IMG =
+  "https://routesacademy.b-cdn.net/images/Shilpa%20C%20Mentor.png";
 const LIBA_MARIYAM_IMG =
   "https://routesacademy.b-cdn.net/images/Liba%20Mariyam%20Data%20Analytics%20Mentor.png";
 const SANIYA_JIMMY_IMG =
@@ -70,6 +78,9 @@ const SHABNAM_IMG =
   "https://routesacademy.b-cdn.net/images/Shabnam%20%20Data%20Analyst%20Mentor.png";
 const SUHAIL_KK_IMG =
   "https://routesacademy.b-cdn.net/images/Suhail%20KK%20Logistics%20-%20HOD.png";
+// Note: the CDN filename really does have a trailing space before the extension.
+const AKHIL_C_NAIR_IMG =
+  "https://routesacademy.b-cdn.net/images/Akhil%20C%20Nair%20Logistics%20Mentor%20.png";
 
 // TODO: replace once Muhammed Rahees P's photo is on the CDN.
 const MUHAMMED_RAHEES_P_IMG =
@@ -162,7 +173,7 @@ export const courses: Course[] = [
         engagingPercentage: 78,
         helpfulPercentage: 92,
         clarityPercentage: 88,
-        image: "https://routesacademy.b-cdn.net/images/mentor3.png"
+        image: HARSHA_T_IMG
       }
     ],
 
@@ -343,8 +354,7 @@ export const courses: Course[] = [
         engagingPercentage: 80,
         helpfulPercentage: 88,
         clarityPercentage: 86,
-        image:
-          "https://routesacademy.b-cdn.net/images/mentor2.png"
+        image: ADITHYA_PT_IMG
       }
     ],
     certificate_img: [
@@ -514,7 +524,7 @@ export const courses: Course[] = [
         engagingPercentage: 70,
         helpfulPercentage: 75,
         clarityPercentage: 72,
-        image: "https://routesacademy.b-cdn.net/images/mentor4.png"
+        image: SHILPA_C_IMG
       }
     ],
     certificate_img: [
@@ -606,7 +616,7 @@ export const courses: Course[] = [
         engagingPercentage: 78,
         helpfulPercentage: 92,
         clarityPercentage: 88,
-        image: "https://routesacademy.b-cdn.net/images/mentor3.png"
+        image: HARSHA_T_IMG
       }
     ],
     certificate_img: [
@@ -709,7 +719,20 @@ export const courses: Course[] = [
         engagingPercentage: 82,
         helpfulPercentage: 90,
         clarityPercentage: 86,
-        image: SUHAIL_KK_IMG
+        image: SUHAIL_KK_IMG,
+        // Subject sits to the right of frame in this shot, so zoom in and pin right.
+        imageClassName:
+          "object-cover object-top-right origin-top-right scale-125 w-full h-full"
+      },
+      {
+        id: 2,
+        name: "Akhil C Nair",
+        designation: "Logistics Mentor",
+        qualification: "",
+        engagingPercentage: 82,
+        helpfulPercentage: 90,
+        clarityPercentage: 86,
+        image: AKHIL_C_NAIR_IMG
       }
     ],
     certificate_img: [

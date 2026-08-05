@@ -117,7 +117,9 @@ const MentorAndReviewsSection: React.FC<{
                       alt={mentor.name}
                       width={140}
                       height={140}
-                      className="object-cover w-full h-full"
+                      className={
+                        mentor.imageClassName ?? "object-cover object-top w-full h-full"
+                      }
                     />
                   </div>
 
