@@ -57,6 +57,25 @@ export interface Course {
 }
 
 // ---------------------------------------------------------------------------
+// Faculty photos.
+// ---------------------------------------------------------------------------
+
+const TOMSY_JOJAN_IMG =
+  "https://routesacademy.b-cdn.net/images/Tomcy%20Jojan%20Financial%20Analyst%20Mentor.png";
+const LIBA_MARIYAM_IMG =
+  "https://routesacademy.b-cdn.net/images/Liba%20Mariyam%20Data%20Analytics%20Mentor.png";
+const SANIYA_JIMMY_IMG =
+  "https://routesacademy.b-cdn.net/images/Saniya%20Jimmy%20Data%20Analytics%20Mentor.png";
+const SHABNAM_IMG =
+  "https://routesacademy.b-cdn.net/images/Shabnam%20%20Data%20Analyst%20Mentor.png";
+const SUHAIL_KK_IMG =
+  "https://routesacademy.b-cdn.net/images/Suhail%20KK%20Logistics%20-%20HOD.png";
+
+// TODO: replace once Muhammed Rahees P's photo is on the CDN.
+const MUHAMMED_RAHEES_P_IMG =
+  "https://routesacademy.b-cdn.net/images/mentor.png";
+
+// ---------------------------------------------------------------------------
 // Accreditation and completion certificates shared across courses.
 // ---------------------------------------------------------------------------
 
@@ -227,25 +246,13 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "Abin Prakash",
-        designation: "Data Analytics, Excel & Power BI",
-        qualification: "BBA in Finance",
+        name: "Tomsy Jojan",
+        designation: "Financial Analyst Mentor",
+        qualification: "",
         engagingPercentage: 85,
         helpfulPercentage: 90,
         clarityPercentage: 92,
-        image:
-          "https://routesacademy.b-cdn.net/images/mentor1.png"
-      },
-      {
-        id: 2,
-        name: "Adithya P T",
-        designation: "Microsoft Certified Trainer, SQL & Python",
-        qualification: "M.Sc. Computer Science (Data Science)",
-        engagingPercentage: 80,
-        helpfulPercentage: 88,
-        clarityPercentage: 86,
-        image:
-          "https://routesacademy.b-cdn.net/images/mentor2.png"
+        image: TOMSY_JOJAN_IMG
       }
     ],
     certificate_img: [
@@ -420,25 +427,13 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "Abin Prakash",
-        designation: "Data Analytics, Excel & Power BI",
-        qualification: "BBA in Finance",
+        name: "Saniya Jimmy",
+        designation: "Data Analytics Mentor",
+        qualification: "",
         engagingPercentage: 85,
         helpfulPercentage: 90,
         clarityPercentage: 92,
-        image:
-          "https://routesacademy.b-cdn.net/images/mentor1.png"
-      },
-      {
-        id: 2,
-        name: "Adithya P T",
-        designation: "Microsoft Certified Trainer, SQL & Python",
-        qualification: "M.Sc. Computer Science (Data Science)",
-        engagingPercentage: 80,
-        helpfulPercentage: 88,
-        clarityPercentage: 86,
-        image:
-          "https://routesacademy.b-cdn.net/images/mentor2.png"
+        image: SANIYA_JIMMY_IMG
       }
     ],
     certificate_img: [
@@ -708,13 +703,13 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "Industry Specialists",
-        designation: "Logistics & AI Experts",
-        qualification: "BBA in Finance",
+        name: "Suhail K K",
+        designation: "Logistics - HOD",
+        qualification: "",
         engagingPercentage: 82,
         helpfulPercentage: 90,
         clarityPercentage: 86,
-        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+        image: SUHAIL_KK_IMG
       }
     ],
     certificate_img: [
@@ -809,13 +804,13 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "Expert Faculty Team",
-        designation: "AI & Data Science Specialists",
-        qualification: "BBA in Finance",
+        name: "Liba Mariyam",
+        designation: "Data Scientist",
+        qualification: "",
         engagingPercentage: 85,
         helpfulPercentage: 93,
         clarityPercentage: 89,
-        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+        image: LIBA_MARIYAM_IMG
       }
     ],
     certificate_img: [
@@ -1034,13 +1029,15 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "Senior HR Professionals",
-        designation: "HR & People Analytics Experts",
-        qualification: "BBA in Finance",
+        name: "Shabnam",
+        // TODO: confirm the HR title — the CDN photo is filed as
+        // "Data Analyst Mentor", which does not fit this course.
+        designation: "HR Mentor",
+        qualification: "",
         engagingPercentage: 86,
         helpfulPercentage: 92,
         clarityPercentage: 90,
-        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+        image: SHABNAM_IMG
       }
     ],
     certificate_img: [
@@ -1155,13 +1152,13 @@ export const courses: Course[] = [
     mentor: [
       {
         id: 1,
-        name: "Digital Marketing Experts",
-        designation: "AI & Marketing Specialists",
-        qualification: "BBA in Finance",
+        name: "Muhammed Rahees P",
+        designation: "Digital Marketing Mentor",
+        qualification: "",
         engagingPercentage: 88,
         helpfulPercentage: 94,
         clarityPercentage: 91,
-        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+        image: MUHAMMED_RAHEES_P_IMG
       }
     ],
     certificate_img: [
