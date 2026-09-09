@@ -942,7 +942,7 @@ export const courses: Course[] = [
         engagingPercentage: 84,
         helpfulPercentage: 91,
         clarityPercentage: 88,
-        image: "https://routesacademy.b-cdn.net/images/mentor.png"
+        image: "/images/mentors/abin-sheldon-data-analyst.png"
       }
     ],
     certificate_img: [
